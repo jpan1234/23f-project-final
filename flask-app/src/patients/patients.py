@@ -37,9 +37,9 @@ def get_prescriptions(patientid):
 
     return jsonify(json_data)
 
-# Get all the prescriptions from the database 
+# Get all the notifications from the database 
 @patients.route('/notifications/<patientid>}', methods=['GET'])
-def get_prescriptions(patientid):
+def get_notifications(patientid):
     '''
     Get all notifications from the database for the patient
 
@@ -51,6 +51,40 @@ def get_prescriptions(patientid):
     # use cursor to query the database for a list of products
     cursor.execute(f'SELECT content FROM HuskyHealth.Notifications\
                     WHERE patientID = {patientid};')
+
+    # grab the column headers from the returned data
+    column_headers = [x[0] for x in cursor.description]
+
+    # create an empty dictionary object to use in 
+    # putting column headers together with data
+    json_data = []
+
+    # fetch all the data from the cursor
+    theData = cursor.fetchall()
+
+    # for each of the rows, zip the data elements together with
+    # the column headers. 
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+
+# Get all the messages from the database from a doctor 
+@patients.route('/messages/<patientid>/<doctorid>}', methods=['GET'])
+def get_notifications(patientid, doctorid):
+    '''
+    Get all notifications from the database for the patient
+
+    columns: subject, content, dateSent for the patient
+    '''
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    # use cursor to query the database for a list of products
+    cursor.execute(f'SELECT subject, content, dateSent FROM Message\
+                     WHERE patientID = {patientid}\
+                     AND doctorID = {doctorid};')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
