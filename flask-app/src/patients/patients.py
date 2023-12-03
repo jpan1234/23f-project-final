@@ -6,7 +6,7 @@ from src import db
 patients = Blueprint('patients', __name__)
 
 # Get all the prescriptions from the database 
-@patients.route('/prescriptions/<patientid>}', methods=['GET'])
+@patients.route('/prescriptions/<patientid>', methods=['GET'])
 def get_prescriptions(patientid):
     '''
     Get all prescriptions from the database
@@ -38,7 +38,7 @@ def get_prescriptions(patientid):
     return jsonify(json_data)
 
 # Get all the notifications from the database 
-@patients.route('/notifications/<patientid>}', methods=['GET'])
+@patients.route('/notifications/<patientid>', methods=['GET'])
 def get_notifications(patientid):
     '''
     Get all notifications from the database for the patient
@@ -72,7 +72,7 @@ def get_notifications(patientid):
 
 
 # Get all the messages from the database from a doctor 
-@patients.route('/messages/<patientid>/<doctorid>}', methods=['GET'])
+@patients.route('/messages/<patientid>/<doctorid>', methods=['GET'])
 def get_doctor_message(patientid, doctorid):
     '''
     Get all messages from the database for the patient from a doctor
@@ -106,7 +106,7 @@ def get_doctor_message(patientid, doctorid):
 
 
 # Get all the messages from the database from a coach 
-@patients.route('/messages/<patientid>/<coachid>}', methods=['GET'])
+@patients.route('/messages/<patientid>/<coachid>', methods=['GET'])
 def get_coach_message(patientid, coachid):
     '''
     Get all messages from the database for the patient from a coach
@@ -140,8 +140,8 @@ def get_coach_message(patientid, coachid):
 
 
 # Get all the messages from the database from a coach 
-@patients.route('/messages/<patientid>/<repid>}', methods=['GET'])
-def get_rep_message(patientid, coachid):
+@patients.route('/messages/<patientid>/<repid>', methods=['GET'])
+def get_rep_message(patientid, repiD):
     '''
     Get all messages from the database for the patient from a rep
 
@@ -174,7 +174,7 @@ def get_rep_message(patientid, coachid):
 
 
 # Get all the healthrecords from the database for a patient 
-@patients.route('/healthrecords/<patientid>}', methods=['GET'])
+@patients.route('/healthrecords/<patientid>', methods=['GET'])
 def get_health_records(patientid):
     '''
     Get all health records from the database for the patient
@@ -209,7 +209,7 @@ def get_health_records(patientid):
 
 
 # Get all the lab results from the database for a patient 
-@patients.route('/labresults/notifications/<patientid>}', methods=['GET'])
+@patients.route('/labresults/notifications/<patientid>', methods=['GET'])
 def get_lab_records(patientid):
     '''
     Get all lab result records from the database for the patient
@@ -245,7 +245,7 @@ def get_lab_records(patientid):
     return jsonify(json_data)
 
 # Get all the visits records from the database for a patient 
-@patients.route('/visits/<patientid>}', methods=['GET'])
+@patients.route('/visits/<patientid>', methods=['GET'])
 def get_visit_records(patientid):
     '''
     Get all visits records from the database for the patient
@@ -278,7 +278,7 @@ def get_visit_records(patientid):
     return jsonify(json_data)
 
 # Get all the billing records from the database for a patient 
-@patients.route('/billingrecords/<patientid>}', methods=['GET'])
+@patients.route('/billingrecords/<patientid>', methods=['GET'])
 def get_billing_records(patientid):
     '''
     Get all billing records from the database for the patient
@@ -312,7 +312,7 @@ def get_billing_records(patientid):
 
 
 # Get all the billing records from the database for a patient 
-@patients.route('/billingrecords/<patientid>}', methods=['GET'])
+@patients.route('/billingrecords/<patientid>', methods=['GET'])
 def get_billing_records(patientid):
     '''
     Get all billing records from the database for the patient
@@ -346,7 +346,7 @@ def get_billing_records(patientid):
 
 
 # Get all the wellness goal records from the database for a patient 
-@patients.route('/wellnessrecords/<patientid>}', methods=['GET'])
+@patients.route('/wellnessrecords/<patientid>', methods=['GET'])
 def get_wellness_records(patientid):
     '''
     Get all wellness records from the database for the patient
