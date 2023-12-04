@@ -138,28 +138,6 @@ def get_health_records(patientid):
     return jsonify(json_data)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# NEED TO CHANGE THIS BELOW
-
-
-
 # Get all the lab results from the database for a patient 
 @patients.route('/labresults/<patientid>', methods=['GET'])
 def get_lab_records(patientid):
@@ -172,12 +150,8 @@ def get_lab_records(patientid):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT result, LabResults.type, testDate FROM HuskyHealth.LabResults\
-                     JOIN Prescriptions\
-                     ON LabResults.testID = Prescriptions.testID\
-                     JOIN HuskyHealth.Patient\
-                     ON Prescriptions.patientID = Patient.patientID\
-                     WHERE Patient.patientID = {patientid};')
+    cursor.execute(f'SELECT result, type, testDate FROM LabResults\
+                     WHERE patientID = {patientid};')
     
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
