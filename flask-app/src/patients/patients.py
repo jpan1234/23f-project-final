@@ -17,7 +17,7 @@ def get_prescriptions(patientid):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT medication, pharmacy, dateprescribed FROM HuskyHealth.Prescriptions\
+    cursor.execute(f'SELECT medication, pharmacy, dateprescribed FROM Prescriptions\
                     WHERE patientID = {patientid};')
 
     # grab the column headers from the returned data
@@ -49,7 +49,7 @@ def get_notifications(patientid):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT content FROM HuskyHealth.Notifications\
+    cursor.execute(f'SELECT content FROM Notifications\
                     WHERE patientID = {patientid}\
                     AND status = "Unread";')
 
@@ -373,7 +373,7 @@ def post_rep_message(repid):
     patientid = the_data['patientID']
 
     # Constructing the query
-    query = 'INSERT INTO HuskyHealth.Message (subject, content, patientID, repID) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientID, repID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", '
@@ -493,7 +493,7 @@ def update_message(comid):
     subject = the_data['subject']
     content = the_data['content']
 
-    query = f'UPDATE HuskyHealth.Message\
+    query = f'UPDATE Message\
                     SET subject = {subject}, content = {content}\
                     WHERE comID = {comid};'
 
@@ -527,7 +527,7 @@ def update_patient_wellnessrecord(wellnessrecordID):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
-    query = f'UPDATE HuskyHealth.WellnessRecord\
+    query = f'UPDATE WellnessRecord\
                      SET complete = {completed}\
                      WHERE wellnessrecordID = {wellnessrecordID};'
     

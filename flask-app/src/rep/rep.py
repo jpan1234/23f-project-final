@@ -341,9 +341,9 @@ def post_doctor_message(doctorid):
 
 
 
-# updates this patient's current insurance plan
-@rep.route('/rep/insuranceplans/<repID>/<patientID>', methods=['PUT'])
-def update_patient_insurance_plan(repID, patientID):
+# updates a patient's current insurance plan
+@rep.route('/rep/insuranceplans/<planID>', methods=['PUT'])
+def update_patient_insurance_plan(planID):
     
     # collecting data from request object 
     the_data = request.json
@@ -353,9 +353,14 @@ def update_patient_insurance_plan(repID, patientID):
     terminationDate = the_data['terminationDate']
     copay = the_data['copay']
     description = the_data['description']
-    
+    inactive = the_data['inactive'] # have the choice to set something as inactive
+    repid = the_data['repID']
+        
     # create update query
-    the_query = f'''something'''
+    the_query = f'''UPDATE InsurancePlan\
+                    SET terminationDate = {terminationDate}, copay = {copay}, description = {description},\
+                        inactive = {inactive}, repID = {repid}\
+                    WHERE planID = {planID}'''
     current_app.logger.info(the_query)
     
     cursor = db.get_db().cursor()
@@ -364,12 +369,24 @@ def update_patient_insurance_plan(repID, patientID):
 
     return "Success!"
 
-# inactive this patient's insurance plan
-@rep.route('/rep/insuranceplans/<repID>/<patientID>', methods=['DELETE'])
-def inactivate_patient_insurance_plan(repID, patientID):
+# set billing record as paid
+@rep.route('/billingrecord/<patientid>', methods=['PUT'])
+def pay_bill(patientID):
+
+    # collecting data from the request object 
+    the_data = request.json
+    current_app.logger.info(the_data)
+
+    #extracting the variable
+    paid = the_data['paid'] # either 1 or 0, mostly going to set to 1 to set as "complete"
+    billingrecordID = the_data['billingRecordID']
 
     # Constructing the query
-    query = f'''something'''
+    query = f'UPDATE BillingRecord\
+                     SET paid = {paid}\
+                     WHERE billingRecordID = {billingrecordID}
+                     AND patientID = {patientID};'
+    
     current_app.logger.info(query)
 
     # executing and committing the update statement 
@@ -378,3 +395,38 @@ def inactivate_patient_insurance_plan(repID, patientID):
     db.get_db().commit()
     
     return 'Success!'
+
+
+# update a message to a doctor
+@rep.route('/messages/<comid>', methods=['PUT'])
+def update_message(comid):
+    '''
+    Update a message 
+
+    columns: 
+    '''
+
+    # collecting data from the request object 
+    the_data = request.json
+
+    # extracting the variable
+    subject = the_data['subject']
+    content = the_data['content']
+
+    query = f'UPDATE Message\
+                    SET subject = {subject}, content = {content}\
+                    WHERE comID = {comid};'
+
+    # update with new content and keep remaining old subject
+    cursor.execute(query)
+    # log the query
+    current_app.logger.info(query)
+
+    # commit the changes
+    db.get_db().commit()
+
+
+    return "Updated message."
+
+
+# NEED a DELETE route
