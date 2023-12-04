@@ -384,7 +384,7 @@ def pay_bill(patientID):
     # Constructing the query
     query = f'UPDATE BillingRecord\
                      SET paid = {paid}\
-                     WHERE billingRecordID = {billingrecordID}
+                     WHERE billingRecordID = {billingrecordID}\
                      AND patientID = {patientID};'
     
     current_app.logger.info(query)
