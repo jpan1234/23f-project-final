@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS HealthRecords (
 CREATE TABLE IF NOT EXISTS Message (
     comID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     dateSent DATE,
-    [subject] VARCHAR(255),
+    subject VARCHAR(255),
     content TEXT,
     patientID INT,
     doctorID INT,
@@ -129,7 +129,7 @@ CREATE TABLE IF NOT EXISTS InsurancePlan (
     planID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     terminationDate DATE,
     copay DECIMAL,
-    [description] TEXT,
+    description TEXT,
     repID INT,
     inactive TINYINT(1) DEFAULT 0 NOT NULL,
     FOREIGN KEY (repID) REFERENCES InsuranceRepresentative(repID) ON UPDATE CASCADE ON DELETE RESTRICT
@@ -138,7 +138,7 @@ CREATE TABLE IF NOT EXISTS InsurancePlan (
 -- creating BillingRecord table
 CREATE TABLE IF NOT EXISTS BillingRecord (
     billingRecordID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    [description] TEXT,
+    description TEXT,
     amount DECIMAL,
     patientID INT NOT NULL,
     planID INT,
@@ -151,7 +151,7 @@ CREATE TABLE IF NOT EXISTS BillingRecord (
 CREATE TABLE IF NOT EXISTS WellnessRecord (
     wellnessRecordID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     goal VARCHAR(255),
-    [description] TEXT,
+    description TEXT,
     patientID INT NOT NULL,
     complete TINYINT(1) DEFAULT 0 NOT NULL,
     FOREIGN KEY (patientID) REFERENCES Patient(patientID) ON UPDATE CASCADE ON DELETE RESTRICT
@@ -175,7 +175,7 @@ CREATE TABLE IF NOT EXISTS vaxHistoryRecord (
 CREATE TABLE IF NOT EXISTS Notifications (
     notificationID INT PRIMARY KEY NOT NULL,
     content TEXT,
-    [status] VARCHAR(50),
+    status VARCHAR(50),
     timeSent TIMESTAMP,
     patientID INT NOT NULL,
     visitID INT,
