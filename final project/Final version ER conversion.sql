@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS Prescriptions (
     patientID INT NOT NULL,
     resultDate DATE NOT NULL,
     company VARCHAR(255) NOT NULL,
-    doctorID INT NOT NULL,,
+    doctorID INT NOT NULL,
     status VARCHAR(50) NOT NULL,
     datePrescribed DATE NOT NULL,
     pharmacy VARCHAR(255) NOT NULL,
@@ -195,7 +195,7 @@ DROP TABLE IF EXISTS AllergyRecord;
 DROP TABLE IF EXISTS WellnessRecord;
 DROP TABLE IF EXISTS BillingRecord;
 DROP TABLE IF EXISTS InsurancePlan;
-DROP TABLE IF EXISTS [Message];
+DROP TABLE IF EXISTS Message;
 DROP TABLE IF EXISTS HealthRecords;
 DROP TABLE IF EXISTS Prescriptions;
 DROP TABLE IF EXISTS LabResults;
