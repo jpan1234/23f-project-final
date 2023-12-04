@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS Doctor (
     specialization VARCHAR(255),
     firstName VARCHAR(255),
     lastName VARCHAR(255),
-    healthRecordConsent TINYINT(1) DEFAULT 1
+    consent TINYINT(1) DEFAULT 1
 );
 
 # creating WellnessCoach table
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS WellnessCoach (
     education VARCHAR(255),
     firstName VARCHAR(255),
     lastName VARCHAR(255),
-    healthRecordConsent TINYINT(1) DEFAULT 0
+    consent TINYINT(1) DEFAULT 0
 );
 
 # creating InsuranceRepresentative table
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS InsuranceRepresentative (
     company VARCHAR(255),
     firstName VARCHAR(255),
     lastName VARCHAR(255),
-    healthRecordConsent TINYINT(1) DEFAULT 0
+    consent TINYINT(1) DEFAULT 0
 );
 
 # creating Visit table
@@ -172,9 +172,22 @@ CREATE TABLE IF NOT EXISTS vaxHistoryRecord (
     FOREIGN KEY (healthRecordID) REFERENCES HealthRecords(healthRecordID) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
+# creating Notifications table
+CREATE TABLE IF NOT EXISTS Notifications (
+    notificationID INT PRIMARY KEY,
+    content TEXT,
+    status VARCHAR(50),
+    timeSent TIMESTAMP,
+    patientID INT,
+    visitID INT,
+    testID INT,
+    FOREIGN KEY (patientID) REFERENCES Patient(patientID) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (visitID) REFERENCES Visit(visitID) ON UPDATE CASCADE ON DELETE SET NULL,
+    FOREIGN KEY (testID) REFERENCES LabResults(testID) ON UPDATE CASCADE ON DELETE SET NULL
+);
 
 # Drop all tables in reverse order to avoid foreign key constraint issues
-
+DROP TABLE IF EXISTS Notifications;
 DROP TABLE IF EXISTS vaxHistoryRecord;
 DROP TABLE IF EXISTS AllergyRecord;
 DROP TABLE IF EXISTS WellnessRecord;
