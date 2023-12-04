@@ -365,7 +365,7 @@ def post_coach_message(coachid):
 
 
     # Constructing the query
-    query = 'INSERT INTO HuskyHealth.Message (subject, content, patientid, coachid) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientid, coachid) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", '
@@ -533,7 +533,6 @@ def update_message(comid):
 
 
     return "Updated message."
-
 
 # update a wellness record
 @patients.route('/wellnessrecords/<wellnessrecordid>', methods=['PUT'])
