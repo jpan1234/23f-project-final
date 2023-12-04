@@ -3,7 +3,7 @@ import json
 from src import db
 
 
-products = Blueprint('doctors', __name__)
+doctors = Blueprint('doctors', __name__)
 
 # Get all the products from the database
 @doctors.route('/doctor', methods=['GET'])
