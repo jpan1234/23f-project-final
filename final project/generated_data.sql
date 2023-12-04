@@ -124,7 +124,7 @@ insert into Doctor (doctorID, specialization, firstName, lastName, consent) valu
 insert into Doctor (doctorID, specialization, firstName, lastName, consent) values (60, 'Geriatrics', 'Delilah', 'Hollidge', 1);
 
 
---Wellness Coach
+-- Wellness Coach
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (1, 'Nursing', 'Carla', 'Lightollers', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (2, 'Psychology', 'Cammy', 'Jaume', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (3, 'Psychology', 'Sydel', 'Edelman', 0);
@@ -185,3 +185,65 @@ insert into WellnessCoach (coachID, education, firstName, lastName, consent) val
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (58, 'Behavioral Science', 'Wyatan', 'Sibly', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (59, 'Integrative Health', 'Henrieta', 'Hantusch', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (60, 'Health Education', 'Brandea', 'Brooking', 0);
+
+-- Insurance Representative
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (1, 'Allstate', 'Bellina', 'Woolmore', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (2, 'Farmers Insurance', 'Audre', 'Dudeney', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (3, 'Liberty Mutual', 'Shina', 'Pinchen', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (4, 'Farmers Insurance', 'Abelard', 'Piperley', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (5, 'Blue Cross Blue Shield', 'Stephine', 'Potier', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (6, 'Travelers', 'Babita', 'Lean', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (7, 'Progressive', 'Mil', 'Hurl', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (8, 'Cigna', 'Gaby', 'Crangle', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (9, 'Cigna', 'Lancelot', 'Maymond', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (10, 'Travelers', 'Bordie', 'Sertin', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (11, 'UnitedHealth Group', 'Uta', 'Crichmere', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (12, 'Farmers Insurance', 'Trixi', 'Kemson', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (13, 'Cigna', 'Wittie', 'McNamee', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (14, 'Nationwide', 'Moritz', 'Knowler', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (15, 'Travelers', 'Hersh', 'Dishmon', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (16, 'Aetna', 'Pascal', 'Lowson', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (17, 'State Farm', 'Rhodie', 'Witcher', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (18, 'State Farm', 'Meara', 'Aberdein', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (19, 'USAA', 'Maude', 'Innot', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (20, 'MetLife', 'Garek', 'Caisley', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (21, 'Allstate', 'Jarid', 'Dooher', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (22, 'Liberty Mutual', 'Miguelita', 'Hughesdon', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (23, 'UnitedHealth Group', 'Jarrod', 'Tonsley', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (24, 'Nationwide', 'Kalil', 'Killshaw', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (25, 'USAA', 'Chester', 'Bullers', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (26, 'Liberty Mutual', 'Irita', 'Haffard', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (27, 'Cigna', 'Yul', 'Krugmann', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (28, 'Aetna', 'Tate', 'Deller', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (29, 'Blue Cross Blue Shield', 'Cherianne', 'Warmisham', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (30, 'MetLife', 'Jeanna', 'Roycraft', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (31, 'State Farm', 'Findley', 'Ogles', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (32, 'UnitedHealth Group', 'Donella', 'Maddra', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (33, 'Allstate', 'Anton', 'Dainty', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (34, 'Farmers Insurance', 'Bernete', 'Evison', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (35, 'USAA', 'Melody', 'Sandcraft', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (36, 'Prudential', 'Ive', 'Dot', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (37, 'Aetna', 'Dion', 'Saladino', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (38, 'UnitedHealth Group', 'Newton', 'MacVicar', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (39, 'Prudential', 'Rina', 'Rawle', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (40, 'Cigna', 'Peirce', 'Southernwood', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (41, 'Aetna', 'Paten', 'Landrean', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (42, 'Prudential', 'Denise', 'Bagshawe', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (43, 'State Farm', 'Miran', 'Bingle', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (44, 'Travelers', 'Maisie', 'Veldstra', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (45, 'Liberty Mutual', 'Noel', 'Casacchia', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (46, 'State Farm', 'Katie', 'Kearle', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (47, 'Farmers Insurance', 'Quint', 'Fanti', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (48, 'Cigna', 'Valentia', 'Possel', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (49, 'Cigna', 'Chryste', 'Archer', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (50, 'Blue Cross Blue Shield', 'Cristabel', 'Koop', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (51, 'UnitedHealth Group', 'Christoper', 'Yurov', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (52, 'Blue Cross Blue Shield', 'Jamil', 'Ridding', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (53, 'Allstate', 'Sandy', 'Dalliwater', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (54, 'MetLife', 'Gareth', 'Barsham', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (55, 'Farmers Insurance', 'Marmaduke', 'Maffucci', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (56, 'Liberty Mutual', 'Berny', 'Jacques', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (57, 'Prudential', 'Merline', 'Decker', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (58, 'Nationwide', 'Aile', 'Markson', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (59, 'UnitedHealth Group', 'Gerik', 'Ughetti', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (60, 'Nationwide', 'Jarrett', 'Cowope', 0);
