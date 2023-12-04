@@ -339,7 +339,7 @@ def post_coach_message(coachid):
 
 
     # Constructing the query
-    query = 'INSERT INTO Message (subject, content, patientid, coachid) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientID, coachID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", '
@@ -373,7 +373,7 @@ def post_rep_message(repid):
     patientid = the_data['patientID']
 
     # Constructing the query
-    query = 'INSERT INTO HuskyHealth.Message (subject, content, patientid, repid) VALUES ("'
+    query = 'INSERT INTO HuskyHealth.Message (subject, content, patientID, repID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", '
