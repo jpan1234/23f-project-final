@@ -5,6 +5,13 @@ CREATE DATABASE IF NOT EXISTS HuskyHealth;
 -- use the database
 USE HuskyHealth;
 
+CREATE USER IF NOT EXISTS 'webapp'@'%'
+
+# grant privileges
+GRANT ALL PRIVILEGES ON HuskyHealth.* to 'webapp'@'%';
+
+FLUSH PRIVILEGES;
+
 -- creating the Patient table
 CREATE TABLE IF NOT EXISTS Patient
 (
