@@ -64,8 +64,12 @@ CREATE TABLE IF NOT EXISTS LabResults (
     testID INT AUTO_INCREMENT PRIMARY KEY,
     result TEXT,
     type VARCHAR(255),
-    testDate DATE
+    testDate DATE,
+    patientID INT,
+    FOREIGN KEY (patientID) REFERENCES Patient(patientID) ON UPDATE CASCADE ON DELETE SET NULL
 );
+
+
 
 # creating Prescriptions table
 CREATE TABLE IF NOT EXISTS Prescriptions (
@@ -176,7 +180,7 @@ DROP TABLE IF EXISTS AllergyRecord;
 DROP TABLE IF EXISTS WellnessRecord;
 DROP TABLE IF EXISTS BillingRecord;
 DROP TABLE IF EXISTS InsurancePlan;
-DROP TABLE IF EXISTS Message;
+DROP TABLE IF EXISTS [Message];
 DROP TABLE IF EXISTS HealthRecords;
 DROP TABLE IF EXISTS Prescriptions;
 DROP TABLE IF EXISTS LabResults;
