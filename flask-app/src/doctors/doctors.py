@@ -475,3 +475,128 @@ def add_new_message_doctor_to_rep(repid):
     db.get_db().commit()
     
     return 'Success!'
+
+# PUT COMMANDS
+
+# update a message
+@doctors.route('/messages/<comid>', methods=['PUT'])
+def update_message(comid):
+    '''
+    Update a message 
+
+    columns: 
+    '''
+
+    # collecting data from the request object 
+    the_data = request.json
+
+    # extracting the variable
+    subject = the_data['subject']
+    content = the_data['content']
+
+    query = f'UPDATE HuskyHealth.Message\
+                    SET subject = {subject}, content = {content}\
+                    WHERE comID = {comid};'
+
+    # update with new content and keep remaining old subject
+    cursor.execute(query)
+    # log the query
+    current_app.logger.info(query)
+
+    # commit the changes
+    db.get_db().commit()
+
+
+    return "Updated message."
+
+
+# cancel a doctor visit
+@doctors.route('/visits/<visitid>', methods=['PUT'])
+def cancel_doctor_visit(visitid):
+    '''
+    Cancel a visit 
+
+    columns: 
+    '''
+
+    # collecting data from the request object 
+    the_data = request.json
+    current_app.logger.info(the_data)
+
+    #extracting the variable
+    canceled = the_data['canceled'] # either 1 or 0, mostly going to set to 1 to set as "complete"
+
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    query = f'UPDATE HuskyHealth.Visit\
+                     SET canceled = {canceled}\
+                     WHERE visitID = {visitid};'
+    
+    # use cursor to query the database for a list of products
+    cursor.execute(query)
+    
+    # log query
+    current_app.logger.info(query)
+
+    # commit changes
+    db.get_db().commit()
+
+    return 'Canceled visit.'
+
+
+# update a prescription
+@doctors.route('/prescriptions/<patientid>', methods=['PUT'])
+def update_prescription(patientid):
+    '''
+    Update a prescription
+
+    columns: 
+    '''
+
+    # collecting data from the request object 
+    the_data = request.json
+    current_app.logger.info(the_data)
+
+    #extracting the variable
+    deactived = the_data['deactived'] # either 1 or 0, mostly going to set to 1 to set as "complete"
+    scriptid = the_data['scriptID']
+
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    query = f'UPDATE Presctiptions\
+                     SET inactive = {deactived}\
+                     WHERE scriptID = {scriptid};'
+    
+    # use cursor to query the database for a list of products
+    cursor.execute(query)
+    
+    # log query
+    current_app.logger.info(query)
+
+    # commit changes
+    db.get_db().commit()
+
+    return 'Canceled visit.'
+
+
+# DELETE ROUTE
+
+# Deletes a notification
+@patients.route('/notifications/<notificationid>', methods=['DELETE'])
+def delete_notification(notificationID):
+    
+    query = f'DELETE\
+        FROM Notifications\
+        WHERE notificationID = {notificationID};'
+        
+    # get cursor and execute it
+    cursor = db.get_db().cursor()
+
+    cursor.execute(query)
+    
+    # commit changes
+    db.get_db().commit()
+
+    return "Successfully deleted notification!"
