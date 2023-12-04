@@ -19,7 +19,7 @@ def get_patient_insurance_plan(patientID):
                     ON Patient.patientID = BillingRecord.patientID\
                     JOIN InsurnacePlan\
                     ON BillingRecord.planID = InsurancePlan.planID\
-                    WHERE Patient.patientID = {patientid};')
+                    WHERE Patient.patientID = {patientID};')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -249,7 +249,7 @@ def add_patient_billing_record (patientID):
     query = 'INSERT INTO BillingRecord (description, amount, patientID, repID, planID, paid) VALUES ("'
     query += description + '", "'
     query += amount + '", "'
-    query += patientid + '", '
+    query += patientID + '", '
     query += repID + '", '
     query += planID + '", '
     query += paid + '", '
@@ -412,6 +412,8 @@ def update_message(comid):
     # extracting the variable
     subject = the_data['subject']
     content = the_data['content']
+
+    cursor = db.get_db().cursor()
 
     query = f'UPDATE Message\
                     SET subject = {subject}, content = {content}\

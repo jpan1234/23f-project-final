@@ -331,9 +331,7 @@ def add_new_message_doctor_to_patient(patientid):
 
 
     # Constructing the query
-    query = 'INSERT INTO Message (comID, dateSent, subject, content, patientID, doctorID) values ("'
-    query += comID + '", "'
-    query += dateSent + '", "'
+    query = 'INSERT INTO Message (subject, content, patientID, doctorID) values ("'
     query += subject + '", '
     query += content + '", "'
     query += patientid + '", "'
@@ -369,7 +367,7 @@ def add_new_doctor_healthrecord(doctorid):
     query += familyHistory + '", "'
     query += allergies + '", '
     query += vaxHistory + '", "'
-    query += patientid + '", "'
+    query += patientID + '", "'
     query += doctorid + '", '
     query += scriptID + ')'
     current_app.logger.info(query)
@@ -455,7 +453,7 @@ def add_new_message_doctor_to_rep(repid):
     dateSent = the_data['dateSent']
     subject = the_data['subject']
     content = the_data['content']
-    doctor = the_data['doctorID'] # doctor will need to be provided, shouldn't this be other way?
+    doctorid = the_data['doctorID'] # doctor will need to be provided, shouldn't this be other way?
 
 
     # Constructing the query
@@ -496,6 +494,7 @@ def update_message(comid):
     query = f'UPDATE HuskyHealth.Message\
                     SET subject = {subject}, content = {content}\
                     WHERE comID = {comid};'
+    cursor = db.get_db().cursor()
 
     # update with new content and keep remaining old subject
     cursor.execute(query)
@@ -583,7 +582,7 @@ def update_prescription(patientid):
 # DELETE ROUTE
 
 # Deletes a notification
-@patients.route('/notifications/<notificationid>', methods=['DELETE'])
+@doctors.route('/notifications/<notificationid>', methods=['DELETE'])
 def delete_notification(notificationID):
     
     query = f'DELETE\

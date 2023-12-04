@@ -83,7 +83,7 @@ def get_message(patientid):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT subject, content, dateSent FROM HuskyHealth.Message\
+    cursor.execute(f'SELECT subject, content, dateSent FROM Message\
                      WHERE patientID = {patientid};')
 
     # grab the column headers from the returned data
@@ -183,7 +183,7 @@ def get_visit_records(patientid):
 
     # use cursor to query the database for a list of products
     cursor.execute(f'SELECT purpose, visitDate\
-                     FROM HuskyHealth.Visit\
+                     FROM Visit\
                      WHERE patientID = {patientid};')
     
     # grab the column headers from the returned data
@@ -216,7 +216,7 @@ def get_billing_records(patientid):
 
     # use cursor to query the database for a list of products
     cursor.execute(f'SELECT description, amount\
-                     FROM HuskyHealth.BillingRecord\
+                     FROM BillingRecord\
                      WHERE patientID = {patientid};')
     
     # grab the column headers from the returned data
@@ -251,7 +251,7 @@ def get_wellness_records(patientid):
 
     # use cursor to query the database for a list of products
     cursor.execute(f'SELECT goal, description\
-                     FROM HuskyHealth.WellnessRecord\
+                     FROM WellnessRecord\
                      WHERE patientID = {patientid};')
     
     # grab the column headers from the returned data
@@ -306,7 +306,7 @@ def post_doctor_message(doctorid):
 
 
     # Constructing the query
-    query = 'INSERT INTO HuskyHealth.Message (subject, content, patientid, doctorid) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientid, doctorid) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", '
@@ -493,6 +493,8 @@ def update_message(comid):
     subject = the_data['subject']
     content = the_data['content']
 
+    cursor = db.get_db().cursor()
+
     query = f'UPDATE Message\
                     SET subject = {subject}, content = {content}\
                     WHERE comID = {comid};'
@@ -561,7 +563,7 @@ def cancel_doctor_visit(visitid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
-    query = f'UPDATE HuskyHealth.Visit\
+    query = f'UPDATE Visit\
                      SET canceled = {canceled}\
                      WHERE visitID = {visitid};'
     
