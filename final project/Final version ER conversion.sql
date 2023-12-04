@@ -12,8 +12,7 @@ CREATE TABLE IF NOT EXISTS Patient
     firstName VARCHAR(255) NOT NULL,
     lastName VARCHAR(255) NOT NULL,
     birthDate DATE NOT NULL,
-    age INT,
-    healthRecordConsent TINYINT(1) DEFAULT 0 NOT NULL
+    age INT
 );
 
 -- updating the age to be the timestamp difference between birth date and current date
