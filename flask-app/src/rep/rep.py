@@ -6,15 +6,20 @@ from src import db
 rep = Blueprint('rep', __name__)
 
 # Get information on patient-specific insurance plan
-@rep.route('/rep/insuranceplans/<repID>/<patientID>', methods=['GET'])
-def get_patient_insurance_plan(repID, patientID):
+@rep.route('/rep/insuranceplans/<patientID>', methods=['GET'])
+def get_patient_insurance_plan(patientID):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
     cursor.execute(f'SELECT Patient.firstName, Patient.lastName,\
                     InsurancePlan.description,\
-                    FROM Patient JOIN ')
+                    FROM Patient\
+                    JOIN BillingRecord\
+                    ON Patient.patientID = BillingRecord.patientID\
+                    JOIN InsurnacePlan\
+                    ON BillingRecord.planID = InsurancePlan.planID\
+                    WHERE Patient.patientID = {patientid};')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -33,6 +38,99 @@ def get_patient_insurance_plan(repID, patientID):
 
     return jsonify(json_data)
 
+
+# Provide a list of all insurance plans 
+@rep.route('/rep/insuranceplans', methods=['GET'])
+def get_all_insurance_plans(repID, patientID):
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    # use cursor to query the database for a list of products
+    query = f'''SELECT DISTINCT description FROM InsurancePlan\
+                WHERE inactive = 0'''
+    cursor.execute(query)
+
+    # grab the column headers from the returned data
+    column_headers = [x[0] for x in cursor.description]
+
+    # create an empty dictionary object to use in 
+    # putting column headers together with data
+    json_data = []
+
+    # fetch all the data from the cursor
+    theData = cursor.fetchall()
+
+    # for each of the rows, zip the data elements together with
+    # the column headers. 
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+# Provide all health records for this patient 
+@rep.route('/rep/healthrecords/<patientID>', methods=['GET'])
+def get_patient_health_records(patientID):
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    # use cursor to query the database for a list of healthrecords if the given coach has consent
+    query = f'''SELECT * FROM HealthRecords\
+                JOIN Patient\
+                ON HealthRecords.patientID = Patient.patientID\
+                JOIN Visit\
+                ON Patient.patientID = Visit.patientID\
+                JOIN WellnessCoach
+                ON Visit.coachID = WellnessCoach.coachID
+                WHERE HealthRecords.patientID = {patientID}\
+                AND WellnessCoach.consent = 1'''
+    cursor.execute(query)
+
+    # grab the column headers from the returned data
+    column_headers = [x[0] for x in cursor.description]
+
+    # create an empty dictionary object to use in 
+    # putting column headers together with data
+    json_data = []
+
+    # fetch all the data from the cursor
+    theData = cursor.fetchall()
+
+    # for each of the rows, zip the data elements together with
+    # the column headers. 
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+# Provide all billing records for this patient 
+@rep.route('/rep/billingrecords/<repID>/<patientID>', methods=['GET'])
+def get_patient_billing_records(repID, patientID):
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    # use cursor to query the database for a list of products
+    query = f'''something'''
+    cursor.execute(query)
+
+    # grab the column headers from the returned data
+    column_headers = [x[0] for x in cursor.description]
+
+    # create an empty dictionary object to use in 
+    # putting column headers together with data
+    json_data = []
+
+    # fetch all the data from the cursor
+    theData = cursor.fetchall()
+
+    # for each of the rows, zip the data elements together with
+    # the column headers. 
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+
+    
 # add an insurance plan for a specfic patient
 @rep.route('/rep/insuranceplans/<repID>/<patientID>', methods=['POST'])
 def add_patient_insurance_plan (repID, patientID):
@@ -94,84 +192,3 @@ def inactivate_patient_insurance_plan(repID, patientID):
     db.get_db().commit()
     
     return 'Success!'
-
-# Provide a list of all insurance plans 
-@rep.route('/rep/insuranceplans', methods=['GET'])
-def get_all_insurance_plans(repID, patientID):
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
-    query = f'''something'''
-    cursor.execute(query)
-
-    # grab the column headers from the returned data
-    column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
-    json_data = []
-
-    # fetch all the data from the cursor
-    theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    return jsonify(json_data)
-
-# Provide all health records for this patient 
-@rep.route('/rep/healthrecords/<repID>/<patientID>', methods=['GET'])
-def get_patient_health_records(repID, patientID):
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
-    query = f'''something'''
-    cursor.execute(query)
-
-    # grab the column headers from the returned data
-    column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
-    json_data = []
-
-    # fetch all the data from the cursor
-    theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    return jsonify(json_data)
-
-# Provide all billing records for this patient 
-@rep.route('/rep/billingrecords/<repID>/<patientID>', methods=['GET'])
-def get_patient_billing_records(repID, patientID):
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
-    query = f'''something'''
-    cursor.execute(query)
-
-    # grab the column headers from the returned data
-    column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
-    json_data = []
-
-    # fetch all the data from the cursor
-    theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    return jsonify(json_data)
