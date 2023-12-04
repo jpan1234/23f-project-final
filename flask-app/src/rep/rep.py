@@ -127,7 +127,7 @@ def get_patient_billing_records(patientID):
     return jsonify(json_data)
 
 @rep.route('/messages/<patientid>', methods=['GET'])
-def get_message(patientid):
+def get_message_patient(patientid):
     '''
     Get all messages for a particular patient
 
@@ -158,7 +158,7 @@ def get_message(patientid):
     return jsonify(json_data)
 
 @rep.route('/messages/<doctorid>', methods=['GET'])
-def get_message(doctorid):
+def get_message_doctor(doctorid):
     '''
     Get all messages for a particular doctor
 
@@ -199,7 +199,7 @@ def get_message(doctorid):
 
 # add an insurance plan for a specfic patient
 @rep.route('/insuranceplans/>', methods=['POST'])
-def add_patient_billing_record():
+def add_patient_insurance_plan():
 
     # collecting data from the request object 
     the_data = request.json
@@ -429,6 +429,3 @@ def update_message(comid):
 
 
     return "Updated message."
-
-
-# NEED a DELETE route
