@@ -72,10 +72,10 @@ def get_notifications(patientid):
 
 
 # Get all the messages from the database from a doctor 
-@patients.route('/messages/<patientid>/<doctorid>', methods=['GET'])
-def get_doctor_message(patientid, doctorid):
+@patients.route('/messages/<patientid>', methods=['GET'])
+def get_message(patientid):
     '''
-    Get all messages from the database for the patient from a doctor
+    Get all messages for a particular patient
 
     columns: subject, content, dateSent for the patient
     '''
@@ -84,77 +84,8 @@ def get_doctor_message(patientid, doctorid):
 
     # use cursor to query the database for a list of products
     cursor.execute(f'SELECT subject, content, dateSent FROM HuskyHealth.Message\
-                     WHERE patientID = {patientid}\
-                     AND doctorID = {doctorid};')
+                     WHERE patientID = {patientid};')
 
-    # grab the column headers from the returned data
-    column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
-    json_data = []
-
-    # fetch all the data from the cursor
-    theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    return jsonify(json_data)
-
-
-# Get all the messages from the database from a coach 
-@patients.route('/messages/<patientid>/<coachid>', methods=['GET'])
-def get_coach_message(patientid, coachid):
-    '''
-    Get all messages from the database for the patient from a coach
-
-    columns: subject, content, dateSent for the patient
-    '''
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT subject, content, dateSent FROM HuskyHealth.Message\
-                     WHERE patientID = {patientid}\
-                     AND coachID = {coachid};')
-    
-    # grab the column headers from the returned data
-    column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
-    json_data = []
-
-    # fetch all the data from the cursor
-    theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    return jsonify(json_data)
-
-
-# Get all the messages from the database from a coach 
-@patients.route('/messages/<patientid>/<repid>', methods=['GET'])
-def get_rep_message(patientid, repiD):
-    '''
-    Get all messages from the database for the patient from a rep
-
-    columns: subject, content, dateSent for the patient
-    '''
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT subject, content, dateSent FROM HuskyHealth.Message\
-                     WHERE patientID = {patientid}\
-                     AND repID = {repiD};')
-    
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
 
@@ -185,10 +116,9 @@ def get_health_records(patientid):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT firstName, lastName, allergies, vaxHistory FROM HealthRecords\
-                    JOIN Patient\
-                    ON HealthRecords.patientID = Patient.patientID\
-                    WHERE HealthRecords.patientID = {patientid};')
+    cursor.execute(f'SELECT familyHistory, allergies, vaxHistory\
+                    FROM HealthRecords\
+                    WHERE patientID = {patientid};')
     
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -208,8 +138,30 @@ def get_health_records(patientid):
     return jsonify(json_data)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# NEED TO CHANGE THIS BELOW
+
+
+
 # Get all the lab results from the database for a patient 
-@patients.route('/labresults/notifications/<patientid>', methods=['GET'])
+@patients.route('/labresults/<patientid>', methods=['GET'])
 def get_lab_records(patientid):
     '''
     Get all lab result records from the database for the patient
@@ -220,11 +172,11 @@ def get_lab_records(patientid):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT result, type, testDate FROM HuskyHealth.LabResults\
-                     JOIN HuskyHealth.Notifications\
-                     ON LabResults.testID = HuskyHealth.Notifications.testID\
+    cursor.execute(f'SELECT result, LabResults.type, testDate FROM HuskyHealth.LabResults\
+                     JOIN Prescriptions\
+                     ON LabResults.testID = Prescriptions.testID\
                      JOIN HuskyHealth.Patient\
-                     ON Notifications.patientID = HuskyHealth.Patient.patientID\
+                     ON Prescriptions.patientID = Patient.patientID\
                      WHERE Patient.patientID = {patientid};')
     
     # grab the column headers from the returned data
@@ -345,11 +297,25 @@ def get_wellness_records(patientid):
 
     return jsonify(json_data)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # POST METHODS
 
 # post a message from a patient to a doctor
-@patients.route('/messages/<patientid>/<doctorid>', methods=['POST'])
-def post_doctor_message(patientid, doctorid):
+@patients.route('/messages/<doctorid>', methods=['POST'])
+def post_doctor_message(doctorid):
     '''
     Post a message to the database from a patient to a doctor
 
@@ -362,8 +328,8 @@ def post_doctor_message(patientid, doctorid):
     #extracting the variable
     subject = the_data['subject']
     content = the_data['content']
-    #patientid = the_data['patientID']
-    #doctorid = the_data['doctorid']
+    patientid = the_data['patientID']
+
 
     # Constructing the query
     query = 'INSERT INTO HuskyHealth.Message (subject, content, patientid, doctorid) VALUES ("'
@@ -381,8 +347,8 @@ def post_doctor_message(patientid, doctorid):
     return 'Message sent!'
 
 # post a message from a patient to a coach
-@patients.route('/messages/<patientid>/<coachid>', methods=['POST'])
-def post_coach_message(patientid, coachid):
+@patients.route('/messages/<coachid>', methods=['POST'])
+def post_coach_message(coachid):
     '''
     Post a message to the database from a patient to a coach
 
@@ -395,8 +361,8 @@ def post_coach_message(patientid, coachid):
     #extracting the variable
     subject = the_data['subject']
     content = the_data['content']
-    #patientid = the_data['patientID']
-    #doctorid = the_data['doctorid']
+    patientid = the_data['patientID']
+
 
     # Constructing the query
     query = 'INSERT INTO HuskyHealth.Message (subject, content, patientid, coachid) VALUES ("'
@@ -416,8 +382,8 @@ def post_coach_message(patientid, coachid):
 
 
 # post a message from a patient to a rep
-@patients.route('/messages/<patientid>/<repid>', methods=['POST'])
-def post_rep_message(patientid, repid):
+@patients.route('/messages/<repid>', methods=['POST'])
+def post_rep_message(repid):
     '''
     Post a message to the database from a patient to a rep
 
@@ -430,11 +396,10 @@ def post_rep_message(patientid, repid):
     #extracting the variable
     subject = the_data['subject']
     content = the_data['content']
-    #patientid = the_data['patientID']
-    #doctorid = the_data['doctorid']
+    patientid = the_data['patientID']
 
     # Constructing the query
-    query = 'INSERT INTO HuskyHealth.Message (subject, content, patientid, doctorid) VALUES ("'
+    query = 'INSERT INTO HuskyHealth.Message (subject, content, patientid, repid) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", '
@@ -450,7 +415,7 @@ def post_rep_message(patientid, repid):
 
 
 # post a visit with a doctor
-@patients.route('/visits/<patientid>/<doctorid>', methods=['POST'])
+@patients.route('/visits/<doctorid>', methods=['POST'])
 def schedule_doctor_visit(patientid, doctorid):
     '''
     Schedule a visit with a doctor
@@ -464,8 +429,7 @@ def schedule_doctor_visit(patientid, doctorid):
     #extracting the variable
     purpose = the_data['purpose']
     visitDate = the_data['visitDate']
-    #patientid = the_data['patientID']
-    #doctorid = the_data['doctorid']
+    patientid = the_data['patientID']
 
     # Constructing the query
     query = 'INSERT INTO Visit (purpose, visitDate, patientID, doctorID) VALUES ("'
@@ -483,8 +447,8 @@ def schedule_doctor_visit(patientid, doctorid):
     return 'Visit scheduled!'
 
 # post a visit with a coach
-@patients.route('/visits/<patientid>/<coachid>', methods=['POST'])
-def schedule_coach_visit(patientid, coachid):
+@patients.route('/visits/<coachid>', methods=['POST'])
+def schedule_coach_visit(coachid):
     '''
     Schedule a visit with a coach
 
@@ -497,8 +461,8 @@ def schedule_coach_visit(patientid, coachid):
     #extracting the variable
     purpose = the_data['purpose']
     visitDate = the_data['visitDate']
-    #patientid = the_data['patientID']
-    #doctorid = the_data['doctorid']
+    patientid = the_data['patientID']
+
 
     # Constructing the query
     query = 'INSERT INTO Visit (purpose, visitDate, patientID, coachID) VALUES ("'
@@ -516,262 +480,68 @@ def schedule_coach_visit(patientid, coachid):
     return 'Visit scheduled!'
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # PUT COMMANDS
 
 # update a message to a doctor
-@patients.route('/messages/<patientid>/<doctorid>', methods=['PUT'])
-def update_doctor_message(patientid, doctorid):
+@patients.route('/messages/<comid>', methods=['PUT'])
+def update_message(comid):
     '''
-    Update a message with a doctor
-
-    columns: purpose, visitDate, patientID, doctorID
-    '''
-
-
-    # collecting data from the request object 
-    the_data = request.json
-
-    #extracting the variable
-    subject = the_data['subject']
-    content = the_data['content']
-    comid = the_data['comID']
-
-    # grab information from previous db record that we are updating on
-    doctor_message = get_doctor_message(patientid, doctorid) 
-
-    old_subject = doctor_message['subject']
-    old_content = doctor_message['content']
-
-    # log info
-    current_app.logger.info(the_data)
-    
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # if there are no changes to subject (no input, only change content)
-    if subject == '':
-
-        query = f'UPDATE HuskyHealth.Message\
-                     SET subject = {old_subject}, content = {content}\
-                     WHERE comID = {comid}\
-                     AND patientID = {patientid}\
-                     AND doctorID = {doctorid};'
-
-        # update with new content and keep remaining old subject
-        cursor.execute(query)
-        # log the query
-        current_app.logger.info(query)
-
-        
-    # if there are no changes to content (no input, only change subject)
-    elif content == '':
-
-        query = f'UPDATE HuskyHealth.Message\
-                     SET subject = {subject}, content = {old_content}\
-                     WHERE comID = {comid}\
-                     AND patientID = {patientid}\
-                     AND doctorID = {doctorid};'
-
-        # update with new subject and keep remaining old content
-        cursor.execute(query)
-
-        # update with new content and keep remaining old subject
-        cursor.execute(query)
-        current_app.logger.info(query)
-
-    # if there are changes to both, update based off of it
-    else: 
-
-        query = f'UPDATE HuskyHealth.Message\
-                     SET subject = {subject}, content = {content}\
-                     WHERE comID = {comid}\
-                     AND patientID = {patientid}\
-                     AND doctorID = {doctorid};'
-
-        # update with new subject and keep remaining old content
-        cursor.execute(query)
-        # log the query
-        current_app.logger.info(query)
-
-
-    # commit the changes
-    db.get_db().commit()
-
-
-    return "updated message to your doctor!"
-
-
-# update a message to a rep
-@patients.route('/messages/<patientid>/<repid>', methods=['PUT'])
-def update_rep_message(patientid, repid):
-    '''
-    Update a message with a rep
+    Update a message 
 
     columns: 
     '''
 
-
     # collecting data from the request object 
     the_data = request.json
 
-    #extracting the variable
+    # extracting the variable
     subject = the_data['subject']
     content = the_data['content']
-    comid = the_data['comID']
 
-    # grab information from previous db record that we are updating on
-    doctor_message = get_rep_message(patientid, repid) 
+    query = f'UPDATE HuskyHealth.Message\
+                    SET subject = {subject}, content = {content}\
+                    WHERE comID = {comid};'
 
-    old_subject = doctor_message['subject']
-    old_content = doctor_message['content']
-
-    # log info
-    current_app.logger.info(the_data)
-    
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # if there are no changes to subject (no input, only change content)
-    if subject == '':
-
-        query = f'UPDATE HuskyHealth.Message\
-                     SET subject = {old_subject}, content = {content}\
-                     WHERE comID = {comid}\
-                     AND patientID = {patientid}\
-                     AND doctorID = {repid};'
-
-        # update with new content and keep remaining old subject
-        cursor.execute(query)
-        # log the query
-        current_app.logger.info(query)
-
-        
-    # if there are no changes to content (no input, only change subject)
-    elif content == '':
-
-        query = f'UPDATE HuskyHealth.Message\
-                     SET subject = {subject}, content = {old_content}\
-                     WHERE comID = {comid}\
-                     AND patientID = {patientid}\
-                     AND doctorID = {repid};'
-
-        # update with new subject and keep remaining old content
-        cursor.execute(query)
-
-        # update with new content and keep remaining old subject
-        cursor.execute(query)
-        current_app.logger.info(query)
-
-    # if there are changes to both, update based off of it
-    else: 
-
-        query = f'UPDATE HuskyHealth.Message\
-                     SET subject = {subject}, content = {content}\
-                     WHERE comID = {comid}\
-                     AND patientID = {patientid}\
-                     AND doctorID = {repid};'
-
-        # update with new subject and keep remaining old content
-        cursor.execute(query)
-        # log the query
-        current_app.logger.info(query)
-
+    # update with new content and keep remaining old subject
+    cursor.execute(query)
+    # log the query
+    current_app.logger.info(query)
 
     # commit the changes
     db.get_db().commit()
 
 
-    return "updated message to your insurance rep!"
-
-# update a message to a coach
-@patients.route('/messages/<patientid>/<coachid>', methods=['PUT'])
-def update_coach_message(patientid, coachid):
-    '''
-    Update a visit with a coach
-
-    columns: 
-    '''
+    return "Updated message."
 
 
-    # collecting data from the request object 
-    the_data = request.json
-
-    #extracting the variable
-    subject = the_data['subject']
-    content = the_data['content']
-    comid = the_data['comID']
-
-    # grab information from previous db record that we are updating on
-    coach_message = get_coach_message(patientid, coachid) 
-
-    old_subject = doctor_message['subject']
-    old_content = doctor_message['content']
-
-    # log info
-    current_app.logger.info(the_data)
-    
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # if there are no changes to subject (no input, only change content)
-    if subject == '':
-
-        query = f'UPDATE HuskyHealth.Message\
-                     SET subject = {old_subject}, content = {content}\
-                     WHERE comID = {comid}\
-                     AND patientID = {patientid}\
-                     AND doctorID = {coachid};'
-
-        # update with new content and keep remaining old subject
-        cursor.execute(query)
-        # log the query
-        current_app.logger.info(query)
-
-        
-    # if there are no changes to content (no input, only change subject)
-    elif content == '':
-
-        query = f'UPDATE HuskyHealth.Message\
-                     SET subject = {subject}, content = {old_content}\
-                     WHERE comID = {comid}\
-                     AND patientID = {patientid}\
-                     AND doctorID = {coachid};'
-
-        # update with new subject and keep remaining old content
-        cursor.execute(query)
-
-        # update with new content and keep remaining old subject
-        cursor.execute(query)
-        current_app.logger.info(query)
-
-    # if there are changes to both, update based off of it
-    else: 
-
-        query = f'UPDATE HuskyHealth.Message\
-                     SET subject = {subject}, content = {content}\
-                     WHERE comID = {comid}\
-                     AND patientID = {patientid}\
-                     AND doctorID = {coachid};'
-
-        # update with new subject and keep remaining old content
-        cursor.execute(query)
-        # log the query
-        current_app.logger.info(query)
-
-
-    # commit the changes
-    db.get_db().commit()
-
-
-    return "updated message to your coach!"
-
-# update a message to a rep
-@patients.route('/wellnessrecords/<patientid>', methods=['PUT'])
-def update_patient_wellnessrecord(patientid, wellnessrecordID):
+# update a wellness record
+@patients.route('/wellnessrecords/<wellnessrecordid>', methods=['PUT'])
+def update_patient_wellnessrecord(wellnessrecordID):
     '''
     Update a wellness goal as complete or not
 
-    columns: 
+    columns
     '''
 
     # collecting data from the request object 
@@ -786,8 +556,7 @@ def update_patient_wellnessrecord(patientid, wellnessrecordID):
 
     query = f'UPDATE HuskyHealth.WellnessRecord\
                      SET complete = {completed}\
-                     WHERE wellnessrecordID = {wellnessrecordID}\
-                     AND patientID = {patientid};'
+                     WHERE wellnessrecordID = {wellnessrecordID};'
     
     # use cursor to query the database for a list of products
     cursor.execute(query)
@@ -798,13 +567,13 @@ def update_patient_wellnessrecord(patientid, wellnessrecordID):
     # commit changes
     db.get_db().commit()
 
-    return 'updated wellness record!'
+    return 'Updated wellness record!'
 
 # cancel a doctor visit
-@patients.route('/visits/<patientid/<doctorid>', methods=['PUT'])
-def cancel_doctor_visit(patientid, doctorid, visitid):
+@patients.route('/visits/<visitid>', methods=['PUT'])
+def cancel_doctor_visit(visitid):
     '''
-    Cancel a visit between a doctor and a patient
+    Cancel a visit 
 
     columns: 
     '''
@@ -821,9 +590,7 @@ def cancel_doctor_visit(patientid, doctorid, visitid):
 
     query = f'UPDATE HuskyHealth.Visit\
                      SET canceled = {canceled}\
-                     WHERE visitID = {visitid}\
-                     AND patientID = {patientid}\
-                     AND doctorID = {doctorid};'
+                     WHERE visitID = {visitid};'
     
     # use cursor to query the database for a list of products
     cursor.execute(query)
@@ -834,53 +601,15 @@ def cancel_doctor_visit(patientid, doctorid, visitid):
     # commit changes
     db.get_db().commit()
 
-    return 'Canceled visit with your doctor!'
-
-# update a message to a rep
-@patients.route('/visits/<patientid/<coachid>', methods=['PUT'])
-def cancel_coach_visit(patientid, coachid, visitid):
-    '''
-    Cancel a visit between a coach and a patient
-
-    columns: 
-    '''
-
-    # collecting data from the request object 
-    the_data = request.json
-    current_app.logger.info(the_data)
-
-    #extracting the variable
-    canceled = the_data['canceled'] # either 1 or 0, mostly going to set to 1 to set as "complete"
-
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    query = f'UPDATE HuskyHealth.Visit\
-                     SET canceled = {canceled}\
-                     WHERE visitID = {visitid}\
-                     AND patientID = {patientid}\
-                     AND coachID = {coachid};'
-    
-    # use cursor to query the database for a list of products
-    cursor.execute(query)
-    
-    # log query
-    current_app.logger.info(query)
-
-    # commit changes
-    db.get_db().commit()
-
-    return 'Canceled visit with your coach!'
-
+    return 'Canceled visit.'
 
 # Deletes a notification
-@patients.route('/notifications/<patientid>', methods=['DELETE'])
-def delete_notification(patientid, notificationID):
+@patients.route('/notifications/<notificationid>', methods=['DELETE'])
+def delete_notification(notificationID):
     
     query = f'DELETE\
         FROM Notifications\
-        WHERE notificationID = {notificationID}\
-        AND patientID = {patientid};'
+        WHERE notificationID = {notificationID};'
         
     # get cursor and execute it
     cursor = db.get_db().cursor()
@@ -890,4 +619,4 @@ def delete_notification(patientid, notificationID):
     # commit changes
     db.get_db().commit()
 
-    return "successfully deleted notification!"
+    return "Successfully deleted notification!"
