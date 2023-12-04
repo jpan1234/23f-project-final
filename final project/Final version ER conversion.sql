@@ -179,6 +179,7 @@ CREATE TABLE IF NOT EXISTS Notifications (
     patientID INT NOT NULL,
     visitID INT,
     testID INT,
+    deleted TINYINT(1) DEFAULT 0 NOT NULL,
     FOREIGN KEY (patientID) REFERENCES Patient
 
 (patientID) ON UPDATE CASCADE ON DELETE CASCADE,
