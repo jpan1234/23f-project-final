@@ -197,19 +197,3 @@ CREATE TABLE IF NOT EXISTS Notifications (
 );
 
 
--- Drop all tables in reverse order to avoid foreign key constraint issues
-DROP TABLE IF EXISTS Notifications;
-DROP TABLE IF EXISTS vaxHistoryRecord;
-DROP TABLE IF EXISTS AllergyRecord;
-DROP TABLE IF EXISTS WellnessRecord;
-DROP TABLE IF EXISTS BillingRecord;
-DROP TABLE IF EXISTS InsurancePlan;
-DROP TABLE IF EXISTS Message;
-DROP TABLE IF EXISTS HealthRecords;
-DROP TABLE IF EXISTS Prescriptions;
-DROP TABLE IF EXISTS LabResults;
-DROP TABLE IF EXISTS Visit;
-DROP TABLE IF EXISTS InsuranceRepresentative;
-DROP TABLE IF EXISTS WellnessCoach;
-DROP TABLE IF EXISTS Doctor;
-DROP TABLE IF EXISTS Patient;
