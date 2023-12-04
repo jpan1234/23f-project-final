@@ -131,13 +131,6 @@ def get_healthRecords_for_doctors_patients(doctorID):
 
 
 
-
-
-# THIS NEEDS TO BE CHANGED BELOW NEED TO ADD QUERY
-
-
-
-
 @doctors.route('/labresults/<doctorid>', methods=['Get'])
 def get_labresults_for_doctors_patients(doctorID):
 
@@ -149,9 +142,15 @@ def get_labresults_for_doctors_patients(doctorID):
 
     cursor = db.get_db().cursor()
 
-    query = f''
+    # use cursor to query the database for a list of products
+    cursor.execute(f'SELECT result, type, testDate FROM LabResults\
+                     JOIN Patient\
+                     ON LabResults.patientID = Patient.patientID\
+                     JOIN Visit\
+                     ON Visit.patientID = Patient.patientID\
+                     WHERE Visit.doctorID = {doctorID}\
+                     ;')
 
-    cursor.execute(query)
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
 
