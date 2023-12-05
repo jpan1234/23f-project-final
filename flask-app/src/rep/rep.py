@@ -75,8 +75,8 @@ def get_patient_health_records(patientID):
 
     # use cursor to query the database for a list of healthrecords if the given rep has consent
     query = f'SELECT * FROM HealthRecords\
-                JOIN InsuranceRepresentative
-                ON HealthRecords.repID = InsuranceRepresentative.repID
+                JOIN InsuranceRepresentative\
+                ON HealthRecords.repID = InsuranceRepresentative.repID\
                 WHERE HealthRecords.patientID = {patientID}\
                 AND InsuranceRepresentative.consent = 1'
     cursor.execute(query)
