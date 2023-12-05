@@ -163,7 +163,7 @@ def get_healthRecords_for_coach(coachid):
     query = f'SELECT healthRecordID, familyHistory, allergies, vaxHistory FROM HealthRecords\
         JOIN WellnessCoach\
         ON WellnessCoach.coachID = HealthRecords.coachID\
-        WHERE ID = {coachid} AND AND WellnessCoach.consent = 1\
+        WHERE HealthRecords.coachID = {coachid} AND WellnessCoach.consent = 1\
         ORDER BY patientID;'
 
     cursor.execute(query)
