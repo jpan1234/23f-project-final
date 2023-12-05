@@ -8,7 +8,7 @@ coach = Blueprint('coach', __name__)
 # GETS
 
 # Get all the unseen notifications sent by the coach's patient from the database
-@coach.route('/notifications/<coachid>/<patientid>', methods=['GET'])
+@coach.route('/notifications/<coachid>', methods=['GET'])
 def get_notifications_from_patient(patient_id):
     '''
     Get all notifications that are unseen from coach's patient
@@ -42,7 +42,7 @@ def get_notifications_from_patient(patient_id):
     return jsonify(json_data)
 
 # Get all coachs messages
-@coach.route('/messages/<coachid>/<patientid>', methods=['GET'])
+@coach.route('/messages/<coachid>', methods=['GET'])
 def get_messages_from_coach(coach_id):
     '''
     Get all messages between coach and affiliated patient
@@ -75,7 +75,7 @@ def get_messages_from_coach(coach_id):
     return jsonify(json_data)
 
 # Get all coachs visits
-@coach.route('/visits/<coachid>/<patientid>', methods=['GET'])
+@coach.route('/visits/<coachid>', methods=['GET'])
 def get_coach_visits(coach_id):
     '''
     Get all coachs visits
@@ -110,7 +110,7 @@ def get_coach_visits(coach_id):
 
 
 # Get list of the health records a coach is allowed to view of affiliated patient
-@coach.route('/healthrecords/<coachid>/<patientid>', methods=['GET'])
+@coach.route('/healthrecords/<coachid>', methods=['GET'])
 def get_coach_healthrecords(coach_id):
     '''
     Gets list of health records a coach can view of affiliated patient
@@ -144,7 +144,7 @@ def get_coach_healthrecords(coach_id):
     return jsonify(json_data)
 
 # Get list of all wellness records of a coach
-@coach.route('/wellnessrecord/<coachid>/<patientid>', methods=['GET'])
+@coach.route('/wellnessrecord/<coachid>', methods=['GET'])
 def get_coach_records(coach_id):
     '''
     Gets list of all goals of a coach 
