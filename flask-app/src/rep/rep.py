@@ -73,12 +73,12 @@ def get_patient_health_records(patientID):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
-    # use cursor to query the database for a list of healthrecords if the given coach has consent
-    query = f'''SELECT * FROM HealthRecords\
-                JOIN WellnessCoach
-                ON HealthRecords.coachID = WellnessCoach.coachID
+    # use cursor to query the database for a list of healthrecords if the given rep has consent
+    query = f'SELECT * FROM HealthRecords\
+                JOIN InsuranceRepresentative
+                ON HealthRecords.repID = InsuranceRepresentative.repID
                 WHERE HealthRecords.patientID = {patientID}\
-                AND WellnessCoach.consent = 1'''
+                AND InsuranceRepresentative.consent = 1'
     cursor.execute(query)
 
     # grab the column headers from the returned data
