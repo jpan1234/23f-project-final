@@ -282,6 +282,40 @@ def update_message_coach(comid):
 
     return "Updated message."
 
+# cancel a coach visit
+@coach.route('/visits/<visitid>', methods=['PUT'])
+def cancel_coach_visit(visitid):
+    '''
+    Cancel a visit 
+
+    columns: 
+    '''
+
+    # collecting data from the request object 
+    the_data = request.json
+    current_app.logger.info(the_data)
+
+    #extracting the variable
+    canceled = the_data['canceled'] # either 1 or 0, mostly going to set to 1 to set as "complete"
+
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    query = f'UPDATE Visit\
+                     SET canceled = {canceled}\
+                     WHERE visitID = {visitid};'
+    
+    # use cursor to query the database for a list of products
+    cursor.execute(query)
+    
+    # log query
+    current_app.logger.info(query)
+
+    # commit changes
+    db.get_db().commit()
+
+    return 'Canceled visit.'
+
 # DELETE
 
 # Deletes a message
@@ -301,3 +335,4 @@ def delete_notification_coach(comID):
     db.get_db().commit()
 
     return "Successfully deleted message!"
+
