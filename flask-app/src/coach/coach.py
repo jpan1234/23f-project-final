@@ -18,11 +18,13 @@ def get_notifications_from_patient(patientid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
-    # use cursor to query the database for a list of products
-    cursor.execute('SELECT Notifications.patientID, content, timeSent FROM HuskyHealth.Notifications\
+    query = f'SELECT Notifications.patientID, content, timeSent FROM HuskyHealth.Notifications\
         JOIN HuskyHealth.Patient ON Notifications.patientID = Patient.patientID\
         JOIN HuskyHealth.Visit ON Patient.patientID = Visit.patientID\
-        WHERE status = ''Unread'' AND patientID = {patientid};')
+        WHERE status = Unread AND patientID = {patientid};'
+
+    # use cursor to query the database for a list of products
+    cursor.execute(query)
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -52,10 +54,12 @@ def get_messages_from_coach(coachid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
-    # use cursor to query the database for a list of products
-    cursor.execute('SELECT subject, content, dateSent FROM HuskyHealth.Message\
+    query = f'SELECT subject, content, dateSent FROM HuskyHealth.Message\
                      WHERE coachID = {coachid}\
-                     ORDER BY dateSent DESC;')
+                     ORDER BY dateSent DESC;'
+
+    # use cursor to query the database for a list of products
+    cursor.execute(query)
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -85,46 +89,12 @@ def get_coach_visits(coachid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
-    # use cursor to query the database for a list of products
-    cursor.execute('SELECT purpose, visitDate\
+    query = f'SELECT purpose, visitDate\
                      FROM HuskyHealth.Visit\
-                     WHERE coachID = {coachid}')
-
-    # grab the column headers from the returned data
-    column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
-    json_data = []
-
-    # fetch all the data from the cursor
-    theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    return jsonify(json_data)
-
-
-
-# Get list of the health records a coach is allowed to view of affiliated patient
-@coach.route('/healthrecords/<coachid>', methods=['GET'])
-def get_coach_healthrecords(coachid):
-    '''
-    Gets list of health records a coach can view of affiliated patient
-
-    columns: 
-    '''
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
+                     WHERE coachID = {coachid};'
 
     # use cursor to query the database for a list of products
-    cursor.execute('SELECT healthRecordID, familyHistory, allergies, vaxHistory FROM HealthRecords\
-                     JOIN WellnessCoach\
-                     ON WellnessCoach.coachID = HealthRecords.coachID\
-                     WHERE WellnessCoach.coachID = {coachid} AND WellnessCoach.consent = 1')
+    cursor.execute(query)
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -142,6 +112,7 @@ def get_coach_healthrecords(coachid):
         json_data.append(dict(zip(column_headers, row)))
 
     return jsonify(json_data)
+
 
 # Get list of all wellness records of a coach
 @coach.route('/wellnessrecord/<coachid>', methods=['GET'])
@@ -154,10 +125,12 @@ def get_coach_records(coachid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
-    # use cursor to query the database for a list of products
-    cursor.execute('SELECT goal, description\
+    query = f'SELECT goal, description\
                      FROM HuskyHealth.WellnessRecord\
-                     WHERE coachID = {coachid}')
+                     WHERE coachID = {coachid};'
+
+    # use cursor to query the database for a list of products
+    cursor.execute(query)
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -175,6 +148,43 @@ def get_coach_records(coachid):
         json_data.append(dict(zip(column_headers, row)))
 
     return jsonify(json_data)
+
+@coach.route('/healthrecords/<coachid>', methods=['Get'])
+def get_healthRecords_for_coach(coachid):
+
+    '''
+    Get all the coachs' patients' health records
+
+    columns: healthRecordID, familyHistory, allergies, vaxHistory
+    '''
+
+    cursor = db.get_db().cursor()
+
+    query = f'SELECT healthRecordID, familyHistory, allergies, vaxHistory FROM HealthRecords\
+        JOIN WellnessCoach\
+        ON WellnessCoach.coachID = HealthRecords.coachID\
+        WHERE ID = {coachid} AND AND WellnessCoach.consent = 1\
+        ORDER BY patientID;'
+
+    cursor.execute(query)
+    # grab the column headers from the returned data
+    column_headers = [x[0] for x in cursor.description]
+
+    # create an empty dictionary object to use in 
+    # putting column headers together with data
+    json_data = []
+
+    # fetch all the data from the cursor
+    theData = cursor.fetchall()
+
+    # for each of the rows, zip the data elements together with
+    # the column headers. 
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+
 
 # POSTS
 
