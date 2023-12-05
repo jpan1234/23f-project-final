@@ -124,8 +124,7 @@ def get_coach_healthrecords(coach_id):
     cursor.execute('SELECT * FROM HealthRecords\
                 JOIN WellnessCoach\
                 ON HealthRecords.coachID = WellnessCoach.coachID\
-                WHERE HealthRecords.patientID = {patientID}\
-                AND WellnessCoach.consent = 1')
+                WHERE WellnessCoach.consent = 1')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
