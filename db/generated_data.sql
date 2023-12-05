@@ -311,71 +311,72 @@ insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, ca
 insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (60, 'cras mi pede', '2023-11-28', 30, 48, 48, 0);
 
 -- Lab Results
-insert into LabResults (testID, result, type, testDate, patientID) values (1, 'a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem', 'Urinalysis', '2/12/2023', 42);
-insert into LabResults (testID, result, type, testDate, patientID) values (2, 'vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in', 'Liver Enzymes', '7/11/2023', 3);
-insert into LabResults (testID, result, type, testDate, patientID) values (3, 'in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor', 'Lipid Profile', '5/24/2023', 4);
-insert into LabResults (testID, result, type, testDate, patientID) values (4, 'morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus', 'Blood Glucose', '8/20/2023', 57);
-insert into LabResults (testID, result, type, testDate, patientID) values (5, 'luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti', 'PSA)', '9/15/2023', 24);
-insert into LabResults (testID, result, type, testDate, patientID) values (6, 'leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut', 'BUN (Blood Urea Nitrogen)', '4/14/2023', 23);
-insert into LabResults (testID, result, type, testDate, patientID) values (7, 'hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at', 'Liver Enzymes', '2/5/2023', 37);
-insert into LabResults (testID, result, type, testDate, patientID) values (8, 'magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in', 'Hepatitis Panel', '10/28/2023', 27);
-insert into LabResults (testID, result, type, testDate, patientID) values (9, 'tristique fusce congue diam id ornare imperdiet sapien urna pretium', 'Blood Glucose', '3/23/2023', 14);
-insert into LabResults (testID, result, type, testDate, patientID) values (10, 'at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at', 'Tumor Markers (e.g.', '4/2/2023', 30);
-insert into LabResults (testID, result, type, testDate, patientID) values (11, 'magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque', 'HIV Test', '4/3/2023', 46);
-insert into LabResults (testID, result, type, testDate, patientID) values (12, 'nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est', 'Lipid Profile', '6/13/2023', 20);
-insert into LabResults (testID, result, type, testDate, patientID) values (13, 'nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor', 'PSA)', '1/14/2023', 9);
-insert into LabResults (testID, result, type, testDate, patientID) values (14, 'praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio', 'TSH (Thyroid Stimulating Hormone)', '1/13/2023', 44);
-insert into LabResults (testID, result, type, testDate, patientID) values (15, 'consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum', 'TSH (Thyroid Stimulating Hormone)', '1/19/2023', 25);
-insert into LabResults (testID, result, type, testDate, patientID) values (16, 'orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio', 'Lipid Profile', '7/6/2023', 5);
-insert into LabResults (testID, result, type, testDate, patientID) values (17, 'ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus', 'BUN (Blood Urea Nitrogen)', '8/18/2023', 10);
-insert into LabResults (testID, result, type, testDate, patientID) values (18, 'metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget', 'BUN (Blood Urea Nitrogen)', '11/28/2023', 46);
-insert into LabResults (testID, result, type, testDate, patientID) values (19, 'in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis', 'Blood Glucose', '10/23/2023', 57);
-insert into LabResults (testID, result, type, testDate, patientID) values (20, 'quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu pede', 'Lipid Profile', '3/28/2023', 50);
-insert into LabResults (testID, result, type, testDate, patientID) values (21, 'aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan', 'TSH (Thyroid Stimulating Hormone)', '10/25/2023', 6);
-insert into LabResults (testID, result, type, testDate, patientID) values (22, 'curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae', 'X-rays', '3/19/2023', 11);
-insert into LabResults (testID, result, type, testDate, patientID) values (23, 'in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor', 'HIV Test', '6/3/2023', 1);
-insert into LabResults (testID, result, type, testDate, patientID) values (24, 'tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum', 'Complete Blood Count (CBC)', '7/11/2023', 2);
-insert into LabResults (testID, result, type, testDate, patientID) values (25, 'quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac', 'Metabolic Panel', '3/9/2023', 20);
-insert into LabResults (testID, result, type, testDate, patientID) values (26, 'vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur', 'Hepatitis Panel', '11/9/2023', 1);
-insert into LabResults (testID, result, type, testDate, patientID) values (27, 'cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat', 'BUN (Blood Urea Nitrogen)', '5/6/2023', 25);
-insert into LabResults (testID, result, type, testDate, patientID) values (28, 'sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus', 'Urinalysis', '12/16/2022', 51);
-insert into LabResults (testID, result, type, testDate, patientID) values (29, 'vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae', 'Creatinine Levels', '5/3/2023', 13);
-insert into LabResults (testID, result, type, testDate, patientID) values (30, 'cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna', 'Complete Blood Count (CBC)', '1/25/2023', 8);
-insert into LabResults (testID, result, type, testDate, patientID) values (31, 'orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin', 'PSA)', '5/7/2023', 35);
-insert into LabResults (testID, result, type, testDate, patientID) values (32, 'quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in', 'Metabolic Panel', '11/1/2023', 48);
-insert into LabResults (testID, result, type, testDate, patientID) values (33, 'arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula', 'HIV Test', '8/21/2023', 26);
-insert into LabResults (testID, result, type, testDate, patientID) values (34, 'nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit', 'Hepatitis Panel', '7/24/2023', 40);
-insert into LabResults (testID, result, type, testDate, patientID) values (35, 'morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie', 'Hepatitis Panel', '12/20/2022', 57);
-insert into LabResults (testID, result, type, testDate, patientID) values (36, 'integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis', 'X-rays', '9/24/2023', 21);
-insert into LabResults (testID, result, type, testDate, patientID) values (37, 'vel augue vestibulum ante ipsum primis in faucibus orci luctus', 'X-rays', '9/16/2023', 19);
-insert into LabResults (testID, result, type, testDate, patientID) values (38, 'in eleifend quam a odio in hac habitasse platea dictumst maecenas ut', 'Metabolic Panel', '1/25/2023', 37);
-insert into LabResults (testID, result, type, testDate, patientID) values (39, 'nam dui proin leo odio porttitor id consequat in consequat ut nulla sed', 'PSA)', '2/11/2023', 32);
-insert into LabResults (testID, result, type, testDate, patientID) values (40, 'gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem', 'Lipid Profile', '1/18/2023', 25);
-insert into LabResults (testID, result, type, testDate, patientID) values (41, 'non pretium quis lectus suspendisse potenti in eleifend quam a', 'ECG or EKG (Electrocardiogram)', '10/6/2023', 45);
-insert into LabResults (testID, result, type, testDate, patientID) values (42, 'morbi porttitor lorem id ligula suspendisse ornare consequat lectus in', 'BUN (Blood Urea Nitrogen)', '4/12/2023', 19);
-insert into LabResults (testID, result, type, testDate, patientID) values (43, 'imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis', 'X-rays', '9/6/2023', 32);
-insert into LabResults (testID, result, type, testDate, patientID) values (44, 'morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis', 'ECG or EKG (Electrocardiogram)', '8/20/2023', 57);
-insert into LabResults (testID, result, type, testDate, patientID) values (45, 'nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient', 'TSH (Thyroid Stimulating Hormone)', '7/28/2023', 50);
-insert into LabResults (testID, result, type, testDate, patientID) values (46, 'est quam pharetra magna ac consequat metus sapien ut nunc vestibulum', 'TSH (Thyroid Stimulating Hormone)', '9/28/2023', 8);
-insert into LabResults (testID, result, type, testDate, patientID) values (47, 'eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus', 'Lipid Profile', '10/31/2023', 21);
-insert into LabResults (testID, result, type, testDate, patientID) values (48, 'laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper', 'Urinalysis', '9/24/2023', 5);
-insert into LabResults (testID, result, type, testDate, patientID) values (49, 'orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio', 'Lipid Profile', '2/6/2023', 7);
-insert into LabResults (testID, result, type, testDate, patientID) values (50, 'a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque', 'Creatinine Levels', '5/11/2023', 23);
-insert into LabResults (testID, result, type, testDate, patientID) values (51, 'amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor', 'Hepatitis Panel', '1/20/2023', 39);
-insert into LabResults (testID, result, type, testDate, patientID) values (52, 'nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere', 'TSH (Thyroid Stimulating Hormone)', '12/23/2022', 2);
-insert into LabResults (testID, result, type, testDate, patientID) values (53, 'faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat', 'Blood Glucose', '4/18/2023', 35);
-insert into LabResults (testID, result, type, testDate, patientID) values (54, 'pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel', 'BUN (Blood Urea Nitrogen)', '11/27/2023', 15);
-insert into LabResults (testID, result, type, testDate, patientID) values (55, 'parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus', 'Lipid Profile', '5/18/2023', 59);
-insert into LabResults (testID, result, type, testDate, patientID) values (56, 'at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat', 'BUN (Blood Urea Nitrogen)', '5/19/2023', 25);
-insert into LabResults (testID, result, type, testDate, patientID) values (57, 'condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit', 'Creatinine Levels', '4/21/2023', 8);
-insert into LabResults (testID, result, type, testDate, patientID) values (58, 'cursus id turpis integer aliquet massa id lobortis convallis tortor', 'BUN (Blood Urea Nitrogen)', '8/18/2023', 1);
-insert into LabResults (testID, result, type, testDate, patientID) values (59, 'erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam', 'Complete Blood Count (CBC)', '10/11/2023', 12);
-insert into LabResults (testID, result, type, testDate, patientID) values (60, 'arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse', 'X-rays', '12/25/2022', 47);
+insert into LabResults (testID, result, type, testDate, patientID) values (1, 'a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem', 'Urinalysis', '2023/2/23', 42);
+INSERT INTO LabResults (testID, result, type, testDate, patientID) VALUES
+(2, 'vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in', 'Liver Enzymes', '2023-07-11', 3),
+(3, 'in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor', 'Lipid Profile', '2023-05-24', 4),
+(4, 'morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus', 'Blood Glucose', '2023-08-20', 57),
+(5, 'luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti', 'PSA)', '2023-09-15', 24),
+(6, 'leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut', 'BUN (Blood Urea Nitrogen)', '2023-04-14', 23),
+(7, 'hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at', 'Liver Enzymes', '2023-02-05', 37),
+(8, 'magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in', 'Hepatitis Panel', '2023-10-28', 27),
+(9, 'tristique fusce congue diam id ornare imperdiet sapien urna pretium', 'Blood Glucose', '2023-03-23', 14),
+(10, 'at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at', 'Tumor Markers (e.g.', '2023-04-02', 30),
+(11, 'magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque', 'HIV Test', '2023-04-03', 46),
+(12, 'nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est', 'Lipid Profile', '2023-06-13', 20),
+(13, 'nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor', 'PSA)', '2023-01-14', 9),
+(14, 'praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio', 'TSH (Thyroid Stimulating Hormone)', '2023-01-13', 44),
+(15, 'consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum', 'TSH (Thyroid Stimulating Hormone)', '2023-01-19', 25),
+(16, 'orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio', 'Lipid Profile', '2023-07-06', 5),
+(17, 'ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus', 'BUN (Blood Urea Nitrogen)', '2023-08-18', 10),
+(18, 'metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget', 'BUN (Blood Urea Nitrogen)', '2023-11-28', 46),
+(19, 'in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis', 'Blood Glucose', '2023-10-23', 57),
+(20, 'quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu pede', 'Lipid Profile', '2023-03-28', 50),
+(21, 'aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan', 'TSH (Thyroid Stimulating Hormone)', '2023-10-25', 6),
+(22, 'curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae', 'X-rays', '2023-03-19', 11),
+(23, 'in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor', 'HIV Test', '2023-06-03', 1),
+(24, 'tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum', 'Complete Blood Count (CBC)', '2023-07-11', 2),
+(25, 'quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac', 'Metabolic Panel', '2023-03-09', 20),
+(26, 'vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur', 'Hepatitis Panel', '2023-11-09', 1),
+(27, 'cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat', 'BUN (Blood Urea Nitrogen)', '2023-05-06', 25),
+(28, 'sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus', 'Urinalysis', '2022-12-16', 51),
+(29, 'vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae', 'Creatinine Levels', '2023-05-03', 13),
+(30, 'cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna', 'Complete Blood Count (CBC)', '2023-01-25', 8),
+(31, 'orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin', 'PSA)', '2023-05-07', 35),
+(32, 'quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in', 'Metabolic Panel', '2023-11-01', 48),
+(33, 'arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula', 'HIV Test', '2023-08-21', 26),
+(34, 'nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit', 'Hepatitis Panel', '2023-07-24', 40),
+(35, 'morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie', 'Hepatitis Panel', '2022-12-20', 57),
+(36, 'integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis', 'X-rays', '2023-09-24', 21),
+(37, 'vel augue vestibulum ante ipsum primis in faucibus orci luctus', 'X-rays', '2023-09-16', 19),
+(38, 'in eleifend quam a odio in hac habitasse platea dictumst maecenas ut', 'Metabolic Panel', '2023-01-25', 37),
+(39, 'nam dui proin leo odio porttitor id consequat in consequat ut nulla sed', 'PSA)', '2023-02-11', 32),
+(40, 'gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem', 'Lipid Profile', '2023-01-18', 25),
+(41, 'non pretium quis lectus suspendisse potenti in eleifend quam a', 'ECG or EKG (Electrocardiogram)', '2023-10-06', 45),
+(42, 'morbi porttitor lorem id ligula suspendisse ornare consequat lectus in', 'BUN (Blood Urea Nitrogen)', '2023-04-12', 19),
+(43, 'imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis', 'X-rays', '2023-09-06', 32),
+(44, 'morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis', 'ECG or EKG (Electrocardiogram)', '2023-08-20', 57),
+(45, 'nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient', 'TSH (Thyroid Stimulating Hormone)', '2023-07-28', 50),
+(46, 'est quam pharetra magna ac consequat metus sapien ut nunc vestibulum', 'TSH (Thyroid Stimulating Hormone)', '2023-09-28', 8),
+(47, 'eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus', 'Lipid Profile', '2023-10-31', 21),
+(48, 'laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper', 'Urinalysis', '2023-09-24', 5),
+(49, 'orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio', 'Lipid Profile', '2023-02-06', 7),
+(50, 'a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque', 'Creatinine Levels', '2023-05-11', 23),
+(51, 'amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor', 'Hepatitis Panel', '2023-01-20', 39),
+(52, 'nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere', 'TSH (Thyroid Stimulating Hormone)', '2022-12-23', 2),
+(53, 'faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat', 'Blood Glucose', '2023-04-18', 35),
+(54, 'pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel', 'BUN (Blood Urea Nitrogen)', '2023-11-27', 15),
+(55, 'parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus', 'Lipid Profile', '2023-05-18', 59),
+(56, 'at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat', 'BUN (Blood Urea Nitrogen)', '2023-05-19', 25),
+(57, 'condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit', 'Creatinine Levels', '2023-04-21', 8),
+(58, 'cursus id turpis integer aliquet massa id lobortis convallis tortor', 'BUN (Blood Urea Nitrogen)', '2023-08-18', 1),
+(59, 'erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam', 'Complete Blood Count (CBC)', '2023-10-11', 12),
+(60, 'arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse', 'X-rays', '2022-12-25', 47);
 
 -- Prescriptions
 -- may have to change dates 
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (1, 'eget tincidunt eget', 8, 52, 47, '2023-04-23', 'ut', 4, 'pellentesque', '2023-06-25', 'Waters and Sons', 'Octinoxate and Titanium Dioxide', 12, 0);
 insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (2, 'dictumst etiam', 9, 1, 43, '2023-10-20', 'dictumst', 20, 'integer', '2023-01-10', 'Morissette-Emmerich', 'Warfarin Sodium', 78, 1);
+insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (1, 'eget tincidunt eget', 8, 52, 47, '2023-04-23', 'ut', 4, 'pellentesque', '2023-06-25', 'Waters and Sons', 'Octinoxate and Titanium Dioxide', 12, 0);
 insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (3, 'convallis', 56, 40, 23, '2023-06-18', 'aliquet', 4, 'mattis', '2023-11-07', 'Sauer-Friesen', 'venlafaxine hydrochloride', 17, 1);
 insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (4, 'nulla', 16, 35, 8, '2023-10-29', 'leo', 32, 'praesent', '2023-04-29', 'Carroll, Murray and Grimes', 'OCTINOXATE, TITANIUM DIOXIDE, and ZINC OXIDE', 57, 1);
 insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (5, 'cursus id turpis', 9, 14, 46, '2023-11-30', 'pellentesque', 13, 'nonummy', '2023-01-26', 'Hodkiewicz, Bergnaum and Cormier', 'Sunscreen', 16, 0);
@@ -817,120 +818,122 @@ insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (8, 'Polio');
 insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (35, 'Rubella)');
 insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (38, 'Tetanus');
 insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (41, 'Flu shot');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (35, 'Tetanus');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (51, 'Rubella)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (1, 'Tetanus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (2, 'Rubella)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (3, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (4, 'DTaP (Diphtheria');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (5, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (6, 'Meningococcal');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (7, 'Mumps');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (59, 'Varicella (Chickenpox)');
 insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (60, 'Varicella (Chickenpox)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (14, 'DTaP (Diphtheria');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (2, 'Hepatitis B');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (53, 'Meningococcal');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (6, 'Mumps');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (24, 'Varicella (Chickenpox)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (16, 'Varicella (Chickenpox)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (17, 'Pneumococcal');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (49, 'Shingles');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (54, 'Shingles');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (46, 'Pertussis)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (15, 'Varicella (Chickenpox)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (44, 'Meningococcal');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (48, 'MMR (Measles');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (6, 'Rubella)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (40, 'Hepatitis B');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (2, 'Hepatitis B');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (17, 'Rotavirus');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (37, 'Pertussis)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (4, 'Rotavirus');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (51, 'Varicella (Chickenpox)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (24, 'DTaP (Diphtheria');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (43, 'Shingles');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (22, 'Varicella (Chickenpox)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (32, 'Hib (Haemophilus influenzae type b)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (9, 'HPV (Human Papillomavirus)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (55, 'Pertussis)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (29, 'Rotavirus');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (44, 'Pertussis)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (59, 'Hib (Haemophilus influenzae type b)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (50, 'HPV (Human Papillomavirus)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (51, 'Hepatitis B');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (28, 'COVID-19');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (9, 'Varicella (Chickenpox)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (29, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (10, 'Pneumococcal');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (11, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (12, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (13, 'Pertussis)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (14, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (15, 'Meningococcal');
 insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (17, 'MMR (Measles');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (57, 'Shingles');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (52, 'Pneumococcal');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (51, 'Shingles');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (2, 'Rotavirus');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (28, 'Flu shot');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (48, 'Varicella (Chickenpox)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (3, 'Hepatitis B');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (30, 'Hepatitis B');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (12, 'DTaP (Diphtheria');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (52, 'Flu shot');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (42, 'MMR (Measles');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (10, 'MMR (Measles');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (55, 'Pertussis)');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (47, 'Polio');
-insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (5, 'Hib (Haemophilus influenzae type b)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (18, 'Rubella)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (19, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (21, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (22, 'Rotavirus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (23, 'Pertussis)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (24, 'Rotavirus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (25, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (26, 'DTaP (Diphtheria');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (27, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (28, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (29, 'Hib (Haemophilus influenzae type b)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (30, 'HPV (Human Papillomavirus)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (31, 'Pertussis)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (32, 'Rotavirus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (33, 'Pertussis)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (34, 'Hib (Haemophilus influenzae type b)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (36, 'HPV (Human Papillomavirus)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (37, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (39, 'COVID-19');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (40, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (42, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (43, 'MMR (Measles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (44, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (45, 'Pneumococcal');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (46, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (47, 'Rotavirus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (48, 'Flu shot');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (49, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (50, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (51, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (52, 'DTaP (Diphtheria');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (53, 'Flu shot');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (54, 'MMR (Measles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (55, 'MMR (Measles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (56, 'Pertussis)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (57, 'Polio');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (58, 'Hib (Haemophilus influenzae type b)');
+
 
 
 -- Notifications
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (1, 'Praesent blandit.', 'consequat', '3:04 AM', 21, 6, 23, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (2, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', 'pede', '1:51 AM', 47, 59, 33, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (3, 'Cras pellentesque volutpat dui.', 'et', '6:11 PM', 17, 17, 54, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (4, 'Phasellus sit amet erat.', 'adipiscing', '8:46 AM', 15, 50, 54, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (5, 'Donec posuere metus vitae ipsum.', 'libero', '3:43 PM', 40, 17, 10, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (6, 'Duis consequat dui nec nisi volutpat eleifend.', 'curae', '8:51 PM', 22, 4, 17, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (7, 'Proin at turpis a pede posuere nonummy.', 'at', '8:09 PM', 33, 36, 4, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (8, 'Nullam varius.', 'semper', '10:07 AM', 48, 50, 18, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (9, 'Nam dui.', 'aliquam', '9:22 PM', 46, 43, 52, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (10, 'Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'pellentesque', '8:35 AM', 31, 3, 49, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (11, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.', 'dui', '11:18 PM', 54, 46, 40, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (12, 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 'nisi', '11:34 PM', 54, 33, 59, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (13, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.', 'ut', '11:47 AM', 18, 55, 6, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (14, 'Aliquam erat volutpat.', 'morbi', '12:59 AM', 20, 59, 5, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (15, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 'neque', '6:53 AM', 13, 36, 32, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (16, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.', 'eu', '3:45 AM', 57, 11, 52, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (17, 'Curabitur at ipsum ac tellus semper interdum.', 'libero', '1:46 PM', 9, 4, 9, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (18, 'Praesent lectus.', 'sed', '7:07 AM', 48, 36, 35, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (19, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'semper', '6:28 AM', 53, 20, 33, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (20, 'Maecenas rhoncus aliquam lacus.', 'nulla', '1:02 PM', 3, 20, 14, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (21, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.', 'cras', '10:13 AM', 31, 48, 18, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (22, 'Nulla facilisi.', 'feugiat', '2:49 AM', 54, 43, 46, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (23, 'Nulla nisl.', 'velit', '1:50 PM', 2, 25, 59, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (24, 'Cras pellentesque volutpat dui.', 'ut', '9:05 AM', 24, 30, 17, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (25, 'Aenean lectus.', 'nunc', '11:02 AM', 4, 22, 2, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (26, 'Ut at dolor quis odio consequat varius.', 'quam', '8:00 AM', 17, 9, 19, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (27, 'In quis justo.', 'in', '5:10 AM', 16, 11, 47, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (28, 'Vivamus tortor.', 'nunc', '2:56 PM', 21, 19, 8, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (29, 'Nulla tellus.', 'ut', '4:24 PM', 60, 14, 15, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (30, 'Proin at turpis a pede posuere nonummy.', 'quam', '10:01 PM', 17, 56, 16, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (31, 'Ut tellus.', 'nunc', '4:59 AM', 33, 12, 52, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (32, 'Nullam molestie nibh in lectus.', 'dui', '10:26 AM', 13, 24, 43, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (33, 'Curabitur gravida nisi at nibh.', 'luctus', '2:27 AM', 5, 51, 8, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (34, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'luctus', '11:16 AM', 38, 32, 42, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (35, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.', 'phasellus', '2:37 PM', 24, 6, 52, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (36, 'Maecenas pulvinar lobortis est.', 'morbi', '3:13 AM', 60, 48, 35, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (37, 'Fusce posuere felis sed lacus.', 'et', '6:55 PM', 50, 41, 50, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (38, 'Nullam sit amet turpis elementum ligula vehicula consequat.', 'hac', '3:41 AM', 47, 16, 14, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (39, 'Maecenas rhoncus aliquam lacus.', 'lectus', '11:32 PM', 54, 51, 18, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (40, 'Pellentesque at nulla.', 'morbi', '1:31 AM', 21, 47, 37, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (41, 'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 'molestie', '4:19 PM', 15, 16, 46, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (42, 'Nulla ac enim.', 'augue', '5:42 AM', 55, 43, 53, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (43, 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.', 'diam', '6:40 AM', 2, 11, 9, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (44, 'Aliquam sit amet diam in magna bibendum imperdiet.', 'praesent', '8:38 PM', 2, 3, 58, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (45, 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 'metus', '7:53 PM', 25, 1, 54, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (46, 'Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'turpis', '12:29 AM', 44, 15, 22, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (47, 'Nulla tellus.', 'convallis', '3:03 AM', 50, 24, 58, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (48, 'Nullam varius.', 'venenatis', '9:22 AM', 44, 11, 42, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (49, 'Nunc rhoncus dui vel sem.', 'augue', '4:55 AM', 32, 24, 60, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (50, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'integer', '1:59 PM', 4, 28, 31, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (51, 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', 'a', '5:43 PM', 18, 39, 8, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (52, 'Nunc purus.', 'gravida', '3:40 AM', 51, 24, 46, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (53, 'Curabitur in libero ut massa volutpat convallis.', 'quisque', '10:14 AM', 3, 29, 30, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (54, 'Suspendisse accumsan tortor quis turpis.', 'convallis', '3:08 AM', 47, 2, 41, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (55, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.', 'rhoncus', '3:47 PM', 30, 33, 17, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (56, 'Pellentesque viverra pede ac diam.', 'phasellus', '2:32 PM', 9, 10, 24, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (57, 'Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'consequat', '5:19 PM', 35, 57, 30, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (58, 'Curabitur convallis.', 'mauris', '12:26 AM', 1, 57, 43, 0);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (59, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 'tellus', '10:01 PM', 54, 22, 50, 1);
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values (60, 'Suspendisse potenti.', 'tempus', '1:46 PM', 4, 50, 60, 0);
-
+insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted)
+values
+(1, 'Praesent blandit.', 'consequat', CURRENT_TIMESTAMP, 21, 6, 23, 0),
+(2, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', 'pede', CURRENT_TIMESTAMP, 47, 59, 33, 0),
+(3, 'Cras pellentesque volutpat dui.', 'et', CURRENT_TIMESTAMP, 17, 17, 54, 0),
+(4, 'Phasellus sit amet erat.', 'adipiscing', CURRENT_TIMESTAMP, 15, 50, 54, 1),
+(5, 'Donec posuere metus vitae ipsum.', 'libero', CURRENT_TIMESTAMP, 40, 17, 10, 1),
+(6, 'Duis consequat dui nec nisi volutpat eleifend.', 'curae', CURRENT_TIMESTAMP, 22, 4, 17, 1),
+(7, 'Proin at turpis a pede posuere nonummy.', 'at', CURRENT_TIMESTAMP, 33, 36, 4, 0),
+(8, 'Nullam varius.', 'semper', CURRENT_TIMESTAMP, 48, 50, 18, 1),
+(9, 'Nam dui.', 'aliquam', CURRENT_TIMESTAMP, 46, 43, 52, 1),
+(10, 'Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'pellentesque', CURRENT_TIMESTAMP, 31, 3, 49, 0),
+(11, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.', 'dui', CURRENT_TIMESTAMP, 54, 46, 40, 0),
+(12, 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 'nisi', CURRENT_TIMESTAMP, 54, 33, 59, 1),
+(13, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.', 'ut', CURRENT_TIMESTAMP, 18, 55, 6, 0),
+(14, 'Aliquam erat volutpat.', 'morbi', CURRENT_TIMESTAMP, 20, 59, 5, 0),
+(15, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 'neque', CURRENT_TIMESTAMP, 13, 36, 32, 1),
+(16, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.', 'eu', CURRENT_TIMESTAMP, 57, 11, 52, 1),
+(17, 'Curabitur at ipsum ac tellus semper interdum.', 'libero', CURRENT_TIMESTAMP, 9, 4, 9, 1),
+(18, 'Praesent lectus.', 'sed', CURRENT_TIMESTAMP, 48, 36, 35, 0),
+(19, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'semper', CURRENT_TIMESTAMP, 53, 20, 33, 0),
+(20, 'Maecenas rhoncus aliquam lacus.', 'nulla', CURRENT_TIMESTAMP, 3, 20, 14, 0),
+(21, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.', 'cras', CURRENT_TIMESTAMP, 31, 48, 18, 1),
+(22, 'Nulla facilisi.', 'feugiat', CURRENT_TIMESTAMP, 54, 43, 46, 0),
+(23, 'Nulla nisl.', 'velit', CURRENT_TIMESTAMP, 2, 25, 59, 0),
+(24, 'Cras pellentesque volutpat dui.', 'ut', CURRENT_TIMESTAMP, 24, 30, 17, 1),
+(25, 'Aenean lectus.', 'nunc', CURRENT_TIMESTAMP, 4, 22, 2, 0),
+(26, 'Ut at dolor quis odio consequat varius.', 'quam', CURRENT_TIMESTAMP, 17, 9, 19, 0),
+(27, 'In quis justo.', 'in', CURRENT_TIMESTAMP, 16, 11, 47, 0),
+(28, 'Vivamus tortor.', 'nunc', CURRENT_TIMESTAMP, 21, 19, 8, 0),
+(29, 'Nulla tellus.', 'ut', CURRENT_TIMESTAMP, 60, 14, 15, 1),
+(30, 'Proin at turpis a pede posuere nonummy.', 'quam', CURRENT_TIMESTAMP, 17, 56, 16, 0),
+(31, 'Ut tellus.', 'nunc', CURRENT_TIMESTAMP, 33, 12, 52, 0),
+(32, 'Nullam molestie nibh in lectus.', 'dui', CURRENT_TIMESTAMP, 13, 24, 43, 0),
+(33, 'Curabitur gravida nisi at nibh.', 'luctus', CURRENT_TIMESTAMP, 5, 51, 8, 1),
+(34, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'luctus', CURRENT_TIMESTAMP, 38, 32, 42, 0),
+(35, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.', 'phasellus', CURRENT_TIMESTAMP, 24, 6, 52, 0),
+(36, 'Maecenas pulvinar lobortis est.', 'morbi', CURRENT_TIMESTAMP, 60, 48, 35, 0),
+(37, 'Fusce posuere felis sed lacus.', 'et', CURRENT_TIMESTAMP, 50, 41, 50, 0),
+(38, 'Nullam sit amet turpis elementum ligula vehicula consequat.', 'hac', CURRENT_TIMESTAMP, 47, 16, 14, 0),
+(39, 'Maecenas rhoncus aliquam lacus.', 'lectus', CURRENT_TIMESTAMP, 54, 51, 18, 1),
+(40, 'Pellentesque at nulla.', 'morbi', CURRENT_TIMESTAMP, 21, 47, 37, 0),
+(41, 'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 'molestie', CURRENT_TIMESTAMP, 15, 16, 46, 1),
+(42, 'Nulla ac enim.', 'augue', CURRENT_TIMESTAMP, 55, 43, 53, 1),
+(43, 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.', 'diam', CURRENT_TIMESTAMP, 2, 11, 9, 1),
+(44, 'Aliquam sit amet diam in magna bibendum imperdiet.', 'praesent', CURRENT_TIMESTAMP, 2, 3, 58, 0),
+(45, 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 'metus', CURRENT_TIMESTAMP, 25, 1, 54, 0),
+(46, 'Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'turpis', CURRENT_TIMESTAMP, 44, 15, 22, 1),
+(47, 'Nulla tellus.', 'convallis', CURRENT_TIMESTAMP, 50, 24, 58, 1),
+(48, 'Nullam varius.', 'venenatis', CURRENT_TIMESTAMP, 44, 11, 42, 1),
+(49, 'Nunc rhoncus dui vel sem.', 'augue', CURRENT_TIMESTAMP, 32, 24, 60, 1),
+(50, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'integer', CURRENT_TIMESTAMP, 4, 28, 31, 1),
+(51, 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', 'a', CURRENT_TIMESTAMP, 18, 39, 8, 1),
+(52, 'Nunc purus.', 'gravida', CURRENT_TIMESTAMP, 51, 24, 46, 1),
+(53, 'Curabitur in libero ut massa volutpat convallis.', 'quisque', CURRENT_TIMESTAMP, 3, 29, 30, 0),
+(54, 'Suspendisse accumsan tortor quis turpis.', 'convallis', CURRENT_TIMESTAMP, 47, 2, 41, 1),
+(55, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.', 'rhoncus', CURRENT_TIMESTAMP, 30, 33, 17, 1),
+(56, 'Pellentesque viverra pede ac diam.', 'phasellus', CURRENT_TIMESTAMP, 9, 10, 24, 1),
+(57, 'Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'consequat', CURRENT_TIMESTAMP, 35, 57, 30, 0),
+(58, 'Curabitur convallis.', 'mauris', CURRENT_TIMESTAMP, 1, 57, 43, 0),
+(59, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 'tellus', CURRENT_TIMESTAMP, 54, 22, 50, 1),
+(60, 'Suspendisse potenti.', 'tempus', CURRENT_TIMESTAMP, 4, 50, 60, 0);
