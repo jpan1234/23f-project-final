@@ -46,7 +46,7 @@ def get_all_insurance_plans():
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    query = f'''SELECT DISTINCT description FROM InsurancePlan\
+    query = f'''SELECT planID, terminationDate, description, copay FROM InsurancePlan\
                 WHERE inactive = 0'''
     cursor.execute(query)
 
