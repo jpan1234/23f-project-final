@@ -40,7 +40,7 @@ def get_patient_insurance_plan(patientID):
 
 
 # Provide a list of all insurance plans 
-@rep.route('/insuranceplans', methods=['GET'])
+@rep.route('/insuranceplan', methods=['GET'])
 def get_all_insurance_plans():
     # get a cursor object from the database
     cursor = db.get_db().cursor()
