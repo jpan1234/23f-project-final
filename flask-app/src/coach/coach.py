@@ -247,3 +247,57 @@ def post_coach_visit(coach_id):
     
     return 'Visit scheduled!'
 
+# PUT
+
+# update a message to a patient
+@coach.route('/messages/<comid>', methods=['PUT'])
+def update_message_coach(comid):
+    '''
+    Update a message 
+
+    columns: 
+    '''
+
+    # collecting data from the request object 
+    the_data = request.json
+
+    # extracting the variable
+    subject = the_data['subject']
+    content = the_data['content']
+
+    cursor = db.get_db().cursor()
+
+    query = f'UPDATE Message\
+                    SET subject = {subject}, content = {content}\
+                    WHERE comID = {comid};'
+
+    # update with new content and keep remaining old subject
+    cursor.execute(query)
+    # log the query
+    current_app.logger.info(query)
+
+    # commit the changes
+    db.get_db().commit()
+
+
+    return "Updated message."
+
+# DELETE
+
+# Deletes a message
+@coach.route('/messages/<comid>', methods=['DELETE'])
+def delete_notification_coach(comID):
+    
+    query = f'DELETE\
+        FROM Messages\
+        WHERE conID = {comID};'
+        
+    # get cursor and execute it
+    cursor = db.get_db().cursor()
+
+    cursor.execute(query)
+    
+    # commit changes
+    db.get_db().commit()
+
+    return "Successfully deleted message!"
