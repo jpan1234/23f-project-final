@@ -122,8 +122,7 @@ def get_coach_healthrecords(coach_id):
 
     # use cursor to query the database for a list of products
     cursor.execute('SELECT * FROM HealthRecords\
-                JOIN WellnessCoach\
-                ON HealthRecords.coachID = WellnessCoach.coachID\
+                ON HealthRecords.coachID = {coachID}\
                 WHERE WellnessCoach.consent = 1')
 
     # grab the column headers from the returned data
