@@ -125,7 +125,7 @@ def get_coach_healthrecords(coachid):
                      JOIN WellnessCoach\
                      ON Wellness.coachID = HealthRecords.coachID\
                      WHERE Wellness.coachID = {coachid}\
-                     AND WellnessCoach.consent = 1')
+                     AND WellnessCoach.consent = '1'')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
