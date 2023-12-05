@@ -810,6 +810,66 @@ insert into AllergyRecord (healthrecordid, allergies) values (59, 'In eleifend q
 insert into AllergyRecord (healthrecordid, allergies) values (60, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.');
 
 -- Vax History Record
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (20, 'Tetanus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (9, 'Hib (Haemophilus influenzae type b)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (16, 'Rubella)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (8, 'Polio');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (35, 'Rubella)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (38, 'Tetanus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (41, 'Flu shot');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (35, 'Tetanus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (51, 'Rubella)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (60, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (14, 'DTaP (Diphtheria');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (2, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (53, 'Meningococcal');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (6, 'Mumps');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (24, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (16, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (17, 'Pneumococcal');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (49, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (54, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (46, 'Pertussis)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (15, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (44, 'Meningococcal');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (48, 'MMR (Measles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (6, 'Rubella)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (40, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (2, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (17, 'Rotavirus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (37, 'Pertussis)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (4, 'Rotavirus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (51, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (24, 'DTaP (Diphtheria');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (43, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (22, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (32, 'Hib (Haemophilus influenzae type b)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (9, 'HPV (Human Papillomavirus)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (55, 'Pertussis)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (29, 'Rotavirus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (44, 'Pertussis)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (59, 'Hib (Haemophilus influenzae type b)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (50, 'HPV (Human Papillomavirus)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (51, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (28, 'COVID-19');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (9, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (29, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (17, 'MMR (Measles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (57, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (52, 'Pneumococcal');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (51, 'Shingles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (2, 'Rotavirus');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (28, 'Flu shot');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (48, 'Varicella (Chickenpox)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (3, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (30, 'Hepatitis B');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (12, 'DTaP (Diphtheria');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (52, 'Flu shot');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (42, 'MMR (Measles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (10, 'MMR (Measles');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (55, 'Pertussis)');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (47, 'Polio');
+insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (5, 'Hib (Haemophilus influenzae type b)');
 
 
 -- Notifications
