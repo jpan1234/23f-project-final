@@ -500,8 +500,8 @@ insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory,
 
 
 -- Message
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (1, '2023-12-04', 'interdum venenatis turpis', 'Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.', 12, 20, 20, 55, 0);
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (2, '2023-12-04', 'erat id mauris vulputate elementum', 'Suspendisse potenti.', 24, 54, 33, 4, 1);
+insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (1, '2023-12-04', 'interdum venenatis turpis', 'Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.', 12, 20, 20, 55, 0);
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (3, '2023-12-04', 'tristique est et', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis.', 45, 58, 32, 12, 1);
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (4, '2023-12-04', 'blandit non', 'Nulla tellus.', 5, 15, 35, 51, 0);
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (5, '2023-12-04', 'viverra pede ac', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor.', 32, 49, 30, 36, 1);
@@ -560,6 +560,11 @@ insert into Message (comid, datesent, subject, content, patientid, doctorid, coa
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (58, '2023-12-04', 'eu', 'In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy.', 39, 56, 52, 41, 0);
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (59, '2023-12-04', 'ultrices enim', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 2, 55, 11, 48, 1);
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (60, '2023-12-04', 'non lectus aliquam sit amet', 'Curabitur convallis.', 20, 2, 15, 3, 1);
+
+
+# for patient 1 example
+insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (61, '2023-12-04', 'erat id mauris vulputate elementum', 'Suspendisse potenti.', 1, 54, 33, 4, 0);
+
 
 -- Insurance Plan
 insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (1, '2028-08-08', 138.89, 'magna vulputate luctus cum sociis natoque penatibus et magnis dis', 45, 0);
