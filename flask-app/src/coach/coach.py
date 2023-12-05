@@ -121,10 +121,11 @@ def get_coach_healthrecords(coach_id):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute('SELECT familyHistory, allergies, vaxHistory\
-                     FROM HuskyHealth.HealthRecords\
-                     WHERE coachID = {coach_id}\
-                     and repConsent = 1')
+    cursor.execute('SELECT * FROM HealthRecords\
+                JOIN WellnessCoach\
+                ON HealthRecords.coachID = WellnessCoach.coachID\
+                WHERE HealthRecords.patientID = {patientID}\
+                AND WellnessCoach.consent = 1')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
