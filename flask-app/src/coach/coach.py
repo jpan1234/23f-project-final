@@ -9,7 +9,7 @@ coach = Blueprint('coach', __name__)
 
 # Get all the unseen notifications sent by the coach's patient from the database
 @coach.route('/notifications/<coachid>', methods=['GET'])
-def get_notifications_from_patient(patient_id):
+def get_notifications_from_patient(patientID):
     '''
     Get all notifications that are unseen from coach's patient
 
@@ -43,7 +43,7 @@ def get_notifications_from_patient(patient_id):
 
 # Get all coachs messages
 @coach.route('/messages/<coachid>', methods=['GET'])
-def get_messages_from_coach(coach_id):
+def get_messages_from_coach(coachID):
     '''
     Get all messages between coach and affiliated patient
 
@@ -54,7 +54,7 @@ def get_messages_from_coach(coach_id):
 
     # use cursor to query the database for a list of products
     cursor.execute('SELECT subject, content, dateSent FROM HuskyHealth.Message\
-                     WHERE coachID = {coach_id}\
+                     WHERE coachID = {coachID}\
                      ORDER BY dateSent DESC;')
 
     # grab the column headers from the returned data
@@ -76,7 +76,7 @@ def get_messages_from_coach(coach_id):
 
 # Get all coachs visits
 @coach.route('/visits/<coachid>', methods=['GET'])
-def get_coach_visits(coach_id):
+def get_coach_visits(coachID):
     '''
     Get all coachs visits
 
@@ -88,7 +88,7 @@ def get_coach_visits(coach_id):
     # use cursor to query the database for a list of products
     cursor.execute('SELECT purpose, visitDate\
                      FROM HuskyHealth.Visit\
-                     WHERE coachID = {coach_id}')
+                     WHERE coachID = {coachID}')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -111,7 +111,7 @@ def get_coach_visits(coach_id):
 
 # Get list of the health records a coach is allowed to view of affiliated patient
 @coach.route('/healthrecords/<coachid>', methods=['GET'])
-def get_coach_healthrecords(coach_id):
+def get_coach_healthrecords(coachID):
     '''
     Gets list of health records a coach can view of affiliated patient
 
@@ -146,7 +146,7 @@ def get_coach_healthrecords(coach_id):
 
 # Get list of all wellness records of a coach
 @coach.route('/wellnessrecord/<coachid>', methods=['GET'])
-def get_coach_records(coach_id):
+def get_coach_records(coachID):
     '''
     Gets list of all goals of a coach 
 
@@ -158,7 +158,7 @@ def get_coach_records(coach_id):
     # use cursor to query the database for a list of products
     cursor.execute('SELECT goal, description\
                      FROM HuskyHealth.WellnessRecord\
-                     WHERE coachID = {coach_id}')
+                     WHERE coachID = {coachID}')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -216,7 +216,7 @@ def post_coach_message(coach_id):
 # add a visit to the database by coach
 
 @coach.route('/visit/<coachid>', methods=['POST'])
-def post_coach_visit(coach_id):
+def post_coach_visit(coachID):
 
     '''
     Post a visit to the database from coach to patient
@@ -238,7 +238,7 @@ def post_coach_visit(coach_id):
     query += purpose + '", "'
     query += visitDate + '", "'
     query += patientid + '", '
-    query += coach_id + ')'
+    query += coachID + ')'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
