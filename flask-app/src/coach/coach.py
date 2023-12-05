@@ -127,7 +127,7 @@ def get_coach_records(coachid):
 
     query = f'SELECT goal, description\
                      FROM HuskyHealth.WellnessRecord\
-                     WHERE coachID = {coachid};'
+                     WHERE WellnessRecord.coachID = {coachid};'
 
     # use cursor to query the database for a list of products
     cursor.execute(query)
@@ -149,6 +149,7 @@ def get_coach_records(coachid):
 
     return jsonify(json_data)
 
+# get all coachs patients health records
 @coach.route('/healthrecords/<coachid>', methods=['Get'])
 def get_healthRecords_for_coach(coachid):
 

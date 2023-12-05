@@ -40,13 +40,13 @@ def get_patient_insurance_plan(patientID):
 
 
 # Provide a list of all insurance plans 
-@rep.route('/insuranceplans', methods=['GET'])
-def get_all_insurance_plans(repID, patientID):
+@rep.route('/insuranceplan', methods=['GET'])
+def get_all_insurance_plans():
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    query = f'''SELECT DISTINCT description FROM InsurancePlan\
+    query = f'''SELECT planID, terminationDate, description, copay FROM InsurancePlan\
                 WHERE inactive = 0'''
     cursor.execute(query)
 
@@ -198,7 +198,7 @@ def get_message_doctor(doctorid):
 
 
 # add an insurance plan for a specfic patient
-@rep.route('/insuranceplans/>', methods=['POST'])
+@rep.route('/insuranceplan/>', methods=['POST'])
 def add_patient_insurance_plan():
 
     # collecting data from the request object 
