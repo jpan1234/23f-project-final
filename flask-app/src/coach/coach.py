@@ -126,8 +126,9 @@ def get_coach_records(coachid):
     cursor = db.get_db().cursor()
 
     query = f'SELECT goal, description\
-                     FROM HuskyHealth.WellnessRecord\
-                     WHERE WellnessRecord.coachID = {coachid};'
+                     FROM WellnessRecord\
+                     JOIN Visit ON WellnessRecord.patientID = Visit.patientID\
+                     WHERE Visit.coachID = {coachid};'
 
     # use cursor to query the database for a list of products
     cursor.execute(query)
