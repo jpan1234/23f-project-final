@@ -244,7 +244,7 @@ def post_coach_visit(coachid):
     patientid = the_data['patientID']
 
     # Constructing the query
-    query = 'INSERT INTO HuskyHealth.Visit (purpose, visitDate, patientid, coachid) VALUES ("'
+    query = 'INSERT INTO HuskyHealth.Visit (purpose, visitDate, patientID, coachID) VALUES ("'
     query += purpose + '", "'
     query += visitDate + '", "'
     query += patientid + '", '
