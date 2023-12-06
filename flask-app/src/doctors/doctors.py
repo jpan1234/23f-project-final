@@ -56,7 +56,7 @@ def get_prescriptions_for_doctor(doctorid):
     
 
 @doctors.route('/notifications/<doctorid>', methods=['Get'])
-def get_notifications_for_doctors_patients(doctorID):
+def get_notifications_for_doctors_patients(doctorid):
 
     '''
     Get all the doctors' patients' notifcations
@@ -69,7 +69,7 @@ def get_notifications_for_doctors_patients(doctorID):
     query = f'SELECT Notifications.patientID, content, timeSent FROM Notifications\
         JOIN Patient ON Notifications.patientID = Patient.patientID\
         JOIN Visit ON Patient.patientID = Visit.patientID\
-        WHERE status = "Unread" AND doctorID = {doctorID};'
+        WHERE status = "Unread" AND doctorID = {doctorid};'
 
     cursor.execute(query)
     # grab the column headers from the returned data
@@ -236,7 +236,7 @@ def get_visits_for_doctors(doctorid):
 
 
 @doctors.route('/messages/<doctorid>', methods=['Get'])
-def get_rep_messages_for_doctors(doctorID):
+def get_rep_messages_for_doctors(doctorid):
 
     '''
     Returns messages between a doctor and a their patients' corresponding representatitves
@@ -247,7 +247,7 @@ def get_rep_messages_for_doctors(doctorID):
     cursor = db.get_db().cursor()
 
     query = f'SELECT subject, content, dateSent, repID FROM Message\
-        WHERE doctorID = {doctorID}\
+        WHERE doctorID = {doctorid}\
         AND repID IS NOT NULL;'
 
     cursor.execute(query)
@@ -606,11 +606,11 @@ def update_prescription(patientid):
 
 # Deletes a notification
 @doctors.route('/notifications/<notificationid>', methods=['DELETE'])
-def delete_notification(notificationID):
+def delete_notification(notificationid):
     
     query = f'DELETE\
         FROM Notifications\
-        WHERE notificationID = {notificationID};'
+        WHERE notificationID = {notificationid};'
         
     # get cursor and execute it
     cursor = db.get_db().cursor()
