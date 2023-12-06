@@ -84,7 +84,8 @@ def get_message(patientid):
 
     # use cursor to query the database for a list of products
     cursor.execute(f'SELECT subject, content FROM Message\
-                     WHERE patientID = {patientid};')
+                     WHERE patientID = {patientid}\
+                     ORDER BY dateSent DESC;')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -307,7 +308,7 @@ def post_doctor_message(patientid):
     datesent = the_data['dateSent']
 
     # Constructing the query
-    query = 'INSERT INTO Message (subject, content, patientID, doctorID) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientID, dateSent, doctorID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", "'
@@ -341,7 +342,7 @@ def post_coach_message(patientid):
     datesent = the_data['dateSent']
 
     # Constructing the query
-    query = 'INSERT INTO Message (subject, content, patientID, coachID, dateSent) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientID, dateSent, coachID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", "'
@@ -377,7 +378,7 @@ def post_rep_message(patientid):
     datesent = the_data['dateSent']
 
     # Constructing the query
-    query = 'INSERT INTO Message (subject, content, patientID, repID) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientID, dateSent, repID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", "'

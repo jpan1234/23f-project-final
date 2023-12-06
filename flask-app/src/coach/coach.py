@@ -206,13 +206,15 @@ def post_coach_message(coachid):
     subject = the_data['subject']
     content = the_data['content']
     patientid = the_data['patientID']
+    datesent = the_data['dateSent']
 
 
     # Constructing the query
-    query = 'INSERT INTO HuskyHealth.Message (subject, content, patientid, coachid) VALUES ("'
+    query = 'INSERT INTO HuskyHealth.Message (subject, content, patientid, dateSent, coachid) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
-    query += patientid + '", '
+    query += patientid + '", "'
+    query += datesent + '", '
     query += coachid + ')'
     current_app.logger.info(query)
 

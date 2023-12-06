@@ -250,13 +250,15 @@ def post_patient_message(repid):
     subject = the_data['subject']
     content = the_data['content']
     patientid = the_data['patientID']
+    datesent = the_data['dateSent']
 
 
     # Constructing the query
-    query = 'INSERT INTO Message (subject, content, patientID, repID) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientID, dateSent, repID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
-    query += patientid + '", '
+    query += patientid + '", "'
+    query += datesent + '", '
     query += repid + ')'
     current_app.logger.info(query)
 
@@ -283,13 +285,15 @@ def post_doctor_message(repid):
     subject = the_data['subject']
     content = the_data['content']
     doctorid = the_data['doctorID']
+    datesent = the_date['dateSent']
 
 
     # Constructing the query
-    query = 'INSERT INTO Message (subject, content, doctorID, repID) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, doctorID, dateSent, repID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
-    query += doctorid + '", '
+    query += doctorid + '", "'
+    query += datesent + '", '
     query += repid + ')'
     current_app.logger.info(query)
 

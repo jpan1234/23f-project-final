@@ -40,8 +40,9 @@ def get_prescriptions_for_doctor(doctorid):
     columns: medication, pharmacy, dateprescribed, patientID
     '''
 
-    query = f'SELECT medication, pharmacy, dateprescribed, patientID FROM Prescriptions\
-                WHERE doctorID = {doctorid};'
+    query = f'SELECT medication, pharmacy, datePrescribed, patientID FROM Prescriptions\
+                WHERE doctorID = {doctorid}]
+                ORDER BY datePrescribed DESC;'
     current_app.logger.info(query)
 
     cursor = db.get_db().cursor()
@@ -101,7 +102,8 @@ def get_messages_for_doctor(doctorid):
     cursor = db.get_db().cursor()
 
     query = f'SELECT subject, content, patientID FROM Message\
-        WHERE doctorID = {doctorid};'
+        WHERE doctorID = {doctorid}\
+        ORDER BY dateSent DESC;'
 
     cursor.execute(query)
     # grab the column headers from the returned data
@@ -327,8 +329,6 @@ def add_new_doctor_prescription(doctorid):
     query += medication + '", "'
     query += str(duration) + '")'
     current_app.logger.info(query)
-    
-    return query
 
     # executing and committing the insert statement 
     cursor = db.get_db().cursor()
@@ -350,13 +350,15 @@ def add_new_message_doctor_to_patient(doctorid):
     subject = the_data['subject']
     content = the_data['content']
     patientid = the_data['patientID']
+    datesent = the_data['dateSent']
 
 
     # Constructing the query
-    query = 'INSERT INTO Message (subject, content, patientID, doctorID) values ("'
+    query = 'INSERT INTO Message (subject, content, patientID, dateSent, doctorID) values ("'
     query += subject + '", "'
     query += content + '", "'
-    query += patientid + '", '
+    query += patientid + '", "'
+    query += datesent + '",'
     query += doctorid + ')'
     current_app.logger.info(query)
 
@@ -378,13 +380,15 @@ def add_new_message_doctor_to_rep(doctorid):
     subject = the_data['subject']
     content = the_data['content']
     repid = the_data['repID']
+    datesent = the_data['dateSent']
 
 
     # Constructing the query
-    query = 'INSERT INTO Message (subject, content, repID, doctorID) values ("'
+    query = 'INSERT INTO Message (subject, content, repID, dateSent, doctorID) values ("'
     query += subject + '", "'
     query += content + '", "'
-    query += repid + '", '
+    query += repid + '", "'
+    query += datesent + '",'
     query += doctorid + ')'
     current_app.logger.info(query)
 
