@@ -219,7 +219,7 @@ def add_patient_billing_record (patientid):
     query = 'INSERT INTO BillingRecord (description, amount, patientID, repID, planID, paid) VALUES ("'
     query += description + '", "'
     query += amount + '", "'
-    query += patientID + '", '
+    query += patientid + '", '
     query += repID + '", '
     query += planID + '", '
     query += paid + '", '
@@ -234,7 +234,7 @@ def add_patient_billing_record (patientid):
     return 'Success!'
 
 
-# post a message to a doctor
+# post a message to a patient
 @rep.route('/messages/<repid>', methods=['POST'])
 def post_patient_message(repid):
     '''
@@ -285,7 +285,7 @@ def post_doctor_message(repid):
     subject = the_data['subject']
     content = the_data['content']
     doctorid = the_data['doctorID']
-    datesent = the_date['dateSent']
+    datesent = the_data['dateSent']
 
 
     # Constructing the query
