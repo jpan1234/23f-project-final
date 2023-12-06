@@ -18,16 +18,19 @@ Welcome to HuskyHealth, a comprehensive Personal Health Record (PHR) System meti
 
 Experience the future of healthcare management at Northeastern University with HuskyHealth—your reliable partner in fostering a healthy and connected community.
 
-This repo contains a setup for spinning up 3 Docker containers: 
+
+
+
+## This repo contains a setup for spinning up 3 Docker containers: 
 1. A MySQL 8 container for database access
-1. A Python Flask container to implement a REST API
-1. A Local AppSmith Server to access the HuskyHealthApp
+2. A Python Flask container to implement REST APIs
+3. A Local AppSmith Server to access the HuskyHealthApp
 
 ## How to setup and start the containers to launch the app
 **Important** - you need Docker Desktop installed
 
 1. Create a file named `db_root_password.txt` in the `secrets/` folder and put inside of it the root password for MySQL. 
-2. Create a file named `db_password.txt` in the `secrets/` folder and put inside of it the password you want to use for the a non-root user named webapp. 
+2. Create a file named `db_password.txt` in the `secrets/` folder and put inside of it the password you want to use for the non-root user named webapp. 
 3. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
 4. Build the images with `docker compose build`
 5. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
