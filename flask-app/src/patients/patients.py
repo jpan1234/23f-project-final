@@ -336,6 +336,7 @@ def post_coach_message(patientid):
     query += coachid + '")'
     current_app.logger.info(query)
 
+
     # executing and committing the insert statement 
     cursor = db.get_db().cursor()
     cursor.execute(query)

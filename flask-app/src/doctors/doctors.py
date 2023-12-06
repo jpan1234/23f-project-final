@@ -41,7 +41,7 @@ def get_prescriptions_for_doctor(doctorid):
     '''
 
     query = f'SELECT medication, pharmacy, datePrescribed, patientID FROM Prescriptions\
-                WHERE doctorID = {doctorid}]
+                WHERE doctorID = {doctorid}\
                 ORDER BY datePrescribed DESC;'
     current_app.logger.info(query)
 
