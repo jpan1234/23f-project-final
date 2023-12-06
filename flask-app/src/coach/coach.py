@@ -225,7 +225,7 @@ def post_coach_message(coachid):
 
 # add a visit to the database by coach
 
-@coach.route('/visit/<coachID>', methods=['POST'])
+@coach.route('/visit/<coachid>', methods=['POST'])
 def post_coach_visit(coachid):
 
     '''
