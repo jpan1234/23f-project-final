@@ -330,7 +330,7 @@ def cancel_coach_visit(visitid):
 # DELETE
 
 # Deletes a notification
-@coach.route('/notifications/<notificationid>', methods=['DELETE'])
+@coach.route('/deletenotifications/<notificationid>', methods=['DELETE'])
 def delete_notification_coach(notificationID):
     
     query = f'DELETE\
