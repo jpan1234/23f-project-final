@@ -329,13 +329,13 @@ def cancel_coach_visit(visitid):
 
 # DELETE
 
-# Deletes a message
-@coach.route('/messages/<comid>', methods=['DELETE'])
-def delete_notification_coach(comID):
+# Deletes a notification
+@coach.route('/notifications/<notificationid>', methods=['DELETE'])
+def delete_notification_coach(notificationID):
     
     query = f'DELETE\
-        FROM Messages\
-        WHERE conID = {comID};'
+        FROM Notifications\
+        WHERE comID = {notificationID};'
         
     # get cursor and execute it
     cursor = db.get_db().cursor()
