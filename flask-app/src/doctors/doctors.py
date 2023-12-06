@@ -5,8 +5,34 @@ from src import db
 
 doctors = Blueprint('doctors', __name__)
 
-@doctors.route('/prescriptions/<doctorid>/<patientid>', methods=['GET'])
-def get_prescriptions_for_doctor(doctorID):
+
+@doctors.route('/patients/<doctorid>', methods=['GET'])
+def get_patients(doctorid):
+
+    '''
+    Get all the doctors prescriptions
+
+    columns: medication, pharmacy, dateprescribed, patientID
+    '''
+
+    query = f'SELECT DISTINCT V.patientID, Patient.firstName, Patient.lastName FROM HuskyHealth.Patient\
+                JOIN HuskyHealth.Visit V on Patient.patientID = V.patientID\
+                WHERE V.doctorID = {doctorid};'
+    
+
+    current_app.logger.info(query)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    the_data = cursor.fetchall()
+    for row in the_data:
+        json_data.append(dict(zip(column_headers, row)))
+    return jsonify(json_data)
+
+@doctors.route('/prescriptions/<doctorid>', methods=['GET'])
+def get_prescriptions_for_doctor(doctorid):
 
     '''
     Get all the doctors prescriptions
@@ -15,7 +41,7 @@ def get_prescriptions_for_doctor(doctorID):
     '''
 
     query = f'SELECT medication, pharmacy, dateprescribed, patientID FROM Prescriptions\
-                WHERE doctorID = {doctorID};'
+                WHERE doctorID = {doctorid};'
     current_app.logger.info(query)
 
     cursor = db.get_db().cursor()
@@ -64,7 +90,7 @@ def get_notifications_for_doctors_patients(doctorID):
 
 
 @doctors.route('/messages/<doctorid>', methods=['Get'])
-def get_messages_for_doctor(doctorID):
+def get_messages_for_doctor(doctorid):
 
     '''
     Get all the doctors' messages
@@ -74,8 +100,8 @@ def get_messages_for_doctor(doctorID):
 
     cursor = db.get_db().cursor()
 
-    query = f'SELECT subject, content, dateSent, patientID FROM Message\
-        WHERE doctorID = {doctorID} ORDER BY dateSent DESC;'
+    query = f'SELECT subject, content, patientID FROM Message\
+        WHERE doctorID = {doctorid};'
 
     cursor.execute(query)
     # grab the column headers from the returned data
@@ -97,7 +123,7 @@ def get_messages_for_doctor(doctorID):
 
 
 @doctors.route('/healthrecords/<doctorid>', methods=['Get'])
-def get_healthRecords_for_doctors_patients(doctorID):
+def get_healthRecords_for_doctors_patients(doctorid):
 
     '''
     Get all the doctors' patients' health records
@@ -107,8 +133,8 @@ def get_healthRecords_for_doctors_patients(doctorID):
 
     cursor = db.get_db().cursor()
 
-    query = f'SELECT healthRecordID, familyHistory, allergies, vaxHistory FROM HealthRecords\
-        WHERE doctorID = {doctorID}\
+    query = f'SELECT healthRecordID, patientID, familyHistory, allergies, vaxHistory FROM HealthRecords\
+        WHERE doctorID = {doctorid}\
         ORDER BY patientID;'
 
     cursor.execute(query)
@@ -132,7 +158,7 @@ def get_healthRecords_for_doctors_patients(doctorID):
 
 
 @doctors.route('/labresults/<doctorid>', methods=['Get'])
-def get_labresults_for_doctors_patients(doctorID):
+def get_labresults_for_doctors_patients(doctorid):
 
     '''
     Get all the doctors' patients' lab results
@@ -143,12 +169,12 @@ def get_labresults_for_doctors_patients(doctorID):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT result, type, testDate FROM LabResults\
+    cursor.execute(f'SELECT result, type, testDate, LabResults.patientID FROM LabResults\
                      JOIN Patient\
                      ON LabResults.patientID = Patient.patientID\
                      JOIN Visit\
                      ON Visit.patientID = Patient.patientID\
-                     WHERE Visit.doctorID = {doctorID}\
+                     WHERE Visit.doctorID = {doctorid}\
                      ;')
 
     # grab the column headers from the returned data
@@ -173,7 +199,7 @@ def get_labresults_for_doctors_patients(doctorID):
 
 
 @doctors.route('/visits/<doctorid>', methods=['Get'])
-def get_visits_for_doctors(doctorID):
+def get_visits_for_doctors(doctorid):
 
     '''
     Get all the doctors' patients' visits
@@ -184,7 +210,8 @@ def get_visits_for_doctors(doctorID):
     cursor = db.get_db().cursor()
 
     query = f'SELECT purpose, visitDate, patientID FROM Visit\
-        WHERE doctorID = {doctorID};'
+            WHERE doctorID = {doctorid}\
+            ORDER BY patientID;'
 
     cursor.execute(query)
     # grab the column headers from the returned data
@@ -259,8 +286,8 @@ def get_rep_messages_for_doctors(doctorID):
 
 
 
-@doctors.route('/prescriptions/<patientid>', methods=['POST'])
-def add_new_doctor_prescription(patientid):
+@doctors.route('/prescriptions/<doctorid>', methods=['POST'])
+def add_new_doctor_prescription(doctorid):
     ''' 
     adding a new prescription for a patient
     '''
@@ -281,7 +308,7 @@ def add_new_doctor_prescription(patientid):
     pharmacy = the_data['pharmacy']
     medication = the_data['medication']
     duration = the_data['duration']
-    doctorid = the_data['doctorID'] # obtain the doctorid
+    patientid = the_data['patientid'] # obtain the doctorid
 
     # Constructing the query
     query = 'INSERT INTO Prescription (scriptID, type, visitID, testID, patientID, resultDate, company, doctorID, status\
@@ -325,9 +352,9 @@ def add_new_message_doctor_to_patient(doctorid):
 
     # Constructing the query
     query = 'INSERT INTO Message (subject, content, patientID, doctorID) values ("'
-    query += subject + '", '
+    query += subject + '", "'
     query += content + '", "'
-    query += patientid + '", "'
+    query += patientid + '", '
     query += doctorid + ')'
     current_app.logger.info(query)
 
