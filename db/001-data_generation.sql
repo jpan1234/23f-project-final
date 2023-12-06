@@ -251,192 +251,197 @@ insert into InsuranceRepresentative (repID, company, firstName, lastName, consen
 insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (60, 'Nationwide', 'Jarrett', 'Cowope', 0);
 
 -- Visit
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (1, 'Check in', '2023-03-21', 1, 1, 30, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (2, 'Headaches', '2023-02-11', 1, 18, 20, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (3, 'Toothache', '2023-01-06', 1, 1, 1, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (4, 'Possible prescription', '2023-10-22', 1, 2, 8, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (5, 'orci eget orci', '2023-08-01', 35, 12, 28, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (6, 'est quam pharetra magna ac', '2023-08-09', 57, 51, 60, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (7, 'dolor vel est donec', '2023-07-09', 56, 29, 1, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (8, 'vel dapibus', '2023-10-28', 26, 18, 38, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (9, 'lacinia sapien quis', '2023-08-08', 52, 21, 57, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (10, 'ultrices posuere cubilia curae donec', '2023-07-31', 37, 52, 40, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (11, 'sapien', '2023-10-28', 39, 34, 12, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (12, 'morbi', '2023-07-01', 8, 60, 37, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (13, 'lacus morbi', '2023-08-19', 34, 38, 1, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (14, 'vel', '2022-12-20', 24, 48, 32, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (15, 'montes nascetur ridiculus', '2023-10-24', 6, 20, 9, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (16, 'ultrices aliquet maecenas', '2023-10-29', 33, 5, 43, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (17, 'duis bibendum', '2023-03-29', 60, 11, 12, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (18, 'magna bibendum imperdiet nullam orci', '2022-12-28', 23, 15, 24, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (19, 'consequat morbi a ipsum integer', '2023-02-05', 37, 59, 34, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (20, 'quis augue', '2023-07-22', 24, 17, 43, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (21, 'primis in', '2023-05-26', 49, 26, 44, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (22, 'porta volutpat quam', '2023-07-29', 33, 17, 22, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (23, 'consequat nulla nisl nunc', '2023-07-05', 40, 3, 34, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (24, 'curae mauris viverra diam vitae', '2023-02-05', 54, 48, 50, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (25, 'at velit eu', '2022-12-05', 21, 39, 45, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (26, 'in quis justo maecenas rhoncus', '2023-10-11', 13, 46, 7, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (27, 'nisi nam ultrices libero', '2022-12-24', 34, 22, 55, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (28, 'sem praesent id massa', '2023-01-11', 26, 1, 44, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (29, 'placerat ante nulla justo aliquam', '2023-06-30', 21, 16, 38, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (30, 'tempus semper est', '2023-04-19', 3, 59, 46, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (31, 'nibh in lectus', '2023-09-07', 33, 32, 25, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (32, 'sapien cum sociis natoque', '2023-07-12', 35, 6, 50, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (33, 'sed', '2023-05-17', 51, 35, 9, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (34, 'diam vitae quam suspendisse potenti', '2023-11-30', 29, 54, 38, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (35, 'luctus nec molestie sed', '2023-05-19', 27, 14, 25, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (36, 'tellus nulla ut', '2022-12-29', 54, 7, 19, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (37, 'interdum in ante vestibulum ante', '2023-05-07', 47, 52, 37, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (38, 'ultrices', '2023-11-07', 59, 26, 52, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (39, 'lectus pellentesque eget', '2023-08-21', 35, 24, 27, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (40, 'dui vel sem', '2023-09-11', 39, 8, 30, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (41, 'accumsan felis', '2023-05-07', 49, 40, 48, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (42, 'eget eleifend', '2023-04-09', 34, 41, 49, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (43, 'molestie lorem quisque ut', '2023-07-03', 51, 9, 11, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (44, 'ut massa', '2023-05-05', 38, 28, 44, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (45, 'primis in faucibus orci luctus', '2023-05-17', 41, 20, 54, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (46, 'blandit mi in porttitor pede', '2023-01-23', 47, 5, 44, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (47, 'integer a', '2023-02-05', 4, 38, 21, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (48, 'pellentesque viverra', '2023-02-15', 37, 56, 44, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (49, 'purus eu magna vulputate luctus', '2023-02-14', 26, 20, 2, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (50, 'eget rutrum at lorem integer', '2023-05-15', 51, 27, 41, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (51, 'accumsan tortor', '2023-05-27', 14, 5, 33, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (52, 'in sapien iaculis congue', '2023-09-10', 45, 52, 8, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (53, 'faucibus', '2023-01-20', 37, 3, 15, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (54, 'et magnis', '2023-04-08', 32, 13, 2, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (55, 'nam tristique tortor eu pede', '2023-10-19', 44, 19, 11, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (56, 'erat vestibulum sed magna at', '2023-10-13', 39, 18, 57, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (57, 'suspendisse potenti', '2023-08-23', 3, 27, 35, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (58, 'tristique est et tempus semper', '2023-02-07', 44, 42, 14, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (59, 'auctor', '2023-07-23', 14, 55, 1, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (60, 'cras mi pede', '2023-11-28', 30, 48, 48, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (1, 'Annual Check-up', '2023-03-21', 1, 1, 30, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (2, 'Migraine Consultation', '2023-02-11', 1, 18, 20, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (3, 'Dental Check-up', '2023-01-06', 1, 1, 1, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (4, 'Medication Review', '2023-10-22', 1, 2, 8, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (5, 'Physical Therapy Session', '2023-08-01', 35, 12, 28, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (6, 'Cardiology Consultation', '2023-08-09', 57, 51, 60, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (7, 'Orthopedic Consultation', '2023-07-09', 56, 29, 1, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (8, 'Routine Vaccination', '2023-10-28', 26, 18, 38, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (9, 'Dermatology Consultation', '2023-08-08', 52, 21, 57, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (10, 'Health Screening', '2023-07-31', 37, 52, 40, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (11, 'Nutrition Counseling', '2023-10-28', 39, 34, 12, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (12, 'Audiology Appointment', '2023-07-01', 8, 60, 37, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (13, 'Eye Examination', '2023-08-19', 34, 38, 1, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (14, 'Psychological Therapy', '2022-12-20', 24, 48, 32, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (15, 'Fitness Assessment', '2023-10-24', 6, 20, 9, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (16, 'Neurology Consultation', '2023-10-29', 33, 5, 43, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (17, 'ENT Check-up', '2023-03-29', 60, 11, 12, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (18, 'Gastroenterology Consultation', '2022-12-28', 23, 15, 24, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (19, 'Chiropractic Adjustment', '2023-02-05', 37, 59, 34, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (20, 'Acupuncture Session', '2023-07-22', 24, 17, 43, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (21, 'Wellness Coaching Session', '2023-05-26', 49, 26, 44, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (22, 'Diabetic Care Consultation', '2023-07-29', 33, 17, 22, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (23, 'Stress Management Session', '2023-07-05', 40, 3, 34, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (24, 'Obstetrics Appointment', '2023-02-05', 54, 48, 50, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (25, 'Rehabilitation Session', '2022-12-05', 21, 39, 45, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (26, 'Mental Health Counseling', '2023-10-11', 13, 46, 7, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (27, 'Hypertension Follow-up', '2022-12-24', 34, 22, 55, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (28, 'Skin Allergy Testing', '2023-01-11', 26, 1, 44, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (29, 'Orthopedic Rehabilitation', '2023-06-30', 21, 16, 38, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (30, 'Weight Management Consultation', '2023-04-19', 3, 59, 46, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (31, 'Routine Blood Test', '2023-09-07', 33, 32, 25, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (32, 'Allergy Consultation', '2023-07-12', 35, 6, 50, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (33, 'General Consultation', '2023-05-17', 51, 35, 9, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (34, 'Post-Surgery Follow-up', '2023-11-30', 29, 54, 38, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (35, 'Sports Injury Assessment', '2023-05-19', 27, 14, 25, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (36, 'Prenatal Check-up', '2022-12-29', 54, 7, 19, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (37, 'Child Wellness Check', '2023-05-07', 47, 52, 37, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (38, 'Sleep Disorder Consultation', '2023-11-07', 59, 26, 52, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (39, 'Ophthalmology Appointment', '2023-08-21', 35, 24, 27, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (40, 'Dietary Counseling', '2023-09-11', 39, 8, 30, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (41, 'Arthritis Management', '2023-05-07', 49, 40, 48, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (42, 'Chronic Pain Management', '2023-04-09', 34, 41, 49, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (43, 'Mental Health Evaluation', '2023-07-03', 51, 9, 11, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (44, 'Osteoporosis Screening', '2023-05-05', 38, 28, 44, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (45, 'Endocrinology Consultation', '2023-05-17', 41, 20, 54, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (46, 'Geriatric Health Check', '2023-01-23', 47, 5, 44, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (47, 'Pediatric Vaccination', '2023-02-05', 4, 38, 21, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (48, 'Skin Cancer Screening', '2023-02-15', 37, 56, 44, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (49, 'Vascular Health Assessment', '2023-02-14', 26, 20, 2, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (50, 'Diabetes Management Review', '2023-05-15', 51, 27, 41, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (51, 'Podiatry Appointment', '2023-05-27', 14, 5, 33, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (52, 'Urology Consultation', '2023-09-10', 45, 52, 8, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (53, 'Emergency Injury Treatment', '2023-01-20', 37, 3, 15, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (54, 'Respiratory Function Test', '2023-04-08', 32, 13, 2, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (55, 'Orthodontic Consultation', '2023-10-19', 44, 19, 11, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (56, 'Back Pain Consultation', '2023-10-13', 39, 18, 57, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (57, 'Stomach Ulcer Follow-up', '2023-08-23', 3, 27, 35, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (58, 'Lymphatic Drainage Therapy', '2023-02-07', 44, 42, 14, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (59, 'Varicose Vein Consultation', '2023-07-23', 14, 55, 1, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (60, 'Knee Joint Examination', '2023-11-28', 30, 48, 48, 0);
 
 -- Lab Results
-insert into LabResults (testID, result, type, testDate, patientID) values (1, 'a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem', 'Urinalysis', '2023/2/23', 42);
-INSERT INTO LabResults (testID, result, type, testDate, patientID) VALUES
-(2, 'vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in', 'Liver Enzymes', '2023-07-11', 1),
-(3, 'in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor', 'Lipid Profile', '2023-05-24', 4),
-(4, 'morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus', 'Blood Glucose', '2023-08-20', 57),
-(5, 'luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti', 'Brain Scans', '2023-09-15', 1),
-(6, 'leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut', 'BUN (Blood Urea Nitrogen)', '2023-04-14', 23),
-(7, 'hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at', 'Liver Enzymes', '2023-02-05', 37),
-(8, 'magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in', 'Hepatitis Panel', '2023-10-28', 27),
-(9, 'tristique fusce congue diam id ornare imperdiet sapien urna pretium', 'Blood Glucose', '2023-03-23', 14),
-(10, 'at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at', 'Tumor Markers (e.g.', '2023-04-02', 30),
-(11, 'magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque', 'HIV Test', '2023-04-03', 46),
-(12, 'nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est', 'Lipid Profile', '2023-06-13', 20),
-(13, 'nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor', 'PSA)', '2023-01-14', 9),
-(14, 'praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio', 'TSH (Thyroid Stimulating Hormone)', '2023-01-13', 44),
-(15, 'consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum', 'TSH (Thyroid Stimulating Hormone)', '2023-01-19', 25),
-(16, 'orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio', 'Lipid Profile', '2023-07-06', 5),
-(17, 'ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus', 'BUN (Blood Urea Nitrogen)', '2023-08-18', 10),
-(18, 'metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget', 'BUN (Blood Urea Nitrogen)', '2023-11-28', 46),
-(19, 'in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis', 'Blood Glucose', '2023-10-23', 57),
-(20, 'quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu pede', 'Lipid Profile', '2023-03-28', 50),
-(21, 'aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan', 'TSH (Thyroid Stimulating Hormone)', '2023-10-25', 6),
-(22, 'curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae', 'X-rays', '2023-03-19', 11),
-(23, 'in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor', 'HIV Test', '2023-06-03', 1),
-(24, 'tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum', 'Complete Blood Count (CBC)', '2023-07-11', 2),
-(25, 'quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac', 'Metabolic Panel', '2023-03-09', 20),
-(26, 'vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur', 'Hepatitis Panel', '2023-11-09', 1),
-(27, 'cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat', 'BUN (Blood Urea Nitrogen)', '2023-05-06', 25),
-(28, 'sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus', 'Urinalysis', '2022-12-16', 51),
-(29, 'vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae', 'Creatinine Levels', '2023-05-03', 13),
-(30, 'cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna', 'Complete Blood Count (CBC)', '2023-01-25', 8),
-(31, 'orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin', 'PSA)', '2023-05-07', 35),
-(32, 'quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in', 'Metabolic Panel', '2023-11-01', 48),
-(33, 'arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula', 'HIV Test', '2023-08-21', 26),
-(34, 'nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit', 'Hepatitis Panel', '2023-07-24', 40),
-(35, 'morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie', 'Hepatitis Panel', '2022-12-20', 57),
-(36, 'integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis', 'X-rays', '2023-09-24', 21),
-(37, 'vel augue vestibulum ante ipsum primis in faucibus orci luctus', 'X-rays', '2023-09-16', 19),
-(38, 'in eleifend quam a odio in hac habitasse platea dictumst maecenas ut', 'Metabolic Panel', '2023-01-25', 37),
-(39, 'nam dui proin leo odio porttitor id consequat in consequat ut nulla sed', 'PSA)', '2023-02-11', 32),
-(40, 'gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem', 'Lipid Profile', '2023-01-18', 25),
-(41, 'non pretium quis lectus suspendisse potenti in eleifend quam a', 'ECG or EKG (Electrocardiogram)', '2023-10-06', 45),
-(42, 'morbi porttitor lorem id ligula suspendisse ornare consequat lectus in', 'BUN (Blood Urea Nitrogen)', '2023-04-12', 19),
-(43, 'imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis', 'X-rays', '2023-09-06', 32),
-(44, 'morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis', 'ECG or EKG (Electrocardiogram)', '2023-08-20', 57),
-(45, 'nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient', 'TSH (Thyroid Stimulating Hormone)', '2023-07-28', 50),
-(46, 'est quam pharetra magna ac consequat metus sapien ut nunc vestibulum', 'TSH (Thyroid Stimulating Hormone)', '2023-09-28', 8),
-(47, 'eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus', 'Lipid Profile', '2023-10-31', 21),
-(48, 'laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper', 'Urinalysis', '2023-09-24', 5),
-(49, 'orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio', 'Lipid Profile', '2023-02-06', 7),
-(50, 'a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque', 'Creatinine Levels', '2023-05-11', 23),
-(51, 'amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor', 'Hepatitis Panel', '2023-01-20', 39),
-(52, 'nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere', 'TSH (Thyroid Stimulating Hormone)', '2022-12-23', 2),
-(53, 'faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat', 'Blood Glucose', '2023-04-18', 35),
-(54, 'pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel', 'BUN (Blood Urea Nitrogen)', '2023-11-27', 15),
-(55, 'parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus', 'Lipid Profile', '2023-05-18', 59),
-(56, 'at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat', 'BUN (Blood Urea Nitrogen)', '2023-05-19', 25),
-(57, 'condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit', 'Creatinine Levels', '2023-04-21', 8),
-(58, 'cursus id turpis integer aliquet massa id lobortis convallis tortor', 'BUN (Blood Urea Nitrogen)', '2023-08-18', 1),
-(59, 'erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam', 'Complete Blood Count (CBC)', '2023-10-11', 12),
-(60, 'arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse', 'X-rays', '2022-12-25', 47);
+insert into LabResults (testID, result, type, testDate, patientID) values 
+(1, 'Normal', 'Urinalysis', '2023-02-23', 42),
+(2, 'Elevated liver enzymes', 'Liver Enzymes', '2023-07-11', 1),
+(3, 'Cholesterol levels within normal range', 'Lipid Profile', '2023-05-24', 4),
+(4, 'Blood glucose level normal', 'Blood Glucose', '2023-08-20', 57),
+(5, 'No abnormalities detected', 'Brain Scans', '2023-09-15', 1),
+(6, 'Blood urea nitrogen levels slightly high', 'BUN (Blood Urea Nitrogen)', '2023-04-14', 23),
+(7, 'Liver function normal', 'Liver Enzymes', '2023-02-05', 37),
+(8, 'No hepatitis infection detected', 'Hepatitis Panel', '2023-10-28', 27),
+(9, 'Blood glucose level slightly elevated', 'Blood Glucose', '2023-03-23', 14),
+(10, 'No significant tumor markers found', 'Tumor Markers', '2023-04-02', 30),
+(11, 'HIV negative', 'HIV Test', '2023-04-03', 46),
+(12, 'High LDL cholesterol levels', 'Lipid Profile', '2023-06-13', 20),
+(13, 'Prostate-specific antigen levels normal', 'PSA', '2023-01-14', 9),
+(14, 'Thyroid hormone levels normal', 'TSH (Thyroid Stimulating Hormone)', '2023-01-13', 44),
+(15, 'TSH levels within normal limits', 'TSH (Thyroid Stimulating Hormone)', '2023-01-19', 25),
+(16, 'Cholesterol levels elevated', 'Lipid Profile', '2023-07-06', 5),
+(17, 'Normal kidney function', 'BUN (Blood Urea Nitrogen)', '2023-08-18', 10),
+(18, 'Blood urea nitrogen levels within normal range', 'BUN (Blood Urea Nitrogen)', '2023-11-28', 46),
+(19, 'Blood glucose levels consistent with diabetes', 'Blood Glucose', '2023-10-23', 57),
+(20, 'High triglycerides level', 'Lipid Profile', '2023-03-28', 50),
+(21, 'Thyroid hormone levels slightly elevated', 'TSH (Thyroid Stimulating Hormone)', '2023-10-25', 6),
+(22, 'No bone fractures detected', 'X-rays', '2023-03-19', 11),
+(23, 'HIV negative', 'HIV Test', '2023-06-03', 1),
+(24, 'White blood cell count normal', 'Complete Blood Count (CBC)', '2023-07-11', 2),
+(25, 'Electrolyte levels normal', 'Metabolic Panel', '2023-03-09', 20),
+(26, 'No hepatitis infection detected', 'Hepatitis Panel', '2023-11-09', 1),
+(27, 'Blood urea nitrogen levels slightly low', 'BUN (Blood Urea Nitrogen)', '2023-05-06', 25),
+(28, 'Urinalysis normal', 'Urinalysis', '2022-12-16', 51),
+(29, 'Creatinine levels within normal range', 'Creatinine Levels', '2023-05-03', 13),
+(30, 'Red blood cell count normal', 'Complete Blood Count (CBC)', '2023-01-25', 8),
+(31, 'Prostate-specific antigen within normal range', 'PSA', '2023-05-07', 35),
+(32, 'Metabolic panel indicates normal kidney and liver function', 'Metabolic Panel', '2023-11-01', 48),
+(33, 'HIV test results negative', 'HIV Test', '2023-08-21', 26),
+(34, 'No hepatitis viruses detected', 'Hepatitis Panel', '2023-07-24', 40),
+(35, 'Liver function tests within normal limits', 'Hepatitis Panel', '2022-12-20', 57),
+(36, 'X-ray shows no bone abnormalities', 'X-rays', '2023-09-24', 21),
+(37, 'X-ray results normal, no fractures detected', 'X-rays', '2023-09-16', 19),
+(38, 'Metabolic panel results within normal range', 'Metabolic Panel', '2023-01-25', 37),
+(39, 'Prostate-specific antigen (PSA) levels normal', 'PSA', '2023-02-11', 32),
+(40, 'Cholesterol levels slightly elevated', 'Lipid Profile', '2023-01-18', 25),
+(41, 'Electrocardiogram (ECG) shows normal heart rhythm', 'ECG or EKG (Electrocardiogram)', '2023-10-06', 45),
+(42, 'Blood urea nitrogen levels within normal range', 'BUN (Blood Urea Nitrogen)', '2023-04-12', 19),
+(43, 'X-ray indicates no lung issues', 'X-rays', '2023-09-06', 32),
+(44, 'Electrocardiogram (ECG) indicates a regular heart rhythm', 'ECG or EKG (Electrocardiogram)', '2023-08-20', 57),
+(45, 'Thyroid hormone levels slightly above normal', 'TSH (Thyroid Stimulating Hormone)', '2023-07-28', 50),
+(46, 'Blood urea nitrogen levels normal', 'BUN (Blood Urea Nitrogen)', '2023-09-28', 8),
+(47, 'Cholesterol levels within normal limits', 'Lipid Profile', '2023-10-31', 21),
+(48, 'Urinalysis shows no signs of infection', 'Urinalysis', '2023-09-24', 5),
+(49, 'Cholesterol levels slightly high', 'Lipid Profile', '2023-02-06', 7),
+(50, 'Creatinine levels indicate normal kidney function', 'Creatinine Levels', '2023-05-11', 23),
+(51, 'No hepatitis viruses detected in hepatitis panel', 'Hepatitis Panel', '2023-01-20', 39),
+(52, 'Thyroid hormone levels within normal range', 'TSH (Thyroid Stimulating Hormone)', '2022-12-23', 2),
+(53, 'Blood glucose levels within normal range', 'Blood Glucose', '2023-04-18', 35),
+(54, 'Blood urea nitrogen levels indicate normal kidney function', 'BUN (Blood Urea Nitrogen)', '2023-11-27', 15),
+(55, 'Cholesterol levels indicate hyperlipidemia', 'Lipid Profile', '2023-05-18', 59),
+(56, 'Blood urea nitrogen levels normal', 'BUN (Blood Urea Nitrogen)', '2023-05-19', 25),
+(57, 'Creatinine levels normal, indicating healthy kidney function', 'Creatinine Levels', '2023-04-21', 8),
+(58, 'Blood urea nitrogen levels within normal limits', 'BUN (Blood Urea Nitrogen)', '2023-08-18', 1),
+(59, 'Complete blood count shows normal white and red blood cell counts', 'Complete Blood Count (CBC)', '2023-10-11', 12),
+(60, 'X-ray shows no abnormalities in the examined area', 'X-rays', '2022-12-25', 47);
 
 -- Prescriptions
 -- may have to change dates 
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (2, 'dictumst etiam', 9, 1, 1, '2023-10-20', 'dictumst', 1, 'integer', '2023-01-10', 'Morissette-Emmerich', 'Aspirin', 78, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (1, 'eget tincidunt eget', 8, 52, 1, '2023-04-23', 'ut', 1, 'pellentesque', '2023-06-25', 'Waters and Sons', 'Allergy Medication', 12, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (3, 'convallis', 56, 40, 23, '2023-06-18', 'aliquet', 4, 'mattis', '2023-11-07', 'Sauer-Friesen', 'venlafaxine hydrochloride', 17, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (4, 'nulla', 16, 35, 8, '2023-10-29', 'leo', 32, 'praesent', '2023-04-29', 'Carroll, Murray and Grimes', 'OCTINOXATE, TITANIUM DIOXIDE, and ZINC OXIDE', 57, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (5, 'cursus id turpis', 9, 14, 46, '2023-11-30', 'pellentesque', 13, 'nonummy', '2023-01-26', 'Hodkiewicz, Bergnaum and Cormier', 'Sunscreen', 16, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (6, 'pede morbi', 29, 45, 27, '2023-04-16', 'quis', 28, 'ut', '2023-07-24', 'Walsh and Sons', 'Ketorolac Tromethamine', 29, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (7, 'eleifend quam', 56, 3, 23, '2023-07-24', 'lorem', 27, 'pellentesque', '2023-06-02', 'Sipes, Johns and Herman', 'chlorhexidine gluconate', 11, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (8, 'consequat ut', 17, 5, 23, '2023-08-06', 'congue', 37, 'aliquam', '2023-07-06', 'Halvorson and Sons', 'METOPROLOL SUCCINATE', 52, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (9, 'risus praesent lectus', 15, 35, 33, '2023-06-11', 'faucibus', 40, 'posuere', '2023-05-28', 'Green-Funk', 'Titanium Dioxide', 10, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (10, 'ipsum', 27, 11, 38, '2023-05-18', 'ut', 33, 'lacinia', '2023-04-24', 'Mitchell and Sons', 'Diphenhydramine HCL, Zinc Acetate', 73, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (11, 'a', 40, 14, 48, '2023-06-05', 'molestie', 28, 'pellentesque', '2023-05-29', 'Predovic, Champlin and Sipes', 'pioglitazone hydrochloride', 14, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (12, 'suspendisse potenti', 10, 59, 34, '2023-06-05', 'pretium', 5, 'et', '2023-10-01', 'Ritchie, Terry and Crooks', 'Triclosan', 33, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (13, 'mattis odio donec', 38, 58, 2, '2023-03-24', 'suspendisse', 32, 'ultrices', '2023-06-09', 'Schowalter-Mann', 'oxymetazoline hydrochloride', 76, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (14, 'sed sagittis', 2, 52, 52, '2023-05-14', 'quisque', 28, 'praesent', '2023-03-13', 'Jaskolski, Boyle and Krajcik', 'OXYCODONE HYDROCHLORIDE', 49, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (15, 'metus arcu adipiscing', 57, 42, 8, '2023-07-08', 'dolor', 23, 'aliquam', '2023-05-31', 'Hegmann-Kirlin', 'Loperamide Hydrochloride', 68, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (16, 'tortor', 51, 51, 17, '2023-05-16', 'quis', 17, 'lobortis', '2023-01-13', 'Nienow, Gulgowski and Conroy', 'fluticasone propionate', 23, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (17, 'ut', 2, 44, 56, '2023-07-31', 'fusce', 34, 'semper', '2023-04-26', 'Metz Inc', 'Alprazolam', 85, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (18, 'erat id mauris', 34, 51, 25, '2022-12-17', 'id', 33, 'nonummy', '2023-04-20', 'Harvey Inc', 'Acetaminophen, Dextromethorphan Hydrobromide, Phenylephrine Hydrochloride', 42, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (19, 'tempus', 47, 18, 32, '2023-05-27', 'penatibus', 19, 'imperdiet', '2023-04-17', 'Sawayn-Lueilwitz', 'HYDROCODONE BITARTRATE, ACETAMINOPHEN', 26, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (20, 'amet', 29, 17, 53, '2023-10-02', 'ac', 50, 'convallis', '2023-06-15', 'Tillman and Sons', 'Avobenzone, Homosalate, Octinoxate, Octisalate, Octocrylene,Oxybenzone', 70, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (21, 'vivamus in felis', 24, 32, 49, '2023-07-25', 'pede', 7, 'nulla', '2023-03-10', 'Jacobson, Weissnat and Schmitt', 'Prazosin Hydrochloride', 39, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (22, 'non', 17, 5, 40, '2023-05-08', 'justo', 17, 'convallis', '2023-03-27', 'Nienow, Kiehn and Stanton', 'Ethyl Alcohol', 22, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (23, 'sapien', 15, 59, 43, '2023-05-18', 'justo', 41, 'lorem', '2023-05-04', 'Blanda, Brown and McGlynn', 'BENZALKONIUM CHLORIDE, LIDOCAINE, BACITRACIN ZINC, NEOMYCIN SULFATE, POLYMYXIN B SULFATE, WATER, ISOPROPYL ALCOHOL, BENZOCAINE, ASPIRIN, ETHYL ALCOHOL', 86, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (24, 'augue', 14, 47, 56, '2023-03-14', 'ultricies', 60, 'rutrum', '2023-03-29', 'Cremin, Williamson and Schoen', 'Divalproex Sodium', 48, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (25, 'quis orci eget', 18, 32, 41, '2023-09-14', 'sit', 10, 'enim', '2023-01-16', 'Kuhn, Crooks and Abbott', 'Digoxin', 2, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (26, 'quis tortor', 19, 13, 39, '2023-01-13', 'ac', 29, 'elementum', '2023-09-02', 'Ruecker Inc', 'NITROUS OXIDE', 36, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (27, 'cras non velit', 15, 38, 58, '2023-09-09', 'pede', 2, 'nascetur', '2023-08-07', 'Roob Group', 'OCTINOXATE OXYBENZONE', 13, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (28, 'nascetur ridiculus', 4, 30, 29, '2023-11-18', 'id', 58, 'lorem', '2023-11-15', 'Bednar, Miller and Stokes', 'TITANIUM DIOXIDE', 78, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (29, 'porttitor id consequat', 21, 5, 42, '2023-08-17', 'diam', 38, 'sed', '2023-03-26', 'West-Krajcik', 'HYDROCODONE BITARTRATE', 70, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (30, 'morbi quis tortor', 43, 57, 51, '2023-02-17', 'ipsum', 42, 'ipsum', '2023-04-18', 'Becker Group', 'adenosine', 86, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (31, 'vestibulum proin', 25, 52, 5, '2023-09-26', 'tincidunt', 37, 'luctus', '2023-06-19', 'Dibbert, Strosin and Swift', 'memantine hydrochloride', 7, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (32, 'luctus', 10, 8, 9, '2023-07-19', 'sapien', 58, 'lobortis', '2022-12-24', 'Erdman-Heidenreich', 'Alcohol', 89, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (33, 'diam', 43, 2, 50, '2023-03-26', 'in', 6, 'tincidunt', '2023-02-23', 'Kunze-Marks', 'Gemcitabine hydrochloride', 52, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (34, 'ultrices', 32, 40, 4, '2023-10-09', 'fusce', 22, 'ultrices', '2023-06-25', 'Goyette-Bednar', 'DEXTROMETHORPHAN HYDROBROMIDE, CHLORPHENIRAMINE MALEATE, and PHENYLEPHRINE HYDROCHLORIDE', 89, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (35, 'donec', 53, 12, 30, '2023-03-18', 'bibendum', 30, 'leo', '2023-08-21', 'Erdman LLC', 'Octinoxate and Titanium Dioxide', 37, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (36, 'fermentum', 54, 37, 5, '2023-04-09', 'turpis', 23, 'ac', '2022-12-07', 'Ritchie, Rippin and Renner', 'BENZALKONIUM CHLORIDE, LIDOCAINE, BACITRACIN ZINC, NEOMYCIN SULFATE, POLYMYXIN B SULFATEBACITRACIN ZINC, NEOMYCIN SULFATE, POLYMYXIN B SULFATE, WATER, ISOPROPYL ALCOHOL,BENZOCAINE,ALCOHOL, ASPIRIN', 47, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (37, 'amet consectetuer', 7, 26, 16, '2023-07-27', 'quisque', 12, 'id', '2023-07-07', 'Batz-Sauer', 'Naproxen Sodium', 68, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (38, 'nunc proin at', 24, 6, 56, '2023-03-07', 'dui', 48, 'feugiat', '2023-11-08', 'Kozey, Brakus and Rutherford', 'hydroxyzine pamoate', 28, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (39, 'ultrices', 9, 9, 51, '2023-04-30', 'est', 27, 'consequat', '2023-04-19', 'Schneider, Bergnaum and Hettinger', 'Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone', 48, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (40, 'consectetuer', 5, 30, 25, '2023-11-05', 'hendrerit', 60, 'at', '2023-10-28', 'Jakubowski-Sanford', 'Tolnaftate', 20, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (41, 'viverra pede', 43, 40, 23, '2023-06-26', 'vel', 19, 'cras', '2023-04-22', 'Oberbrunner, Barton and Hilpert', 'Echinacea, Phytolacca Decandra, Collinsonia Canadensis, Kali Iodatum, Pinus Sylvestris, Pix Liquida, Ferrum Phosphoricum', 34, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (42, 'justo aliquam quis', 22, 51, 28, '2023-10-05', 'massa', 18, 'ullamcorper', '2023-08-04', 'Okuneva Inc', 'Levothyroxine Sodium', 84, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (43, 'elementum eu interdum', 13, 47, 56, '2023-09-22', 'pede', 32, 'sem', '2023-03-16', 'Sporer, Cormier and White', 'Tragacanth Gum', 80, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (44, 'vivamus in felis', 9, 50, 39, '2023-03-01', 'id', 7, 'sollicitudin', '2023-11-11', 'Pouros Group', 'Lamotrigine', 36, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (45, 'dui maecenas tristique', 8, 52, 9, '2023-08-17', 'tempus', 44, 'eleifend', '2023-05-19', 'Jerde, Emmerich and Mraz', 'Erythromycin Ethylsuccinate', 62, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (46, 'sagittis', 25, 40, 16, '2023-10-17', 'libero', 36, 'gravida', '2023-05-26', 'Schneider-Sawayn', 'Acetaminophen', 24, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (47, 'consequat', 16, 60, 19, '2023-07-31', 'mi', 39, 'erat', '2023-02-05', 'DuBuque-Hermiston', 'Sugar Beet Pollen', 42, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (48, 'suscipit ligula', 44, 60, 40, '2023-05-04', 'curae', 55, 'vivamus', '2023-03-17', 'McGlynn-Rowe', 'hydralazine hydrochloride', 51, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (49, 'quam', 50, 8, 33, '2023-03-03', 'praesent', 2, 'vitae', '2023-07-05', 'Ryan and Sons', 'ziprasidone hydrochloride', 44, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (50, 'sed', 21, 34, 29, '2023-11-08', 'mattis', 52, 'convallis', '2023-07-26', 'Reichel Inc', 'Ibuprofen', 46, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (51, 'cursus vestibulum', 53, 30, 37, '2023-10-04', 'varius', 28, 'nullam', '2023-07-17', 'Christiansen, Marks and Kirlin', 'TRICLOSAN', 41, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (52, 'consectetuer eget', 43, 26, 54, '2022-12-12', 'eget', 59, 'et', '2023-06-02', 'Pacocha Inc', 'Carbamide Peroxide', 10, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (53, 'pede posuere', 57, 52, 50, '2023-06-27', 'nulla', 27, 'dolor', '2023-09-20', 'Buckridge Group', 'Levocarnitine', 35, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (54, 'vulputate elementum nullam', 42, 57, 4, '2023-09-14', 'pretium', 46, 'augue', '2023-05-22', 'Ledner-McLaughlin', 'Minoxidil', 52, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (55, 'odio odio elementum', 51, 11, 54, '2023-03-06', 'lectus', 6, 'et', '2023-02-03', 'Stamm LLC', 'STEMPHYLIUM SOLANI', 32, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (56, 'cras in', 24, 49, 23, '2023-10-01', 'porttitor', 27, 'porttitor', '2022-12-29', 'Schuppe Inc', 'Acetaminophen, Aspirin, Caffeine', 14, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (57, 'sit', 32, 22, 39, '2023-01-18', 'et', 44, 'faucibus', '2023-08-04', 'Murazik-Herman', 'Aspirin', 5, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (58, 'orci', 31, 36, 47, '2023-02-11', 'metus', 19, 'donec', '2023-06-26', 'Hartmann-Kirlin', 'cucumber', 29, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (59, 'amet justo', 9, 4, 18, '2023-03-24', 'elementum', 15, 'felis', '2023-11-22', 'Romaguera-Nicolas', 'norethindrone acetate and ethinyl estradiol, ethinyl estradiol and ferrous fumarate', 64, 0);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (60, 'sit amet', 24, 57, 6, '2023-05-21', 'in', 3, 'nulla', '2022-12-12', 'Cummerata Group', 'OCTINOXATE, TITANIUM DIOXIDE, OXYBENZONE', 1, 1);
+insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values 
+(1, 'Prescription', 8, 52, 1, '2023-04-23', 'Pfizer', 1, 'Active', '2023-06-25', 'Waters and Sons', 'Allergy Medication', 12, 0),
+(2, 'Prescription', 9, 1, 1, '2023-10-20', 'Merck', 1, 'Active', '2023-01-10', 'Morissette-Emmerich', 'Aspirin', 78, 0),
+(3, 'Prescription', 56, 40, 23, '2023-06-18', 'GSK', 4, 'Inactive', '2023-11-07', 'Sauer-Friesen', 'Venlafaxine Hydrochloride', 17, 1),
+(4, 'Prescription', 16, 35, 8, '2023-10-29', 'Johnson & Johnson', 32, 'Inactive', '2023-04-29', 'Carroll, Murray and Grimes', 'OCTINOXATE, TITANIUM DIOXIDE, and ZINC OXIDE', 57, 1),
+(5, 'Prescription', 9, 14, 46, '2023-11-30', 'Novartis', 13, 'Active', '2023-01-26', 'Hodkiewicz, Bergnaum and Cormier', 'Sunscreen', 16, 0),
+(6, 'Prescription', 29, 45, 27, '2023-04-16', 'Sanofi', 28, 'Inactive', '2023-07-24', 'Walsh and Sons', 'Ketorolac Tromethamine', 29, 1),
+(7, 'Prescription', 56, 3, 23, '2023-07-24', 'Roche', 27, 'Active', '2023-06-02', 'Sipes, Johns and Herman', 'Chlorhexidine Gluconate', 11, 0),
+(8, 'Prescription', 17, 5, 23, '2023-08-06', 'AbbVie', 37, 'Active', '2023-07-06', 'Halvorson and Sons', 'Metoprolol Succinate', 52, 0),
+(9, 'Prescription', 15, 35, 33, '2023-06-11', 'Teva', 40, 'Inactive', '2023-05-28', 'Green-Funk', 'Titanium Dioxide', 10, 1),
+(10, 'Prescription', 27, 11, 38, '2023-05-18', 'AstraZeneca', 33, 'Active', '2023-04-24', 'Mitchell and Sons', 'Diphenhydramine HCL, Zinc Acetate', 73, 0),
+(11, 'Prescription', 40, 14, 48, '2023-06-05', 'Bayer', 28, 'Active', '2023-05-29', 'Predovic, Champlin and Sipes', 'Pioglitazone Hydrochloride', 14, 0),
+(12, 'Prescription', 10, 59, 34, '2023-06-05', 'Eli Lilly', 5, 'Active', '2023-10-01', 'Ritchie, Terry and Crooks', 'Triclosan', 33, 0),
+(13, 'Prescription', 38, 58, 2, '2023-03-24', 'Moderna', 32, 'Active', '2023-06-09', 'Schowalter-Mann', 'Oxymetazoline Hydrochloride', 76, 0),
+(14, 'Prescription', 2, 52, 52, '2023-05-14', 'Regeneron', 28, 'Active', '2023-03-13', 'Jaskolski, Boyle and Krajcik', 'Oxycodone Hydrochloride', 49, 0),
+(15, 'Prescription', 57, 42, 8, '2023-07-08', 'Bristol Myers Squibb', 23, 'Active', '2023-05-31', 'Hegmann-Kirlin', 'Loperamide Hydrochloride', 68, 0),
+(16, 'Prescription', 51, 51, 17, '2023-05-16', 'Allergan', 17, 'Active', '2023-01-13', 'Nienow, Gulgowski and Conroy', 'Fluticasone Propionate', 23, 0),
+(17, 'Prescription', 2, 44, 56, '2023-07-31', 'Genentech', 34, 'Active', '2023-04-26', 'Metz Inc', 'Alprazolam', 85, 0),
+(18, 'Prescription', 34, 51, 25, '2022-12-17', 'Amgen', 33, 'Active', '2023-04-20', 'Harvey Inc', 'Acetaminophen, Dextromethorphan Hydrobromide, Phenylephrine Hydrochloride', 42, 0),
+(19, 'Prescription', 47, 18, 32, '2023-05-27', 'Purdue Pharma', 19, 'Inactive', '2023-04-17', 'Sawayn-Lueilwitz', 'Hydrocodone Bitartrate, Acetaminophen', 26, 1),
+(20, 'Prescription', 29, 17, 53, '2023-10-02', 'Sun Pharma', 50, 'Inactive', '2023-06-15', 'Tillman and Sons', 'Avobenzone, Homosalate, Octinoxate, Octisalate, Octocrylene, Oxybenzone', 70, 1),
+(21, 'Prescription', 24, 32, 49, '2023-07-25', 'Mylan', 7, 'Inactive', '2023-03-10', 'Jacobson, Weissnat and Schmitt', 'Prazosin Hydrochloride', 39, 1),
+(22, 'Prescription', 17, 5, 40, '2023-05-08', 'Biogen', 17, 'Active', '2023-03-27', 'Nienow, Kiehn and Stanton', 'Ethyl Alcohol', 22, 0),
+(23, 'Prescription', 15, 59, 43, '2023-05-18', 'Celgene', 41, 'Inactive', '2023-05-04', 'Blanda, Brown and McGlynn', 'Benzalkonium Chloride, Lidocaine, Bacitracin Zinc, Neomycin Sulfate, Polymyxin B Sulfate, Water, Isopropyl Alcohol, Benzocaine, Aspirin, Ethyl Alcohol', 86, 1),
+(24, 'Prescription', 14, 47, 56, '2023-03-14', 'Novo Nordisk', 60, 'Active', '2023-03-29', 'Cremin, Williamson and Schoen', 'Divalproex Sodium', 48, 0),
+(25, 'Prescription', 18, 32, 41, '2023-09-14', 'GlaxoSmithKline', 10, 'Active', '2023-01-16', 'Kuhn, Crooks and Abbott', 'Digoxin', 2, 0),
+(26, 'Prescription', 19, 13, 39, '2023-01-13', 'Merck', 29, 'Inactive', '2023-09-02', 'Ruecker Inc', 'Nitrous Oxide', 36, 1),
+(27, 'Prescription', 15, 38, 58, '2023-09-09', 'Pfizer', 2, 'Active', '2023-08-07', 'Roob Group', 'Octinoxate, Oxybenzone', 13, 0),
+(28, 'Prescription', 4, 30, 29, '2023-11-18', 'AstraZeneca', 58, 'Active', '2023-11-15', 'Bednar, Miller and Stokes', 'Titanium Dioxide', 78, 0),
+(29, 'Pain Management', 21, 5, 42, '2023-08-17', 'Generic Pharmaceuticals', 38, 'Active', '2023-03-26', 'West-Krajcik', 'HYDROCODONE BITARTRATE', 70, 0),
+(30, 'Cardiac Care', 43, 57, 51, '2023-02-17', 'HeartCare Pharma', 42, 'Active', '2023-04-18', 'Becker Group', 'adenosine', 86, 1);
+insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) 
+values 
+(31, 'Prescription', 25, 52, 5, '2023-09-26', 'Generic Pharma', 37, 'Active', '2023-06-19', 'Dibbert, Strosin and Swift', 'memantine hydrochloride', 7, 1),
+(32, 'Refill', 10, 8, 9, '2023-07-19', 'Local Pharmacy', 58, 'Completed', '2022-12-24', 'Erdman-Heidenreich', 'Alcohol', 89, 0),
+(33, 'New Prescription', 43, 2, 50, '2023-03-26', 'Major Pharma', 6, 'Active', '2023-02-23', 'Kunze-Marks', 'Gemcitabine hydrochloride', 52, 1),
+(34, 'Renewal', 32, 40, 4, '2023-10-09', 'HealthCare Inc.', 22, 'Active', '2023-06-25', 'Goyette-Bednar', 'DEXTROMETHORPHAN HYDROBROMIDE, CHLORPHENIRAMINE MALEATE, and PHENYLEPHRINE HYDROCHLORIDE', 89, 0),
+(35, 'Prescription', 53, 12, 30, '2023-03-18', 'Global Meds', 30, 'Inactive', '2023-08-21', 'Erdman LLC', 'Octinoxate and Titanium Dioxide', 37, 1),
+(36, 'Refill', 54, 37, 5, '2023-04-09', 'City Pharma', 23, 'Active', '2022-12-07', 'Ritchie, Rippin and Renner', 'BENZALKONIUM CHLORIDE, LIDOCAINE, BACITRACIN ZINC, NEOMYCIN SULFATE, POLYMYXIN B SULFATE', 47, 0),
+(37, 'New Prescription', 7, 26, 16, '2023-07-27', 'Local Pharma', 12, 'Active', '2023-07-07', 'Batz-Sauer', 'Naproxen Sodium', 68, 0),
+(38, 'Renewal', 24, 6, 56, '2023-03-07', 'National Meds', 48, 'Active', '2023-11-08', 'Kozey, Brakus and Rutherford', 'hydroxyzine pamoate', 28, 0),
+(39, 'Prescription', 9, 9, 51, '2023-04-30', 'HealthCare Plus', 27, 'Active', '2023-04-19', 'Schneider, Bergnaum and Hettinger', 'Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone', 48, 0),
+(40, 'Refill', 5, 30, 25, '2023-11-05', 'Global Pharma', 60, 'Active', '2023-10-28', 'Jakubowski-Sanford', 'Tolnaftate', 20, 0),
+(41, 'New Prescription', 43, 40, 23, '2023-06-26', 'MediCare Inc.', 19, 'Inactive', '2023-04-22', 'Oberbrunner, Barton and Hilpert', 'Echinacea, Phytolacca Decandra, Collinsonia Canadensis, Kali Iodatum, Pinus Sylvestris, Pix Liquida, Ferrum Phosphoricum', 34, 1),
+(42, 'Renewal', 22, 51, 28, '2023-10-05', 'Regional Pharma', 18, 'Active', '2023-08-04', 'Okuneva Inc', 'Levothyroxine Sodium', 84, 0),
+(43, 'Prescription', 13, 47, 56, '2023-09-22', 'Health Solutions', 32, 'Inactive', '2023-03-16', 'Sporer, Cormier and White', 'Tragacanth Gum', 80, 1),
+(44, 'Refill', 9, 50, 39, '2023-03-01', 'CityCare Pharma', 7, 'Inactive', '2023-11-11', 'Pouros Group', 'Lamotrigine', 36, 1),
+(45, 'New Prescription', 8, 52, 9, '2023-08-17', 'Wellness Pharma', 44, 'Inactive', '2023-05-19', 'Jerde, Emmerich and Mraz', 'Erythromycin Ethylsuccinate', 62, 1),
+(46, 'Renewal', 25, 40, 16, '2023-10-17', 'QuickMed', 36, 'Inactive', '2023-05-26', 'Schneider-Sawayn', 'Acetaminophen', 24, 1),
+(47, 'Prescription', 16, 60, 19, '2023-07-31', 'MediGlobal', 39, 'Active', '2023-02-05', 'DuBuque-Hermiston', 'Sugar Beet Pollen', 42, 0),
+(48, 'Refill', 44, 60, 40, '2023-05-04', 'HealthLine Pharma', 55, 'Active', '2023-03-17', 'McGlynn-Rowe', 'hydralazine hydrochloride', 51, 0),
+(49, 'New Prescription', 50, 8, 33, '2023-03-03', 'CarePlus', 2, 'Inactive', '2023-07-05', 'Ryan and Sons', 'ziprasidone hydrochloride', 44, 1),
+(50, 'Renewal', 21, 34, 29, '2023-11-08', 'MediCare Plus', 52, 'Active', '2023-07-26', 'Reichel Inc', 'Ibuprofen', 46, 0),
+(51, 'Prescription', 53, 30, 37, '2023-10-04', 'HealthCare Global', 28, 'Inactive', '2023-07-17', 'Christiansen, Marks and Kirlin', 'TRICLOSAN', 41, 0),
+(52, 'Refill', 43, 26, 54, '2022-12-12', 'MediGlobal', 59, 'Active', '2023-06-02', 'Pacocha Inc', 'Carbamide Peroxide', 10, 0),
+(53, 'New Prescription', 57, 52, 50, '2023-06-27', 'MediLocal', 27, 'Inactive', '2023-09-20', 'Buckridge Group', 'Levocarnitine', 35, 1),
+(54, 'Renewal', 42, 57, 4, '2023-09-14', 'MediPharma', 46, 'Active', '2023-05-22', 'Ledner-McLaughlin', 'Minoxidil', 52, 1),
+(55, 'Prescription', 51, 11, 54, '2023-03-06', 'HealthCare Inc.', 6, 'Inactive', '2023-02-03', 'Stamm LLC', 'STEMPHYLIUM SOLANI', 32, 1),
+(56, 'Refill', 24, 49, 23, '2023-10-01', 'CityMed', 27, 'Active', '2022-12-29', 'Schuppe Inc', 'Acetaminophen, Aspirin, Caffeine', 14, 0),
+(57, 'New Prescription', 32, 22, 39, '2023-01-18', 'Major Pharma', 44, 'Inactive', '2023-08-04', 'Murazik-Herman', 'Aspirin', 5, 0),
+(58, 'Renewal', 31, 36, 47, '2023-02-11', 'Local Meds', 19, 'Active', '2023-06-26', 'Hartmann-Kirlin', 'cucumber', 29, 0),
+(59, 'Renewal', 9, 4, 18, '2023-03-24', 'Generic Pharma Inc', 15, 'Pending', '2023-11-22', 'Romaguera-Nicolas', 'norethindrone acetate and ethinyl estradiol, ethinyl estradiol and ferrous fumarate', 64, 0),
+(60, 'New Prescription', 24, 57, 6, '2023-05-21', 'Sunscreen Manufacturers Ltd', 3, 'Filled', '2022-12-12', 'Cummerata Group', 'OCTINOXATE, TITANIUM DIOXIDE, OXYBENZONE', 1, 1);
+
+
 
 -- Health Records
 insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (1, 'Leukemia in grandfather', 'Milk', 'Rubella', 1, 1, 1, 1, 30, 1);
@@ -502,317 +507,330 @@ insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory,
 
 
 -- Message
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (1, '2023-12-04', 'Upcoming Appointment', 'Hi! Just wanted to check in on our upcoming appointment.', 1, 1, NULL, NULL, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (2, '2023-12-04', 'Setting Healthy Goals', 'I want to set healthy goals! I need your help!', 1, NULL, 1, NULL, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (3, '2023-12-04', 'Inquiry on Bills', 'Hi! Just wondering about these bills I need to pay...', 1, NULL, NULL, 1, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (4, '2023-12-04', 'blandit non', 'Nulla tellus.', 5, 15, 35, 51, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (5, '2023-12-04', 'viverra pede ac', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor.', 32, 49, 30, 36, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (6, '2023-12-04', 'aliquam non mauris morbi non', 'Nullam porttitor lacus at turpis.', 4, 28, 28, 19, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (7, '2023-12-04', 'augue vestibulum rutrum rutrum neque', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem.', 26, 25, 27, 5, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (8, '2023-12-04', 'arcu', 'Duis at velit eu est congue elementum. In hac habitasse platea dictumst.', 44, 20, 34, 60, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (9, '2023-12-04', 'vestibulum vestibulum ante ipsum primis', 'Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.', 45, 6, 53, 46, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (10, '2023-12-04', 'proin leo', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 22, 44, 27, 41, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (11, '2023-12-04', 'quam sapien varius ut blandit', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', 4, 30, 19, 10, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (12, '2023-12-04', 'primis', 'Vestibulum sed magna at nunc commodo placerat. Praesent blandit.', 53, 44, 53, 15, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (13, '2023-12-04', 'eros vestibulum ac est lacinia', 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 10, 35, 31, 26, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (14, '2023-12-04', 'sapien quis libero', 'Morbi non quam nec dui luctus rutrum.', 7, 6, 35, 20, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (15, '2023-12-04', 'phasellus sit amet erat nulla', 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 15, 48, 40, 51, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (16, '2023-12-04', 'cubilia curae', 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 12, 59, 56, 26, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (17, '2023-12-04', 'vulputate', 'In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.', 10, 45, 43, 46, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (18, '2023-12-04', 'porttitor lacus at turpis donec', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.', 19, 4, 52, 30, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (19, '2023-12-04', 'id pretium iaculis', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.', 39, 39, 27, 28, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (20, '2023-12-04', 'nam congue', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 48, 7, 16, 24, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (21, '2023-12-04', 'lacus curabitur at', 'Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', 16, 50, 37, 18, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (22, '2023-12-04', 'eros vestibulum ac est lacinia', 'Vivamus vel nulla eget eros elementum pellentesque.', 58, 26, 6, 49, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (23, '2023-12-04', 'et ultrices posuere cubilia', 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', 33, 58, 28, 22, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (24, '2023-12-04', 'quisque ut', 'Maecenas pulvinar lobortis est. Phasellus sit amet erat.', 7, 30, 2, 51, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (25, '2023-12-04', 'at vulputate', 'Nulla ac enim.', 53, 23, 10, 2, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (26, '2023-12-04', 'aenean sit amet justo', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.', 6, 2, 52, 43, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (27, '2023-12-04', 'rutrum rutrum neque aenean auctor', 'Sed ante.', 42, 20, 5, 21, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (28, '2023-12-04', 'mauris', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 6, 23, 41, 4, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (29, '2023-12-04', 'ut erat curabitur gravida nisi', 'Donec semper sapien a libero.', 20, 40, 51, 51, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (30, '2023-12-04', 'justo', 'Mauris sit amet eros.', 20, 35, 58, 26, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (31, '2023-12-04', 'in quis justo maecenas', 'Aliquam sit amet diam in magna bibendum imperdiet.', 18, 43, 26, 17, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (32, '2023-12-04', 'in quis', 'Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo.', 51, 43, 58, 59, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (33, '2023-12-04', 'consequat morbi a ipsum', 'Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim.', 30, 38, 40, 12, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (34, '2023-12-04', 'lacinia aenean sit', 'In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.', 7, 32, 11, 41, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (35, '2023-12-04', 'amet consectetuer adipiscing elit', 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 25, 33, 6, 6, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (36, '2023-12-04', 'suscipit nulla elit ac nulla', 'Nullam molestie nibh in lectus.', 25, 48, 53, 58, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (37, '2023-12-04', 'tincidunt eu felis', 'Pellentesque viverra pede ac diam.', 22, 2, 1, 40, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (38, '2023-12-04', 'donec diam neque vestibulum eget', 'Morbi non quam nec dui luctus rutrum. Nulla tellus.', 21, 29, 37, 4, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (39, '2023-12-04', 'viverra eget congue', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus.', 57, 48, 52, 29, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (40, '2023-12-04', 'montes nascetur ridiculus', 'In sagittis dui vel nisl.', 45, 52, 16, 6, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (41, '2023-12-04', 'pellentesque ultrices mattis odio donec', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 38, 9, 40, 18, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (42, '2023-12-04', 'etiam vel', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.', 42, 38, 44, 55, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (43, '2023-12-04', 'sed', 'Quisque ut erat. Curabitur gravida nisi at nibh.', 30, 44, 45, 24, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (44, '2023-12-04', 'mauris vulputate', 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat.', 30, 17, 21, 29, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (45, '2023-12-04', 'lectus', 'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.', 31, 36, 44, 30, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (46, '2023-12-04', 'tristique', 'Sed sagittis.', 25, 26, 23, 8, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (47, '2023-12-04', 'in hac habitasse', 'Cras pellentesque volutpat dui.', 5, 6, 51, 37, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (48, '2023-12-04', 'parturient montes', 'Donec ut dolor.', 49, 3, 25, 50, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (49, '2023-12-04', 'primis in', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 4, 3, 4, 43, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (50, '2023-12-04', 'nulla', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 2, 39, 28, 23, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (51, '2023-12-04', 'et eros vestibulum ac est', 'Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.', 20, 13, 53, 31, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (52, '2023-12-04', 'eros viverra', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.', 49, 43, 3, 8, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (53, '2023-12-04', 'turpis eget elit sodales', 'Phasellus sit amet erat. Nulla tempus.', 45, 15, 23, 41, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (54, '2023-12-04', 'neque libero convallis eget', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 26, 52, 2, 10, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (55, '2023-12-04', 'quis orci', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.', 43, 60, 8, 20, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (56, '2023-12-04', 'pulvinar lobortis est phasellus', 'Pellentesque ultrices mattis odio. Donec vitae nisi.', 52, 54, 21, 36, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (57, '2023-12-04', 'mauris non', 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue.', 22, 50, 50, 37, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (58, '2023-12-04', 'eu', 'In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy.', 39, 56, 52, 41, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (59, '2023-12-04', 'ultrices enim', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 2, 55, 11, 48, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (60, '2023-12-04', 'non lectus aliquam sit amet', 'Curabitur convallis.', 20, 2, 15, 3, 1);
+insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values 
+(1, '2023-12-04', 'Reminder: Upcoming Appointment', 'Hi! Just a reminder about our appointment scheduled for next week.', 1, 1, NULL, NULL, 0),
+(2, '2023-12-04', 'Setting Wellness Goals', 'I am eager to discuss setting realistic wellness goals during our next session.', 1, NULL, 1, NULL, 0),
+(3, '2023-12-04', 'Billing Inquiry', 'Hello, I have some questions regarding my recent billing statement.', 1, NULL, NULL, 1, 1),
+(4, '2023-12-04', 'Follow-up on Lab Results', 'Please let me know when my lab results are ready for review.', 5, 15, 35, 51, 0),
+(5, '2023-12-04', 'Prescription Renewal Request', 'I would like to request a renewal of my current prescription.', 32, 49, 30, 36, 1),
+(6, '2023-12-04', 'New Symptoms Update', 'I have been experiencing some new symptoms lately and would like to discuss them.', 4, 28, 28, 19, 1),
+(7, '2023-12-04', 'Post-Appointment Feedback', 'I wanted to provide some feedback on my last appointment and discuss next steps.', 26, 25, 27, 5, 0),
+(8, '2023-12-04', 'Query About Medication Side Effects', 'I have some concerns about the side effects of the medication I am currently taking.', 44, 20, 34, 60, 0),
+(9, '2023-12-04', 'Exercise Plan Discussion', 'Can we discuss an exercise plan suitable for my current health condition?', 45, 6, 53, 46, 1),
+(10, '2023-12-04', 'Dietary Advice Needed', 'I am looking for advice on making healthier dietary choices.', 22, 44, 27, 41, 0),
+(11, '2023-12-04', 'Update on Health Progress', 'I wanted to update you on my health progress and get some advice.', 4, 30, 19, 10, 0),
+(12, '2023-12-04', 'Request for Medical Records', 'Could you please provide me with a copy of my recent medical records?', 53, 44, 53, 15, 1),
+(13, '2023-12-04', 'Concerns About Symptoms', 'I have been experiencing some troubling symptoms and would like to discuss them.', 10, 35, 31, 26, 0),
+(14, '2023-12-04', 'General Health Query', 'I have a few general health questions and would appreciate your input.', 7, 6, 35, 20, 0),
+(15, '2023-12-04', 'Feedback on Treatment Plan', 'I would like to provide feedback on my current treatment plan and discuss possible adjustments.', 15, 48, 40, 51, 1),
+(16, '2023-12-04', 'Request for Wellness Tips', 'I am looking for some wellness tips to incorporate into my daily routine.', 12, 59, 56, 26, 0),
+(17, '2023-12-04', 'Question About Test Results', 'Could you please explain my recent test results in more detail?', 10, 45, 43, 46, 0),
+(18, '2023-12-04', 'Follow-up After Hospital Discharge', 'I need guidance on care and precautions after my recent hospital discharge.', 19, 4, 52, 30, 1),
+(19, '2023-12-04', 'Inquiry About Prescription', 'I have questions about the new prescription I received during my last visit.', 39, 39, 27, 28, 0),
+(20, '2023-12-04', 'Seeking Second Opinion', 'I am considering a second opinion regarding my diagnosis and would like to discuss it with you.', 48, 7, 16, 24, 1),
+(21, '2023-12-04', 'Concern About Allergic Reaction', 'I experienced an allergic reaction and need guidance on how to proceed.', 16, 50, 37, 18, 0),
+(22, '2023-12-04', 'Discussion About Health Improvement', 'I would like to discuss how I can further improve my health and well-being.', 58, 26, 6, 49, 0),
+(23, '2023-12-04', 'Request for Fitness Recommendations', 'Can you provide some fitness recommendations tailored to my health condition?', 33, 58, 28, 22, 0),
+(24, '2023-12-04', 'Advice on Managing Chronic Pain', 'I am looking for advice on managing my chronic pain more effectively.', 7, 30, 2, 51, 0),
+(25, '2023-12-04', 'Insurance Coverage Query', 'I have questions about what my insurance covers in terms of treatments.', 53, 23, 10, 2, 1),
+(26, '2023-12-04', 'Feedback on Recent Consultation', 'I want to provide feedback on our recent consultation and the advice given.', 6, 2, 52, 43, 1),
+(27, '2023-12-04', 'Update on Medication Efficacy', 'I would like to update you on how effective the current medication has been for me.', 42, 20, 5, 21, 1),
+(28, '2023-12-04', 'Seeking Clarification on Health Plan', 'I need some clarification regarding the health plan you suggested last time.', 6, 23, 41, 4, 0),
+(29, '2023-12-04', 'Concerns About Recent Symptoms', 'I have been experiencing some new symptoms and am concerned about them.', 20, 40, 51, 51, 1),
+(30, '2023-12-04', 'Discussion About Medication Adjustment', 'I think we need to discuss adjusting my medication based on recent changes in my health.', 20, 35, 58, 26, 0);
+insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) 
+values 
+(31, '2023-12-04', 'Upcoming Appointment Reminder', 'Reminder: Your next appointment is scheduled for [Date]. Please arrive 15 minutes early.', 18, 43, 26, 17, 0),
+(32, '2023-12-04', 'Billing Inquiry Response', 'We have received your inquiry regarding the billing statement. Please contact us at [Phone Number] for further details.', 51, 43, 58, 59, 1),
+(33, '2023-12-04', 'Wellness Check-in', 'How are you doing with your current health plan? Let us know if you have any concerns or questions.', 30, 38, 40, 12, 0),
+(34, '2023-12-04', 'Nutrition Advice', 'A friendly reminder to maintain a balanced diet for better health. Include more fruits and veggies in your meals.', 7, 32, 11, 41, 0),
+(35, '2023-12-04', 'Medication Reminder', 'Please remember to take your prescribed medications regularly. Contact us if you have any side effects or concerns.', 25, 33, 6, 6, 0),
+(36, '2023-12-04', 'Health Update', 'We have an update regarding your recent tests. Please contact our office for more information.', 25, 48, 53, 58, 1),
+(37, '2023-12-04', 'Stress Management Tips', 'Managing stress is crucial for your health. Try practicing mindfulness and relaxation techniques daily.', 22, 2, 1, 40, 0),
+(38, '2023-12-04', 'Prescription Refill Reminder', 'Your prescription is due for a refill. Please confirm if you would like us to process it.', 21, 29, 37, 4, 0),
+(39, '2023-12-04', 'Healthy Lifestyle Choices', 'Remember that regular exercise and a healthy diet are key to maintaining good health. Let us discuss your goals in our next meeting.', 57, 48, 52, 29, 1),
+(40, '2023-12-04', 'Appointment Follow-Up', 'Thank you for your recent visit. Please let us know if you have any questions about the discussed treatment plan.', 45, 52, 16, 6, 0),
+(41, '2023-12-04', 'Seasonal Allergies Alert', 'Allergy season is here. Remember to take preventive measures and keep your medication handy.', 38, 9, 40, 18, 1),
+(42, '2023-12-04', 'Exercise Routine Suggestions', 'A regular exercise routine is vital for your health. Consider walking, swimming, or yoga for a start.', 42, 38, 44, 55, 1),
+(43, '2023-12-04', 'Health Record Update', 'We have updated your health records. Please review them at your next convenience and let us know of any changes.', 30, 44, 45, 24, 1),
+(44, '2023-12-04', 'Annual Health Checkup Reminder', 'It is time for your annual health checkup. Please schedule an appointment at your earliest convenience.', 30, 17, 21, 29, 0),
+(45, '2023-12-04', 'Health Insurance Update', 'There have been updates to your health insurance plan. Contact us to learn more about what these changes mean for you.', 31, 36, 44, 30, 1),
+(46, '2023-12-04', 'Sleep Hygiene Tips', 'Good sleep is essential for health. Try to maintain a regular sleep schedule and create a comfortable sleep environment.', 25, 26, 23, 8, 1),
+(47, '2023-12-04', 'Important Vaccine Reminder', 'Do not forget your upcoming vaccine appointment. Vaccinations are crucial for preventing diseases.', 5, 6, 51, 37, 0),
+(48, '2023-12-04', 'Dental Checkup Reminder', 'A friendly reminder to schedule your regular dental checkup to maintain oral health.', 49, 3, 25, 50, 1),
+(49, '2023-12-04', 'Healthy Eating Tips', 'Eating a balanced diet is key to good health. Consider including whole grains, lean proteins, and plenty of vegetables.', 4, 3, 4, 43, 1),
+(50, '2023-12-04', 'Fitness Goals Encouragement', 'Keep up the good work with your fitness goals. Remember, every step counts towards a healthier you.', 2, 39, 28, 23, 1),
+(51, '2023-12-04', 'Managing Chronic Conditions', 'Managing chronic conditions effectively is key to improving your quality of life. Let us discuss your management plan.', 20, 13, 53, 31, 1),
+(52, '2023-12-04', 'Reminder: Stay Hydrated', 'Staying hydrated is important for your health, especially in hot weather. Keep a water bottle handy.', 49, 43, 3, 8, 0),
+(53, '2023-12-04', 'Skin Care in Summer', 'Protect your skin during summer. Use sunscreen and stay in the shade during peak sun hours.', 45, 15, 23, 41, 1),
+(54, '2023-12-04', 'Mental Health Support', 'Your mental health is important. If you need support or someone to talk to, our team is here for you.', 26, 52, 2, 10, 0),
+(55, '2023-12-04', 'Blood Pressure Monitoring', 'Regular monitoring of your blood pressure is important. Please report any significant changes to us.', 43, 60, 8, 20, 1),
+(56, '2023-12-04', 'Eye Health Reminder', 'Do not forget to take breaks when working on screens to protect your eyes. Regular eye exams are also important.', 52, 54, 21, 36, 0),
+(57, '2023-12-04', 'Pain Management Strategies', 'If you are experiencing chronic pain, there are many strategies that can help. Let us discuss options during your next visit.', 22, 50, 50, 37, 0),
+(58, '2023-12-04', 'Healthy Aging Tips', 'Aging healthily involves staying active, eating well, and maintaining social connections. Let us talk about your health as you age.', 39, 56, 52, 41, 0),
+(59, '2023-12-04', 'Preventive Health Measures', 'Preventive health measures are key to avoiding diseases. Let us ensure you are up to date with all necessary screenings.', 2, 55, 11, 48, 1),
+(60, '2023-12-04', 'Childhood Immunization Schedule', 'Keeping up with your childs immunization schedule is crucial for their health. Please review their vaccination record.', 20, 2, 15, 3, 1);
+
 
 
 
 -- Insurance Plan
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (1, '2028-08-08', 138.89, 'General Payment', 1, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (2, '2027-04-05', 82.95, 'Accelerated Payment', 1, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (3, '2024-04-30', 94.45, 'Husky Afterpay', 1, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (4, '2027-09-29', 148.19, 'posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed', 32, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (5, '2026-09-13', 142.33, 'vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis', 49, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (6, '2023-08-15', 88.79, 'nulla suspendisse potenti cras in purus eu magna vulputate luctus cum', 46, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (7, '2025-07-17', 104.12, 'amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed', 50, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (8, '2025-03-10', 1.92, 'volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in', 44, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (9, '2025-07-30', 62.06, 'sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit', 55, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (10, '2028-07-14', 24.96, 'turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis', 33, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (11, '2028-03-07', 146.74, 'pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat', 22, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (12, '2024-01-28', 77.95, 'sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia', 60, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (13, '2028-06-22', 22.45, 'cursus vestibulum proin eu mi nulla ac enim in tempor', 17, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (14, '2028-08-13', 1.35, 'bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed', 47, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (15, '2024-10-25', 25.74, 'libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis', 53, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (16, '2025-03-15', 121.27, 'turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis', 10, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (17, '2026-02-10', 140.49, 'mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at', 37, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (18, '2027-09-19', 106.42, 'suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis', 40, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (19, '2027-08-05', 112.24, 'tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque', 17, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (20, '2028-08-06', 0.63, 'habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum', 28, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (21, '2028-08-05', 52.43, 'eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie', 20, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (22, '2028-04-25', 29.98, 'nibh ligula nec sem duis aliquam convallis nunc proin at turpis a', 14, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (23, '2027-04-23', 55.07, 'ut volutpat sapien arcu sed augue aliquam erat volutpat in congue', 16, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (24, '2023-01-08', 57.72, 'ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum', 13, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (25, '2023-09-09', 133.39, 'nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus', 38, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (26, '2024-07-15', 58.34, 'odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui', 53, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (27, '2025-07-16', 131.65, 'morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus', 11, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (28, '2024-12-13', 14.86, 'pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra', 2, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (29, '2027-07-13', 5.9, 'dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede', 1, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (30, '2023-03-29', 101.91, 'venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris', 27, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (31, '2024-06-12', 113.61, 'eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis', 43, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (32, '2023-11-02', 7.84, 'turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue', 46, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (33, '2028-10-11', 144.67, 'justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer', 47, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (34, '2023-03-08', 10.55, 'diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci', 37, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (35, '2023-03-31', 10.22, 'nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam', 49, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (36, '2024-11-19', 4.44, 'elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis', 50, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (37, '2023-05-27', 110.99, 'in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat', 47, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (38, '2025-06-19', 91.32, 'ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est', 18, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (39, '2027-03-29', 69.21, 'donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac', 51, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (40, '2026-10-21', 61.28, 'ultricies eu nibh quisque id justo sit amet sapien dignissim', 44, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (41, '2028-07-04', 144.17, 'interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum', 16, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (42, '2024-01-12', 82.91, 'suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc', 38, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (43, '2026-05-27', 59.4, 'nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis', 9, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (44, '2024-09-21', 147.07, 'etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit', 31, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (45, '2028-06-18', 58.94, 'congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus', 9, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (46, '2026-11-24', 148.61, 'vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa', 23, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (47, '2025-04-05', 140.5, 'nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia', 2, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (48, '2027-10-06', 44.96, 'non mi integer ac neque duis bibendum morbi non quam nec dui luctus', 8, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (49, '2028-06-03', 141.35, 'vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet', 46, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (50, '2024-11-16', 18.87, 'libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu', 25, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (51, '2026-12-08', 39.69, 'ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla', 27, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (52, '2027-02-03', 147.31, 'porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in', 44, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (53, '2023-08-06', 58.4, 'dui proin leo odio porttitor id consequat in consequat ut nulla sed', 59, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (54, '2023-06-03', 40.37, 'lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla', 50, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (55, '2027-07-06', 126.61, 'vel ipsum praesent blandit lacinia erat vestibulum sed magna at', 39, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (56, '2025-07-25', 21.91, 'rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis', 33, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (57, '2025-06-03', 42.4, 'ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc', 60, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (58, '2027-12-25', 138.19, 'lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus', 31, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (59, '2027-01-16', 10.49, 'congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec', 40, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (60, '2025-11-08', 111.34, 'quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo', 17, 0);
+insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values 
+(1, '2028-08-08', 138.89, 'Comprehensive Health Coverage', 1, 0),
+(2, '2027-04-05', 82.95, 'Basic Medical Plan', 1, 0),
+(3, '2024-04-30', 94.45, 'Family Health Package', 1, 0),
+(4, '2027-09-29', 148.19, 'Senior Health Care Plan', 32, 0),
+(5, '2026-09-13', 142.33, 'Employee Wellness Program', 49, 0),
+(6, '2023-08-15', 88.79, 'Emergency Care Coverage', 46, 0),
+(7, '2025-07-17', 104.12, 'Outpatient Care Plan', 50, 0),
+(8, '2025-03-10', 1.92, 'Dental and Vision Care', 44, 0),
+(9, '2025-07-30', 62.06, 'Prescription Drug Plan', 55, 0),
+(10, '2028-07-14', 24.96, 'Extended Health Benefits', 33, 0),
+(11, '2028-03-07', 146.74, 'Critical Illness Coverage', 22, 0),
+(12, '2024-01-28', 77.95, 'Maternity and Newborn Care', 60, 0),
+(13, '2028-06-22', 22.45, 'Chronic Disease Management Plan', 17, 0),
+(14, '2028-08-13', 1.35, 'Mental Health Support Plan', 47, 0),
+(15, '2024-10-25', 25.74, 'Preventive Health Care', 53, 0),
+(16, '2025-03-15', 121.27, 'Rehabilitation and Therapy Coverage', 10, 0),
+(17, '2026-02-10', 140.49, 'Private Hospital Room Plan', 37, 0),
+(18, '2027-09-19', 106.42, 'Accident and Injury Coverage', 40, 0),
+(19, '2027-08-05', 112.24, 'Travel Health Insurance', 17, 0),
+(20, '2028-08-06', 0.63, 'Health Savings Account Plan', 28, 0),
+(21, '2028-08-05', 52.43, 'Pediatric Care Coverage', 20, 0),
+(22, '2028-04-25', 29.98, 'Holistic Health Care', 14, 0),
+(23, '2027-04-23', 55.07, 'Specialist Care Plan', 16, 0),
+(24, '2023-01-08', 57.72, 'Inpatient Hospitalization Plan', 13, 0),
+(25, '2023-09-09', 133.39, 'Extended Wellness Program', 38, 0),
+(26, '2024-07-15', 58.34, 'Day Surgery Coverage', 53, 0),
+(27, '2025-07-16', 131.65, 'Alternative Medicine Plan', 11, 0),
+(28, '2024-12-13', 14.86, 'Vision and Dental Benefits', 2, 0),
+(29, '2027-07-13', 5.9, 'Occupational Health Plan', 1, 0),
+(30, '2023-03-29', 101.91, 'Youth Health and Wellness Plan', 27, 0),
+(31, '2024-06-12', 113.61, 'Comprehensive Medical Coverage Plan', 43, 0),
+(32, '2023-11-02', 7.84, 'Basic Health and Wellness Plan', 46, 0),
+(33, '2028-10-11', 144.67, 'Premium Family Health Plan', 47, 0),
+(34, '2023-03-08', 10.55, 'Emergency Care Coverage Plan', 37, 0),
+(35, '2023-03-31', 10.22, 'Senior Citizen Special Care Plan', 49, 0),
+(36, '2024-11-19', 4.44, 'Young Adult Health Coverage Plan', 50, 0),
+(37, '2023-05-27', 110.99, 'Outpatient Services Coverage Plan', 47, 0),
+(38, '2025-06-19', 91.32, 'Family Health Comprehensive Plan', 18, 0),
+(39, '2027-03-29', 69.21, 'Individual Health and Wellness Plan', 51, 0),
+(40, '2026-10-21', 61.28, 'General Medical Coverage Plan', 44, 0),
+(41, '2028-07-04', 144.17, 'Full Coverage Premium Plan', 16, 0),
+(42, '2024-01-12', 82.91, 'Dental and Vision Care Plan', 38, 0),
+(43, '2026-05-27', 59.4, 'Pediatric and Adolescent Health Plan', 9, 0),
+(44, '2024-09-21', 147.07, 'Advanced Medical and Surgical Care Plan', 31, 0),
+(45, '2028-06-18', 58.94, 'Preventive Care and Check-up Plan', 9, 0),
+(46, '2026-11-24', 148.61, 'Extensive Health Coverage Plan', 23, 0),
+(47, '2025-04-05', 140.5, 'Maternity and Child Care Plan', 2, 0),
+(48, '2027-10-06', 44.96, 'Emergency and Urgent Care Plan', 8, 0),
+(49, '2028-06-03', 141.35, 'Specialist Consultation Coverage Plan', 46, 0),
+(50, '2024-11-16', 18.87, 'Routine Health Maintenance Plan', 25, 0),
+(51, '2026-12-08', 39.69, 'Mental Health and Counseling Plan', 27, 0),
+(52, '2027-02-03', 147.31, 'Comprehensive Health Care Plan', 44, 0),
+(53, '2023-08-06', 58.4, 'Accident and Injury Coverage Plan', 59, 0),
+(54, '2023-06-03', 40.37, 'General Wellness and Prevention Plan', 50, 0),
+(55, '2027-07-06', 126.61, 'Chronic Disease Management Plan', 39, 0),
+(56, '2025-07-25', 21.91, 'Basic Prescription Drug Plan', 33, 0),
+(57, '2025-06-03', 42.4, 'Standard Health Care Plan', 60, 0),
+(58, '2027-12-25', 138.19, 'Premium Health and Wellness Plan', 31, 0),
+(59, '2027-01-16', 10.49, 'Youth and Sports Health Plan', 40, 0),
+(60, '2025-11-08', 111.34, 'Comprehensive Care Plus Plan', 17, 0);
+
 
 
 -- Billing Records
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (1, 'Initial payment.', 186, 1, 1, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (2, 'Copay.', 408, 20, 1, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (3, 'Application Fee.', 277, 1, 1, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (4, 'Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.', 440, 50, 44, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (5, 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 140, 28, 3, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (6, 'Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 600, 53, 36, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (7, 'Morbi quis tortor id nulla ultrices aliquet.', 676, 44, 30, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (8, 'In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.', 163, 6, 3, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (9, 'Nullam molestie nibh in lectus.', 391, 9, 6, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (10, 'Aenean lectus. Pellentesque eget nunc.', 347, 40, 54, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (11, 'Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis.', 132, 45, 13, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (12, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.', 416, 29, 40, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (13, 'In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.', 853, 4, 6, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (14, 'Aenean fermentum.', 468, 34, 10, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (15, 'Nullam sit amet turpis elementum ligula vehicula consequat.', 834, 22, 23, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (16, 'Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.', 62, 19, 16, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (17, 'Aliquam erat volutpat. In congue.', 929, 38, 6, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (18, 'Donec semper sapien a libero.', 719, 8, 58, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (19, 'Nulla nisl. Nunc nisl.', 658, 43, 53, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (20, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.', 305, 31, 46, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (21, 'Nulla tellus.', 717, 38, 59, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (22, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', 473, 15, 25, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (23, 'Aliquam non mauris. Morbi non lectus.', 372, 40, 11, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (24, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 634, 35, 23, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (25, 'Curabitur convallis.', 965, 17, 37, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (26, 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 437, 51, 20, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (27, 'Nulla facilisi. Cras non velit nec nisi vulputate nonummy.', 666, 25, 4, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (28, 'In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.', 142, 54, 40, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (29, 'Aliquam non mauris. Morbi non lectus.', 837, 45, 59, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (30, 'In hac habitasse platea dictumst.', 576, 26, 51, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (31, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna.', 393, 34, 5, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (32, 'Duis consequat dui nec nisi volutpat eleifend.', 295, 34, 59, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (33, 'Donec dapibus.', 299, 51, 40, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (34, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.', 194, 52, 46, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (35, 'Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 793, 43, 32, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (36, 'Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 901, 20, 24, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (37, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit.', 235, 32, 12, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (38, 'Nulla facilisi.', 752, 52, 34, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (39, 'Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 811, 5, 43, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (40, 'Sed sagittis.', 168, 55, 28, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (41, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.', 23, 48, 53, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (42, 'Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 821, 25, 50, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (43, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna.', 167, 42, 21, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (44, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', 971, 16, 6, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (45, 'Suspendisse potenti.', 761, 53, 18, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (46, 'Suspendisse accumsan tortor quis turpis. Sed ante.', 497, 8, 34, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (47, 'Maecenas tincidunt lacus at velit.', 564, 15, 24, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (48, 'Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 191, 32, 5, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (49, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 931, 39, 12, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (50, 'Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 987, 4, 16, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (51, 'Etiam justo. Etiam pretium iaculis justo.', 808, 45, 50, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (52, 'Nulla tempus.', 837, 27, 30, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (53, 'Sed ante.', 102, 6, 19, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (54, 'Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.', 894, 32, 16, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (55, 'In quis justo.', 876, 19, 3, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (56, 'Suspendisse accumsan tortor quis turpis. Sed ante.', 26, 3, 18, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (57, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.', 380, 14, 58, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (58, 'Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 593, 59, 12, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (59, 'Proin at turpis a pede posuere nonummy.', 118, 50, 59, 0);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (60, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 851, 44, 55, 0);
+insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values 
+(1, 'Initial Consultation Fee', 186, 1, 1, 1),
+(2, 'Routine Checkup Copay', 408, 20, 1, 1),
+(3, 'Annual Subscription Fee', 277, 1, 1, 1),
+(4, 'Laboratory Test Charges', 440, 50, 44, 1),
+(5, 'Emergency Room Visit Fee', 140, 28, 3, 1),
+(6, 'Specialist Consultation Fee', 600, 53, 36, 0),
+(7, 'Physical Therapy Session Charge', 676, 44, 30, 0),
+(8, 'Diagnostic Imaging Fee', 163, 6, 3, 0),
+(9, 'Prescription Medication Cost', 391, 9, 6, 0),
+(10, 'Dental Procedure Charge', 347, 40, 54, 0),
+(11, 'Outpatient Surgery Fee', 132, 45, 13, 0),
+(12, 'Inpatient Care Daily Rate', 416, 29, 40, 1),
+(13, 'Extended Care Facility Fee', 853, 4, 6, 0),
+(14, 'Vaccination Charge', 468, 34, 10, 0),
+(15, 'Health Screening Cost', 834, 22, 23, 1),
+(16, 'Mental Health Counseling Fee', 62, 19, 16, 0),
+(17, 'Nutrition Consultation Charge', 929, 38, 6, 0),
+(18, 'Occupational Therapy Fee', 719, 8, 58, 1),
+(19, 'Home Care Service Fee', 658, 43, 53, 1),
+(20, 'Orthopedic Equipment Charge', 305, 31, 46, 0),
+(21, 'Allergy Testing Fee', 717, 38, 59, 0),
+(22, 'Eye Examination Cost', 473, 15, 25, 1),
+(23, 'Chiropractic Service Fee', 372, 40, 11, 1),
+(24, 'Telemedicine Consultation Fee', 634, 35, 23, 0),
+(25, 'Ambulance Transportation Charge', 965, 17, 37, 0),
+(26, 'Rehabilitation Program Fee', 437, 51, 20, 1),
+(27, 'Dermatology Treatment Charge', 666, 25, 4, 1),
+(28, 'Acupuncture Therapy Fee', 142, 54, 40, 0),
+(29, 'Urgent Care Visit Fee', 837, 45, 59, 0),
+(30, 'Maternity Care Package Cost', 576, 26, 51, 0),
+(31, 'Consultation Fee', 393, 34, 5, 1),
+(32, 'Routine Check-up Charge', 295, 34, 59, 0),
+(33, 'Lab Test Fee', 299, 51, 40, 1),
+(34, 'Physical Therapy Session Charge', 194, 52, 46, 0),
+(35, 'Specialist Consultation Fee', 793, 43, 32, 0),
+(36, 'Emergency Room Visit Fee', 901, 20, 24, 1),
+(37, 'X-Ray Imaging Charge', 235, 32, 12, 1),
+(38, 'Prescription Medication Cost', 752, 52, 34, 1),
+(39, 'Diagnostic Lab Test Fee', 811, 5, 43, 0),
+(40, 'Annual Wellness Exam Fee', 168, 55, 28, 1),
+(41, 'Vaccination Charge', 23, 48, 53, 0),
+(42, 'Outpatient Procedure Fee', 821, 25, 50, 0),
+(43, 'Radiology Test Fee', 167, 42, 21, 1),
+(44, 'Orthopedic Consultation Charge', 971, 16, 6, 0),
+(45, 'Medication Refill Charge', 761, 53, 18, 1),
+(46, 'Cardiology Evaluation Fee', 497, 8, 34, 0),
+(47, 'MRI Scan Cost', 564, 15, 24, 1),
+(48, 'Ultrasound Service Charge', 191, 32, 5, 1),
+(49, 'Surgical Procedure Fee', 931, 39, 12, 0),
+(50, 'Intensive Care Unit Fee', 987, 4, 16, 0),
+(51, 'Pediatric Service Charge', 808, 45, 50, 0),
+(52, 'Emergency Treatment Cost', 837, 27, 30, 1),
+(53, 'Dental Cleaning Service', 102, 6, 19, 1),
+(54, 'Surgical Operation Cost', 894, 32, 16, 1),
+(55, 'Eye Examination Fee', 876, 19, 3, 1),
+(56, 'Dermatology Consultation Charge', 26, 3, 18, 1),
+(57, 'Neurology Specialist Fee', 380, 14, 58, 0),
+(58, 'Chiropractic Adjustment Fee', 593, 59, 12, 0),
+(59, 'Physiotherapy Session Charge', 118, 50, 59, 0),
+(60, 'Intensive Therapy Unit Cost', 851, 44, 55, 0);
+
 
 -- Wellness Record
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (1, 'Establish a consistent sleep schedule', 'neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere', 1, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (2, 'Maintain a healthy weight', 'platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie', 1, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (3, 'Eat more fruits and veggies', 'pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula', 1, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (4, 'be outdoors', 'potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt', 1, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (5, 'Cultivate positive relationships', 'ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi', 37, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (6, 'Establish a consistent sleep schedule', 'ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis', 12, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (7, 'be outdoors', 'potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus', 25, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (8, 'Limit alcohol to moderate levels', 'ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra', 10, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (9, 'Quit smoking or cut tobacco use', 'ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit', 3, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (10, 'Practice 10 min of daily mindfulness', 'nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum', 42, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (11, 'Cultivate positive relationships', 'ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in', 10, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (12, 'Limit alcohol to moderate levels', 'libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut', 38, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (13, 'Reduce added sugar in snacks', 'cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis', 20, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (14, 'be outdoors', 'id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate', 30, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (15, 'Eat more fruits and veggies', 'orci eget orci vehicula condimentum curabitur in libero ut massa', 4, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (16, 'Practice 10 min of daily mindfulness', 'amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus', 13, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (17, 'Limit alcohol to moderate levels', 'nisl venenatis lacinia aenean sit amet justo morbi ut odio cras', 22, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (18, 'Quit smoking or cut tobacco use', 'purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat', 59, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (19, 'Maintain a healthy weight', 'turpis donec posuere metus vitae ipsum aliquam non mauris morbi', 22, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (20, 'Increase water intake daily', 'consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis', 23, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (21, 'Aim for 7-8 hrs of quality sleep', 'tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique', 57, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (22, 'Establish a consistent sleep schedule', 'tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus', 37, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (23, 'Establish a consistent sleep schedule', 'tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras', 23, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (24, 'Increase water intake daily', 'duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis', 28, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (25, 'Quit smoking or cut tobacco use', 'lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis', 60, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (26, 'Maintain a healthy weight', 'sapien urna pretium nisl ut volutpat sapien arcu sed augue', 39, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (27, 'Reduce added sugar in snacks', 'ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi', 57, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (28, 'Limit alcohol to moderate levels', 'justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique', 54, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (29, 'Cultivate positive relationships', 'massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras', 35, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (30, 'Maintain a healthy weight', 'fusce congue diam id ornare imperdiet sapien urna pretium nisl', 43, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (31, 'Practice 10 min of daily mindfulness', 'imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor', 53, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (32, 'Quit smoking or cut tobacco use', 'tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer', 58, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (33, 'Improve flexibility with stretches', 'pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus', 22, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (34, 'Quit smoking or cut tobacco use', 'amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt', 11, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (35, 'Quit smoking or cut tobacco use', 'sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui', 25, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (36, 'Improve flexibility with stretches', 'at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat', 22, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (37, 'Reduce added sugar in snacks', 'odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut', 16, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (38, 'Practice 10 min of daily mindfulness', 'lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci', 42, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (39, 'Prioritize stress management', 'ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis', 17, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (40, 'Prioritize stress management', 'sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus', 6, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (41, 'Eat more fruits and veggies', 'duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque', 33, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (42, 'Limit screen time', 'in felis eu sapien cursus vestibulum proin eu mi nulla', 9, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (43, 'Limit screen time', 'turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam', 58, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (44, 'Achieve 150 min of weekly exercise', 'lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui', 1, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (45, 'be outdoors', 'proin leo odio porttitor id consequat in consequat ut nulla', 46, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (46, 'Practice 10 min of daily mindfulness', 'eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus', 40, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (47, 'Improve flexibility with stretches', 'in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum', 56, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (48, 'Quit smoking or cut tobacco use', 'sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat', 22, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (49, 'Establish a consistent sleep schedule', 'sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in', 56, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (50, 'Practice 10 min of daily mindfulness', 'est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec', 46, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (51, 'Eat more fruits and veggies', 'leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu', 2, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (52, 'Improve flexibility with stretches', 'etiam pretium iaculis justo in hac habitasse platea dictumst etiam', 36, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (53, 'Maintain a healthy weight', 'in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar', 54, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (54, 'Quit smoking or cut tobacco use', 'odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus', 15, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (55, 'Limit alcohol to moderate levels', 'ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id', 42, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (56, 'Aim for 7-8 hrs of quality sleep', 'risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus', 33, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (57, 'Establish a consistent sleep schedule', 'ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia', 4, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (58, 'Eat more fruits and veggies', 'diam in magna bibendum imperdiet nullam orci pede venenatis non', 36, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (59, 'Limit alcohol to moderate levels', 'nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc', 49, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (60, 'Establish a consistent sleep schedule', 'est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis', 29, 0);
+insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values 
+(1, 'Establish a consistent sleep schedule', 'Creating a bedtime routine to ensure 8 hours of restful sleep.', 1, 0),
+(2, 'Maintain a healthy weight', 'Regular tracking of weight and adjusting diet and exercise.', 1, 0),
+(3, 'Eat more fruits and veggies', 'Incorporating a variety of fruits and vegetables in daily meals.', 1, 0),
+(4, 'Spend time outdoors', 'Planning daily activities outside to improve mental health and physical well-being.', 1, 0),
+(5, 'Cultivate positive relationships', 'Engaging in community activities and nurturing family and friendships.', 37, 0),
+(6, 'Establish a consistent sleep schedule', 'Setting a regular sleep time and creating a calm sleeping environment.', 12, 0),
+(7, 'Spend time outdoors', 'Engaging in outdoor hobbies like hiking or gardening for relaxation.', 25, 0),
+(8, 'Limit alcohol to moderate levels', 'Setting limits on alcohol consumption and exploring healthier alternatives.', 10, 0),
+(9, 'Quit smoking or cut tobacco use', 'Joining a cessation program and using nicotine replacement therapies.', 3, 0),
+(10, 'Practice 10 min of daily mindfulness', 'Allocating time for meditation or yoga to enhance mental clarity.', 42, 0),
+(11, 'Cultivate positive relationships', 'Improving communication skills and attending social gatherings.', 10, 0),
+(12, 'Limit alcohol to moderate levels', 'Identifying triggers and strategies for reducing alcohol intake.', 38, 0),
+(13, 'Reduce added sugar in snacks', 'Opting for natural sweeteners and fruit-based snacks.', 20, 0),
+(14, 'Spend time outdoors', 'Regularly planning activities in natural settings to boost mood.', 30, 0),
+(15, 'Eat more fruits and veggies', 'Exploring new recipes that incorporate diverse fruits and vegetables.', 4, 0),
+(16, 'Practice 10 min of daily mindfulness', 'Setting aside time for guided meditation or peaceful contemplation.', 13, 0),
+(17, 'Limit alcohol to moderate levels', 'Seeking support to moderate alcohol intake and adopting a balanced lifestyle.', 22, 0),
+(18, 'Quit smoking or cut tobacco use', 'Adopting a step-by-step plan to reduce and eventually quit tobacco.', 59, 0),
+(19, 'Maintain a healthy weight', 'Developing a balanced diet plan and regular exercise regimen.', 22, 0),
+(20, 'Increase water intake daily', 'Setting reminders to drink water at regular intervals throughout the day.', 23, 0),
+(21, 'Aim for 7-8 hrs of quality sleep', 'Improving sleep environment and avoiding screens before bedtime.', 57, 0),
+(22, 'Establish a consistent sleep schedule', 'Developing a relaxing pre-sleep routine and adhering to a fixed wake-up time.', 37, 0),
+(23, 'Establish a consistent sleep schedule', 'Avoiding caffeine in the evening and creating a comfortable sleep space.', 23, 0),
+(24, 'Increase water intake daily', 'Carrying a water bottle and replacing sugary drinks with water.', 28, 0),
+(25, 'Quit smoking or cut tobacco use', 'Using support groups and tracking progress to gradually reduce smoking.', 60, 0),
+(26, 'Maintain a healthy weight', 'Regular exercise and mindful eating habits to maintain a healthy BMI.', 39, 0),
+(27, 'Reduce added sugar in snacks', 'Choosing snacks with natural sugars and avoiding processed snacks.', 57, 0),
+(28, 'Limit alcohol to moderate levels', 'Practicing mindful drinking and seeking alternatives to alcoholic beverages.', 54, 0),
+(29, 'Cultivate positive relationships', 'Investing time in building strong and supportive relationships.', 35, 0),
+(30, 'Maintain a healthy weight', 'Following a balanced diet and keeping track of calorie intake.', 43, 0),
+(31, 'Practice 10 min of daily mindfulness', 'Dedicate time daily for mindfulness exercises to improve mental clarity and reduce stress.', 53, 0),
+(32, 'Quit smoking or cut tobacco use', 'Work on strategies to reduce and eventually quit smoking for improved lung health and overall well-being.', 58, 0),
+(33, 'Improve flexibility with stretches', 'Incorporate daily stretching routines to enhance flexibility and reduce muscle tension.', 22, 0),
+(34, 'Quit smoking or cut tobacco use', 'Seek support and use cessation aids to gradually cut down on tobacco usage.', 11, 0),
+(35, 'Quit smoking or cut tobacco use', 'Engage in smoking cessation programs and track progress towards a smoke-free life.', 25, 0),
+(36, 'Improve flexibility with stretches', 'Begin a regimen of stretching exercises focusing on major muscle groups for flexibility.', 22, 0),
+(37, 'Reduce added sugar in snacks', 'Identify and substitute high sugar snacks with healthier options to manage sugar intake.', 16, 0),
+(38, 'Practice 10 min of daily mindfulness', 'Allocate time each day for guided mindfulness and meditation exercises.', 42, 0),
+(39, 'Prioritize stress management', 'Engage in activities and routines that effectively reduce stress levels.', 17, 0),
+(40, 'Prioritize stress management', 'Incorporate relaxation and stress management techniques into daily routine.', 6, 0),
+(41, 'Eat more fruits and veggies', 'Incorporate a variety of fruits and vegetables into daily meals for balanced nutrition.', 33, 0),
+(42, 'Limit screen time', 'Set daily limits on screen time to reduce digital strain and increase physical activity.', 9, 0),
+(43, 'Limit screen time', 'Create a schedule to reduce screen exposure, especially during evening hours.', 58, 0),
+(44, 'Achieve 150 min of weekly exercise', 'Plan and execute a weekly exercise routine totaling at least 150 minutes.', 1, 0),
+(45, 'be outdoors', 'Schedule regular outdoor activities to enjoy fresh air and natural surroundings.', 46, 0),
+(46, 'Practice 10 min of daily mindfulness', 'Set aside time each day for short mindfulness sessions to improve focus.', 40, 0),
+(47, 'Improve flexibility with stretches', 'Incorporate a series of daily stretching exercises to improve overall body flexibility.', 56, 0),
+(48, 'Quit smoking or cut tobacco use', 'Utilize resources and support systems to progressively reduce tobacco usage.', 22, 0),
+(49, 'Establish a consistent sleep schedule', 'Create and follow a regular sleep schedule to ensure 7-8 hours of restful sleep nightly.', 56, 0),
+(50, 'Practice 10 min of daily mindfulness', 'Engage in daily mindfulness practices to enhance mental well-being and reduce stress.', 46, 0),
+(51, 'Eat more fruits and veggies', 'Focus on including a variety of fruits and vegetables in every meal for better health.', 2, 0),
+(52, 'Improve flexibility with stretches', 'Engage in daily stretching routines to enhance flexibility and prevent injuries.', 36, 0),
+(53, 'Maintain a healthy weight', 'Follow a balanced diet and regular exercise regimen to maintain a healthy body weight.', 54, 0),
+(54, 'Quit smoking or cut tobacco use', 'Commit to a smoking cessation plan with goals to gradually reduce and quit smoking.', 15, 0),
+(55, 'Limit alcohol to moderate levels', 'Monitor and reduce alcohol intake to recommended moderate levels for overall health.', 42, 0),
+(56, 'Aim for 7-8 hrs of quality sleep', 'Establish a consistent bedtime routine to ensure 7-8 hours of uninterrupted sleep.', 33, 0),
+(57, 'Establish a consistent sleep schedule', 'Develop a regular sleeping pattern to improve sleep quality and energy levels.', 4, 0),
+(58, 'Eat more fruits and veggies', 'Increase daily intake of fruits and vegetables for essential nutrients and fiber.', 36, 0),
+(59, 'Limit alcohol to moderate levels', 'Implement strategies to moderate alcohol consumption for better health outcomes.', 49, 0),
+(60, 'Establish a consistent sleep schedule', 'Ensure a consistent sleep-wake cycle to aid in better rest and recovery.', 29, 0);
+
 
 -- Allergy Record
-insert into AllergyRecord (healthrecordid, allergies) values (1, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.');
-insert into AllergyRecord (healthrecordid, allergies) values (2, 'Phasellus sit amet erat.');
-insert into AllergyRecord (healthrecordid, allergies) values (3, 'Phasellus in felis.');
-insert into AllergyRecord (healthrecordid, allergies) values (4, 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.');
-insert into AllergyRecord (healthrecordid, allergies) values (5, 'Praesent blandit.');
-insert into AllergyRecord (healthrecordid, allergies) values (6, 'Integer tincidunt ante vel ipsum.');
-insert into AllergyRecord (healthrecordid, allergies) values (7, 'Proin at turpis a pede posuere nonummy.');
-insert into AllergyRecord (healthrecordid, allergies) values (8, 'Praesent blandit lacinia erat.');
-insert into AllergyRecord (healthrecordid, allergies) values (9, 'Maecenas pulvinar lobortis est.');
-insert into AllergyRecord (healthrecordid, allergies) values (10, 'Duis at velit eu est congue elementum.');
-insert into AllergyRecord (healthrecordid, allergies) values (11, 'Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.');
-insert into AllergyRecord (healthrecordid, allergies) values (12, 'Curabitur gravida nisi at nibh.');
-insert into AllergyRecord (healthrecordid, allergies) values (13, 'Donec dapibus.');
-insert into AllergyRecord (healthrecordid, allergies) values (14, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.');
-insert into AllergyRecord (healthrecordid, allergies) values (15, 'Proin interdum mauris non ligula pellentesque ultrices.');
-insert into AllergyRecord (healthrecordid, allergies) values (16, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.');
-insert into AllergyRecord (healthrecordid, allergies) values (17, 'Morbi porttitor lorem id ligula.');
-insert into AllergyRecord (healthrecordid, allergies) values (18, 'Morbi vel lectus in quam fringilla rhoncus.');
-insert into AllergyRecord (healthrecordid, allergies) values (19, 'Nulla justo.');
-insert into AllergyRecord (healthrecordid, allergies) values (20, 'Curabitur convallis.');
-insert into AllergyRecord (healthrecordid, allergies) values (21, 'Donec ut mauris eget massa tempor convallis.');
-insert into AllergyRecord (healthrecordid, allergies) values (22, 'In quis justo.');
-insert into AllergyRecord (healthrecordid, allergies) values (23, 'Sed accumsan felis.');
-insert into AllergyRecord (healthrecordid, allergies) values (24, 'Sed accumsan felis.');
-insert into AllergyRecord (healthrecordid, allergies) values (25, 'In hac habitasse platea dictumst.');
-insert into AllergyRecord (healthrecordid, allergies) values (26, 'Vivamus vel nulla eget eros elementum pellentesque.');
-insert into AllergyRecord (healthrecordid, allergies) values (27, 'Proin risus.');
-insert into AllergyRecord (healthrecordid, allergies) values (28, 'Nullam sit amet turpis elementum ligula vehicula consequat.');
-insert into AllergyRecord (healthrecordid, allergies) values (29, 'Quisque ut erat.');
-insert into AllergyRecord (healthrecordid, allergies) values (30, 'In sagittis dui vel nisl.');
-insert into AllergyRecord (healthrecordid, allergies) values (31, 'Vivamus in felis eu sapien cursus vestibulum.');
-insert into AllergyRecord (healthrecordid, allergies) values (32, 'Pellentesque viverra pede ac diam.');
-insert into AllergyRecord (healthrecordid, allergies) values (33, 'In est risus, auctor sed, tristique in, tempus sit amet, sem.');
-insert into AllergyRecord (healthrecordid, allergies) values (34, 'Curabitur gravida nisi at nibh.');
-insert into AllergyRecord (healthrecordid, allergies) values (35, 'Integer tincidunt ante vel ipsum.');
-insert into AllergyRecord (healthrecordid, allergies) values (36, 'Donec posuere metus vitae ipsum.');
-insert into AllergyRecord (healthrecordid, allergies) values (37, 'Sed accumsan felis.');
-insert into AllergyRecord (healthrecordid, allergies) values (38, 'Duis mattis egestas metus.');
-insert into AllergyRecord (healthrecordid, allergies) values (39, 'Nulla mollis molestie lorem.');
-insert into AllergyRecord (healthrecordid, allergies) values (40, 'Nulla tempus.');
-insert into AllergyRecord (healthrecordid, allergies) values (41, 'Nullam porttitor lacus at turpis.');
-insert into AllergyRecord (healthrecordid, allergies) values (42, 'Suspendisse potenti.');
-insert into AllergyRecord (healthrecordid, allergies) values (43, 'Vestibulum sed magna at nunc commodo placerat.');
-insert into AllergyRecord (healthrecordid, allergies) values (44, 'Nam nulla.');
-insert into AllergyRecord (healthrecordid, allergies) values (45, 'Fusce consequat.');
-insert into AllergyRecord (healthrecordid, allergies) values (46, 'Nunc purus.');
-insert into AllergyRecord (healthrecordid, allergies) values (47, 'Maecenas ut massa quis augue luctus tincidunt.');
-insert into AllergyRecord (healthrecordid, allergies) values (48, 'In est risus, auctor sed, tristique in, tempus sit amet, sem.');
-insert into AllergyRecord (healthrecordid, allergies) values (49, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.');
-insert into AllergyRecord (healthrecordid, allergies) values (50, 'Donec ut dolor.');
-insert into AllergyRecord (healthrecordid, allergies) values (51, 'Praesent blandit.');
-insert into AllergyRecord (healthrecordid, allergies) values (52, 'In hac habitasse platea dictumst.');
-insert into AllergyRecord (healthrecordid, allergies) values (53, 'Nulla tempus.');
-insert into AllergyRecord (healthrecordid, allergies) values (54, 'Suspendisse ornare consequat lectus.');
-insert into AllergyRecord (healthrecordid, allergies) values (55, 'In hac habitasse platea dictumst.');
-insert into AllergyRecord (healthrecordid, allergies) values (56, 'Phasellus id sapien in sapien iaculis congue.');
-insert into AllergyRecord (healthrecordid, allergies) values (57, 'Duis ac nibh.');
-insert into AllergyRecord (healthrecordid, allergies) values (58, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla.');
-insert into AllergyRecord (healthrecordid, allergies) values (59, 'In eleifend quam a odio.');
-insert into AllergyRecord (healthrecordid, allergies) values (60, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.');
+insert into AllergyRecord (healthrecordid, allergies) values 
+(1, 'Peanuts, Tree Nuts, Shellfish'),
+(2, 'Dust Mites, Mold, Pet Dander'),
+(3, 'Pollen, Grass, Weed Allergies'),
+(4, 'Latex, Insect Stings, Certain Medications'),
+(5, 'Gluten, Wheat, Soy'),
+(6, 'Dairy, Eggs, Fish'),
+(7, 'Peanuts, Bee Stings, Latex'),
+(8, 'Mold, Animal Dander, Dust'),
+(9, 'Tree Nuts, Shellfish, Pollen'),
+(10, 'Soy, Wheat, Dairy Products'),
+(11, 'Pollen, Grass, Insect Bites'),
+(12, 'Latex, Medications, Certain Foods'),
+(13, 'Shellfish, Fish, Peanuts'),
+(14, 'Tree Nuts, Bee Stings, Latex'),
+(15, 'Dust Mites, Animal Dander, Mold'),
+(16, 'Pollen, Weed Allergies, Grass'),
+(17, 'Insect Stings, Certain Medications, Latex'),
+(18, 'Dairy, Eggs, Gluten'),
+(19, 'Soy, Wheat, Tree Nuts'),
+(20, 'Shellfish, Pollen, Dust Mites'),
+(21, 'Pet Dander, Mold, Bee Stings'),
+(22, 'Peanuts, Certain Medications, Latex'),
+(23, 'Grass, Pollen, Dust Mites'),
+(24, 'Animal Dander, Mold, Insect Bites'),
+(25, 'Tree Nuts, Shellfish, Wheat'),
+(26, 'Dairy, Eggs, Soy'),
+(27, 'Peanuts, Bee Stings, Pollen'),
+(28, 'Mold, Dust Mites, Animal Dander'),
+(29, 'Shellfish, Fish, Tree Nuts'),
+(30, 'Wheat, Soy, Dairy Products');
+insert into AllergyRecord (healthrecordid, allergies) values 
+(31, 'Peanuts, Tree Nuts, Wheat'),
+(32, 'Latex, Animal Dander, Pollen'),
+(33, 'Shellfish, Insect Stings, Medication Allergies'),
+(34, 'Mold, Dust Mites, Pet Dander'),
+(35, 'Soy, Eggs, Dairy'),
+(36, 'Fish, Bee Stings, Latex'),
+(37, 'Dust Mites, Pollen, Grass Allergies'),
+(38, 'Medications, Food Additives, Certain Fruits'),
+(39, 'Tree Nuts, Pollen, Shellfish'),
+(40, 'Wheat, Soy, Latex'),
+(41, 'Pollen, Insect Bites, Grass Allergies'),
+(42, 'Latex, Medications, Bee Stings'),
+(43, 'Dairy, Eggs, Peanuts'),
+(44, 'Tree Nuts, Insect Stings, Medications'),
+(45, 'Dust, Mold, Animal Dander'),
+(46, 'Pollen, Grass, Dust Mites'),
+(47, 'Latex, Insect Bites, Food Dyes'),
+(48, 'Shellfish, Fish, Tree Nuts'),
+(49, 'Wheat, Dairy, Eggs'),
+(50, 'Soy, Pollen, Latex'),
+(51, 'Mold, Dust Mites, Pet Dander'),
+(52, 'Peanuts, Medications, Bee Stings'),
+(53, 'Tree Nuts, Shellfish, Pollen'),
+(54, 'Soy, Wheat, Dairy'),
+(55, 'Pollen, Grass, Insect Bites'),
+(56, 'Latex, Medications, Certain Foods'),
+(57, 'Shellfish, Peanuts, Tree Nuts'),
+(58, 'Bee Stings, Latex, Tree Nuts'),
+(59, 'Dust Mites, Animal Dander, Mold'),
+(60, 'Pollen, Weed Allergies, Grass');
+
 
 -- Vax History Record
 insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (20, 'Tetanus');
@@ -879,65 +897,64 @@ insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (58, 'Hib (Haem
 
 
 -- Notifications
-insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted)
-values
-(1, 'Praesent blandit.', 'consequat', CURRENT_TIMESTAMP, 1, 6, 23, 0),
-(2, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', 'pede', CURRENT_TIMESTAMP, 1, 59, 33, 0),
-(3, 'Cras pellentesque volutpat dui.', 'et', CURRENT_TIMESTAMP, 1, 17, 54, 0),
-(4, 'Phasellus sit amet erat.', 'adipiscing', CURRENT_TIMESTAMP, 1, 50, 54, 1),
-(5, 'Donec posuere metus vitae ipsum.', 'libero', CURRENT_TIMESTAMP, 40, 17, 10, 1),
-(6, 'Duis consequat dui nec nisi volutpat eleifend.', 'curae', CURRENT_TIMESTAMP, 22, 4, 17, 1),
-(7, 'Proin at turpis a pede posuere nonummy.', 'at', CURRENT_TIMESTAMP, 33, 36, 4, 0),
-(8, 'Nullam varius.', 'semper', CURRENT_TIMESTAMP, 48, 50, 18, 1),
-(9, 'Nam dui.', 'aliquam', CURRENT_TIMESTAMP, 46, 43, 52, 1),
-(10, 'Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'pellentesque', CURRENT_TIMESTAMP, 31, 3, 49, 0),
-(11, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.', 'dui', CURRENT_TIMESTAMP, 54, 46, 40, 0),
-(12, 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 'nisi', CURRENT_TIMESTAMP, 54, 33, 59, 1),
-(13, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.', 'ut', CURRENT_TIMESTAMP, 18, 55, 6, 0),
-(14, 'Aliquam erat volutpat.', 'morbi', CURRENT_TIMESTAMP, 20, 59, 5, 0),
-(15, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 'neque', CURRENT_TIMESTAMP, 13, 36, 32, 1),
-(16, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.', 'eu', CURRENT_TIMESTAMP, 57, 11, 52, 1),
-(17, 'Curabitur at ipsum ac tellus semper interdum.', 'libero', CURRENT_TIMESTAMP, 9, 4, 9, 1),
-(18, 'Praesent lectus.', 'sed', CURRENT_TIMESTAMP, 48, 36, 35, 0),
-(19, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'semper', CURRENT_TIMESTAMP, 53, 20, 33, 0),
-(20, 'Maecenas rhoncus aliquam lacus.', 'nulla', CURRENT_TIMESTAMP, 3, 20, 14, 0),
-(21, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.', 'cras', CURRENT_TIMESTAMP, 31, 48, 18, 1),
-(22, 'Nulla facilisi.', 'feugiat', CURRENT_TIMESTAMP, 54, 43, 46, 0),
-(23, 'Nulla nisl.', 'velit', CURRENT_TIMESTAMP, 2, 25, 59, 0),
-(24, 'Cras pellentesque volutpat dui.', 'ut', CURRENT_TIMESTAMP, 24, 30, 17, 1),
-(25, 'Aenean lectus.', 'nunc', CURRENT_TIMESTAMP, 4, 22, 2, 0),
-(26, 'Ut at dolor quis odio consequat varius.', 'quam', CURRENT_TIMESTAMP, 17, 9, 19, 0),
-(27, 'In quis justo.', 'in', CURRENT_TIMESTAMP, 16, 11, 47, 0),
-(28, 'Vivamus tortor.', 'nunc', CURRENT_TIMESTAMP, 21, 19, 8, 0),
-(29, 'Nulla tellus.', 'ut', CURRENT_TIMESTAMP, 60, 14, 15, 1),
-(30, 'Proin at turpis a pede posuere nonummy.', 'quam', CURRENT_TIMESTAMP, 17, 56, 16, 0),
-(31, 'Ut tellus.', 'nunc', CURRENT_TIMESTAMP, 33, 12, 52, 0),
-(32, 'Nullam molestie nibh in lectus.', 'dui', CURRENT_TIMESTAMP, 13, 24, 43, 0),
-(33, 'Curabitur gravida nisi at nibh.', 'luctus', CURRENT_TIMESTAMP, 5, 51, 8, 1),
-(34, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'luctus', CURRENT_TIMESTAMP, 38, 32, 42, 0),
-(35, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.', 'phasellus', CURRENT_TIMESTAMP, 24, 6, 52, 0),
-(36, 'Maecenas pulvinar lobortis est.', 'morbi', CURRENT_TIMESTAMP, 60, 48, 35, 0),
-(37, 'Fusce posuere felis sed lacus.', 'et', CURRENT_TIMESTAMP, 50, 41, 50, 0),
-(38, 'Nullam sit amet turpis elementum ligula vehicula consequat.', 'hac', CURRENT_TIMESTAMP, 47, 16, 14, 0),
-(39, 'Maecenas rhoncus aliquam lacus.', 'lectus', CURRENT_TIMESTAMP, 54, 51, 18, 1),
-(40, 'Pellentesque at nulla.', 'morbi', CURRENT_TIMESTAMP, 21, 47, 37, 0),
-(41, 'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 'molestie', CURRENT_TIMESTAMP, 15, 16, 46, 1),
-(42, 'Nulla ac enim.', 'augue', CURRENT_TIMESTAMP, 55, 43, 53, 1),
-(43, 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.', 'diam', CURRENT_TIMESTAMP, 2, 11, 9, 1),
-(44, 'Aliquam sit amet diam in magna bibendum imperdiet.', 'praesent', CURRENT_TIMESTAMP, 2, 3, 58, 0),
-(45, 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 'metus', CURRENT_TIMESTAMP, 25, 1, 54, 0),
-(46, 'Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'turpis', CURRENT_TIMESTAMP, 44, 15, 22, 1),
-(47, 'Nulla tellus.', 'convallis', CURRENT_TIMESTAMP, 50, 24, 58, 1),
-(48, 'Nullam varius.', 'venenatis', CURRENT_TIMESTAMP, 44, 11, 42, 1),
-(49, 'Nunc rhoncus dui vel sem.', 'augue', CURRENT_TIMESTAMP, 32, 24, 60, 1),
-(50, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'integer', CURRENT_TIMESTAMP, 4, 28, 31, 1),
-(51, 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', 'a', CURRENT_TIMESTAMP, 18, 39, 8, 1),
-(52, 'Nunc purus.', 'gravida', CURRENT_TIMESTAMP, 51, 24, 46, 1),
-(53, 'Curabitur in libero ut massa volutpat convallis.', 'quisque', CURRENT_TIMESTAMP, 3, 29, 30, 0),
-(54, 'Suspendisse accumsan tortor quis turpis.', 'convallis', CURRENT_TIMESTAMP, 47, 2, 41, 1),
-(55, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.', 'rhoncus', CURRENT_TIMESTAMP, 30, 33, 17, 1),
-(56, 'Pellentesque viverra pede ac diam.', 'phasellus', CURRENT_TIMESTAMP, 9, 10, 24, 1),
-(57, 'Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'consequat', CURRENT_TIMESTAMP, 35, 57, 30, 0),
-(58, 'Curabitur convallis.', 'mauris', CURRENT_TIMESTAMP, 1, 57, 43, 0),
-(59, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 'tellus', CURRENT_TIMESTAMP, 54, 22, 50, 1),
-(60, 'Suspendisse potenti.', 'tempus', CURRENT_TIMESTAMP, 4, 50, 60, 0);
+insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted) values
+(1, 'Reminder: Upcoming Doctor Appointment on 2023-08-08', 'Unread', CURRENT_TIMESTAMP, 1, 6, 23, 0),
+(2, 'Lab Test Results Ready for Review', 'Read', CURRENT_TIMESTAMP, 1, 59, 33, 0),
+(3, 'Wellness Coaching Session Scheduled', 'Unread', CURRENT_TIMESTAMP, 1, 17, 54, 0),
+(4, 'Insurance Plan Update Notification', 'Read', CURRENT_TIMESTAMP, 1, 50, 54, 1),
+(5, 'Prescription Ready for Pickup at Pharmacy', 'Unread', CURRENT_TIMESTAMP, 40, 17, 10, 1),
+(6, 'Bill Payment Confirmation for Recent Visit', 'Read', CURRENT_TIMESTAMP, 22, 4, 17, 1),
+(7, 'New Wellness Goal Set in Your Profile', 'Unread', CURRENT_TIMESTAMP, 33, 36, 4, 0),
+(8, 'Appointment Cancellation Notice', 'Unread', CURRENT_TIMESTAMP, 48, 50, 18, 1),
+(9, 'Health Record Update Available', 'Read', CURRENT_TIMESTAMP, 46, 43, 52, 1),
+(10, 'Upcoming Prescription Renewal Reminder', 'Unread', CURRENT_TIMESTAMP, 31, 3, 49, 0),
+(11, 'Annual Check-Up Reminder', 'Unread', CURRENT_TIMESTAMP, 54, 46, 40, 0),
+(12, 'Reminder: Vaccination Due', 'Read', CURRENT_TIMESTAMP, 54, 33, 59, 1),
+(13, 'New Message from Your Doctor', 'Unread', CURRENT_TIMESTAMP, 18, 55, 6, 0),
+(14, 'Insurance Claim Processed Notification', 'Unread', CURRENT_TIMESTAMP, 20, 59, 5, 0),
+(15, 'Your Health Survey is Now Available', 'Read', CURRENT_TIMESTAMP, 13, 36, 32, 1),
+(16, 'Dietary Recommendations Update', 'Read', CURRENT_TIMESTAMP, 57, 11, 52, 1),
+(17, 'Reminder: Physical Therapy Session Today', 'Unread', CURRENT_TIMESTAMP, 9, 4, 9, 1),
+(18, 'New Wellness Article Recommended for You', 'Unread', CURRENT_TIMESTAMP, 48, 36, 35, 0),
+(19, 'Exercise Plan Update Available', 'Unread', CURRENT_TIMESTAMP, 53, 20, 33, 0),
+(20, 'Dental Check-Up Reminder', 'Unread', CURRENT_TIMESTAMP, 3, 20, 14, 0),
+(21, 'Payment Due Reminder for Recent Consultation', 'Read', CURRENT_TIMESTAMP, 31, 48, 18, 1),
+(22, 'Health Insurance Coverage Update', 'Unread', CURRENT_TIMESTAMP, 54, 43, 46, 0),
+(23, 'Telemedicine Appointment Confirmation', 'Unread', CURRENT_TIMESTAMP, 2, 25, 59, 0),
+(24, 'Eye Exam Appointment Reminder', 'Read', CURRENT_TIMESTAMP, 24, 30, 17, 1),
+(25, 'Update on Your Medication Allergy Profile', 'Unread', CURRENT_TIMESTAMP, 4, 22, 2, 0),
+(26, 'Important Health Notification Regarding Recent Test', 'Unread', CURRENT_TIMESTAMP, 17, 9, 19, 0),
+(27, 'Fitness Goal Achievement Congratulations', 'Unread', CURRENT_TIMESTAMP, 16, 11, 47, 0),
+(28, 'Stress Management Workshop Invitation', 'Unread', CURRENT_TIMESTAMP, 21, 19, 8, 0),
+(29, 'Billing Record Update for Your Account', 'Read', CURRENT_TIMESTAMP, 60, 14, 15, 1),
+(30, 'Appointment Reminder: Wellness Coach Visit', 'Unread', CURRENT_TIMESTAMP, 17, 56, 16, 0),
+(31, 'Update: Electronic Health Record Changes', 'Unread', CURRENT_TIMESTAMP, 33, 12, 52, 0),
+(32, 'New Nutritional Plan Available in Your Profile', 'Unread', CURRENT_TIMESTAMP, 13, 24, 43, 0),
+(33, 'Upcoming Mental Health Counseling Session Reminder', 'Unread', CURRENT_TIMESTAMP, 5, 51, 8, 1),
+(34, 'Update: New Features in Your Health App', 'Unread', CURRENT_TIMESTAMP, 38, 32, 42, 0),
+(35, 'Health Insurance Premium Due Reminder', 'Unread', CURRENT_TIMESTAMP, 24, 6, 52, 0),
+(36, 'Reminder: Blood Pressure Check Next Week', 'Unread', CURRENT_TIMESTAMP, 60, 48, 35, 0),
+(37, 'Your Recent Health Assessment Results', 'Read', CURRENT_TIMESTAMP, 50, 41, 50, 0),
+(38, 'Notification: Health Record Access by New Doctor', 'Unread', CURRENT_TIMESTAMP, 47, 16, 14, 0),
+(39, 'Upcoming Fitness Assessment Reminder', 'Read', CURRENT_TIMESTAMP, 54, 51, 18, 1),
+(40, 'Dental Insurance Plan Update', 'Unread', CURRENT_TIMESTAMP, 21, 47, 37, 0),
+(41, 'Wellness Challenge Participation Confirmation', 'Read', CURRENT_TIMESTAMP, 15, 16, 46, 1),
+(42, 'New Health Article: Managing Diabetes', 'Unread', CURRENT_TIMESTAMP, 55, 43, 53, 1),
+(43, 'Medication Dosage Update Notification', 'Read', CURRENT_TIMESTAMP, 2, 11, 9, 1),
+(44, 'Upcoming Flu Vaccination Clinic Announcement', 'Unread', CURRENT_TIMESTAMP, 2, 3, 58, 0),
+(45, 'Physiotherapy Appointment Rescheduled', 'Unread', CURRENT_TIMESTAMP, 25, 1, 54, 0),
+(46, 'Alert: New Health Guidelines Published', 'Read', CURRENT_TIMESTAMP, 44, 15, 22, 1),
+(47, 'Payment Receipt for Recent Medical Service', 'Read', CURRENT_TIMESTAMP, 50, 24, 58, 1),
+(48, 'Allergy Test Result Consultation Reminder', 'Read', CURRENT_TIMESTAMP, 44, 11, 42, 1),
+(49, 'Notification: Lab Test Appointment Confirmation', 'Read', CURRENT_TIMESTAMP, 32, 24, 60, 1),
+(50, 'Health Insurance Policy Renewal Reminder', 'Unread', CURRENT_TIMESTAMP, 4, 28, 31, 1),
+(51, 'New Message from Your Healthcare Provider', 'Read', CURRENT_TIMESTAMP, 18, 39, 8, 1),
+(52, 'Appointment Confirmation: Dermatology Consultation', 'Unread', CURRENT_TIMESTAMP, 51, 24, 46, 1),
+(53, 'Reminder: Upcoming Eye Exam', 'Unread', CURRENT_TIMESTAMP, 3, 29, 30, 0),
+(54, 'Healthcare Provider Changed Notification', 'Read', CURRENT_TIMESTAMP, 47, 2, 41, 1),
+(55, 'Wellness Program Enrollment Confirmation', 'Unread', CURRENT_TIMESTAMP, 30, 33, 17, 1),
+(56, 'Lab Test Appointment Rescheduled', 'Read', CURRENT_TIMESTAMP, 9, 10, 24, 1),
+(57, 'Billing Discrepancy Resolved Notification', 'Unread', CURRENT_TIMESTAMP, 35, 57, 30, 0),
+(58, 'New Prescription Alert', 'Unread', CURRENT_TIMESTAMP, 1, 57, 43, 0),
+(59, 'Health Insurance Claim Status Update', 'Read', CURRENT_TIMESTAMP, 54, 22, 50, 1),
+(60, 'Emergency Contact Information Update Request', 'Unread', CURRENT_TIMESTAMP, 4, 50, 60, 0);

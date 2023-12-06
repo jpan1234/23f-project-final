@@ -21,7 +21,7 @@ def get_notifications_from_patient(coachid):
     query = f'SELECT notificationID, Notifications.patientID, content, timeSent FROM Notifications\
         JOIN Patient ON Notifications.patientID = Patient.patientID\
         JOIN Visit ON Patient.patientID = Visit.patientID\
-        WHERE deleted = 0 AND coachID = {coachid};'
+        WHERE status = "Unread" AND deleted = 0 AND coachID = {coachid};'
 
     # use cursor to query the database for a list of products
     cursor.execute(query)
