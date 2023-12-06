@@ -235,7 +235,7 @@ def add_patient_billing_record (patientid):
 
 
 # post a message to a patient
-@rep.route('/messages/<repid>', methods=['POST'])
+@rep.route('/messagepatients/<repid>', methods=['POST'])
 def post_patient_message(repid):
     '''
     Post a message to the database from a rep to a patient
@@ -270,7 +270,7 @@ def post_patient_message(repid):
     return 'Message sent!'
 
 # post a message to a doctor
-@rep.route('/messages/<repid>', methods=['POST'])
+@rep.route('/messagedoctors/<repid>', methods=['POST'])
 def post_doctor_message(repid):
     '''
     Post a message to the database from a patient to a coach
