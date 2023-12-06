@@ -537,7 +537,7 @@ def cancel_doctor_visit(visitid):
     current_app.logger.info(the_data)
 
     #extracting the variable
-    canceled = the_data['canceled'] # either 1 or 0, mostly going to set to 1 to set as "complete"
+    canceled = sthe_data['canceled'] # either 1 or 0, mostly going to set to 1 to set as "complete"
 
     # get a cursor object from the database
     cursor = db.get_db().cursor()

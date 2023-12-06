@@ -181,7 +181,7 @@ def add_patient_insurance_plan():
     copay = the_data['amount']
     description = the_data['repID']
     repID = the_data['repID']
-    inactive = 0
+    inactive = "0"
 
     ## Constructing the query
     query = 'INSERT INTO InsurancePlan (terminationDate, copay, description, repID, inactive) VALUES ("'
