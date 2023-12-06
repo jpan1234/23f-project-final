@@ -315,18 +315,20 @@ def add_new_doctor_prescription(doctorid):
         datePrescribed, pharmacy, medication, duration) VALUES ("'
     query += scriptID + '", "'
     query += type_prescription + '", "'
-    query += visitID + '", '
-    query += testID + '", '
+    query += visitID + '", "'
+    query += testID + '", "'
     query += patientid + '", "'
     query += resultDate + '", "'
-    query += company + '", '
-    query += doctorid + '", '
+    query += company + '", "'
+    query += doctorid + '", "'
     query += status + '", "'
     query += datePrescribed + '", "'
-    query += pharmacy + '", '
-    query += medication + '", '
-    query += duration + ')'
+    query += pharmacy + '", "' 
+    query += medication + '", "'
+    query += str(duration) + '")'
     current_app.logger.info(query)
+    
+    return query
 
     # executing and committing the insert statement 
     cursor = db.get_db().cursor()
@@ -337,7 +339,7 @@ def add_new_doctor_prescription(doctorid):
 
 
 
-@doctors.route('/messages/<doctorid>', methods=['POST'])
+@doctors.route('/messagepatient/<doctorid>', methods=['POST'])
 def add_new_message_doctor_to_patient(doctorid):
     
     # collecting data from the request object 
@@ -365,6 +367,34 @@ def add_new_message_doctor_to_patient(doctorid):
     
     return 'Success!'
 
+@doctors.route('/messagerep/<doctorid>', methods=['POST'])
+def add_new_message_doctor_to_rep(doctorid):
+    
+    # collecting data from the request object 
+    the_data = request.json
+    current_app.logger.info(the_data)
+
+    #extracting the variable
+    subject = the_data['subject']
+    content = the_data['content']
+    repid = the_data['repID']
+
+
+    # Constructing the query
+    query = 'INSERT INTO Message (subject, content, repID, doctorID) values ("'
+    query += subject + '", "'
+    query += content + '", "'
+    query += repid + '", '
+    query += doctorid + ')'
+    current_app.logger.info(query)
+
+    # executing and committing the insert statement 
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    
+    return 'Success!'
+
 
 @doctors.route('/healthrecords/<doctorid>', methods=['POST'])
 def add_new_doctor_healthrecord(doctorid):
@@ -376,7 +406,7 @@ def add_new_doctor_healthrecord(doctorid):
     #extracting the variable
     healthRecordID = the_data['healthRecordID']
     familyHistory = the_data['familyHistory']
-    allergies = the_data['product_price']
+    allergies = the_data['allergies']
     vaxHistory = the_data['vaxHistory']
     scriptID = the_data['scriptID']
     patientID = the_data['patientID']
@@ -385,11 +415,11 @@ def add_new_doctor_healthrecord(doctorid):
     query = 'INSERT INTO HealthRecords (healthRecordID, familyHistory, allergies, vaxHistory, patientID, doctorID, scriptID) VALUES ("'
     query += healthRecordID + '", "'
     query += familyHistory + '", "'
-    query += allergies + '", '
+    query += allergies + '", "'
     query += vaxHistory + '", "'
     query += patientID + '", "'
-    query += doctorid + '", '
-    query += scriptID + ')'
+    query += doctorid + '", "'
+    query += scriptID + '")'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
@@ -400,8 +430,8 @@ def add_new_doctor_healthrecord(doctorid):
     return 'Success!'
 
 
-@doctors.route('/labresults/<patientid>', methods=['POST'])
-def add_new_labresults_doctor(patientid):
+@doctors.route('/labresults/', methods=['POST'])
+def add_new_labresults_doctor():
     
     # collecting data from the request object 
     the_data = request.json
@@ -412,13 +442,14 @@ def add_new_labresults_doctor(patientid):
     result = the_data['result']
     result_type = the_data['type']
     testDate = the_data['testDate']
+    patientid = the_data['patientID']
 
 
     # Constructing the query
     query = 'INSERT INTO LabResults (testID, result, type, testDate, patientID) VALUES ("'
     query += testID + '", "'
     query += result + '", "'
-    query += result_type + '", '
+    query += result_type + '", "'
     query += testDate + '", '
     query += patientid + ')'
     current_app.logger.info(query)
@@ -460,37 +491,6 @@ def add_new_visit_doctor(doctorid):
     
     return 'Success!'
 
-
-@doctors.route('/messages/<doctorid>', methods=['POST'])
-def add_new_message_doctor_to_rep(doctorid):
-    
-    # collecting data from the request object 
-    the_data = request.json
-    current_app.logger.info(the_data)
-
-    #extracting the variable
-    comID = the_data['comID']
-    dateSent = the_data['dateSent']
-    subject = the_data['subject']
-    content = the_data['content']
-    repid = the_data['repID'] 
-
-    # Constructing the query
-    query = 'INSERT INTO Message (comID, dateSent, subject, content, patientID, doctorID) VALUES ("'
-    query += comID + '", "'
-    query += dateSent + '", "'
-    query += subject + '", '
-    query += content + '", "'
-    query += repid + '", "'
-    query += doctorid + ')'
-    current_app.logger.info(query)
-
-    # executing and committing the insert statement 
-    cursor = db.get_db().cursor()
-    cursor.execute(query)
-    db.get_db().commit()
-    
-    return 'Success!'
 
 # PUT COMMANDS
 

@@ -881,10 +881,10 @@ insert into vaxHistoryRecord (healthrecordid, vaxhistory) values (58, 'Hib (Haem
 -- Notifications
 insert into Notifications (notificationid, content, status, timesent, patientid, visitid, testid, deleted)
 values
-(1, 'Praesent blandit.', 'consequat', CURRENT_TIMESTAMP, 21, 6, 23, 0),
-(2, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', 'pede', CURRENT_TIMESTAMP, 47, 59, 33, 0),
-(3, 'Cras pellentesque volutpat dui.', 'et', CURRENT_TIMESTAMP, 17, 17, 54, 0),
-(4, 'Phasellus sit amet erat.', 'adipiscing', CURRENT_TIMESTAMP, 15, 50, 54, 1),
+(1, 'Praesent blandit.', 'consequat', CURRENT_TIMESTAMP, 1, 6, 23, 0),
+(2, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', 'pede', CURRENT_TIMESTAMP, 1, 59, 33, 0),
+(3, 'Cras pellentesque volutpat dui.', 'et', CURRENT_TIMESTAMP, 1, 17, 54, 0),
+(4, 'Phasellus sit amet erat.', 'adipiscing', CURRENT_TIMESTAMP, 1, 50, 54, 1),
 (5, 'Donec posuere metus vitae ipsum.', 'libero', CURRENT_TIMESTAMP, 40, 17, 10, 1),
 (6, 'Duis consequat dui nec nisi volutpat eleifend.', 'curae', CURRENT_TIMESTAMP, 22, 4, 17, 1),
 (7, 'Proin at turpis a pede posuere nonummy.', 'at', CURRENT_TIMESTAMP, 33, 36, 4, 0),
