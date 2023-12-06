@@ -83,9 +83,8 @@ def get_message(patientid):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT subject, content, dateSent FROM Message\
-                     WHERE patientID = {patientid}\
-                     ORDER BY dateSENT DESC;')
+    cursor.execute(f'SELECT subject, content FROM Message\
+                     WHERE patientID = {patientid};')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -289,7 +288,7 @@ def get_wellness_records(patientid):
 # POST METHODS
 
 # post a message from a patient to a doctor
-@patients.route('/messages/<patientid>', methods=['POST'])
+@patients.route('/messagedoctor/<patientid>', methods=['POST'])
 def post_doctor_message(patientid):
     '''
     Post a message to the database from a patient to a doctor
@@ -305,13 +304,12 @@ def post_doctor_message(patientid):
     content = the_data['content']
     doctorid = the_data['doctorID']
 
-
     # Constructing the query
     query = 'INSERT INTO Message (subject, content, patientID, doctorID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", '
-    query += doctorid + ')'
+    query += doctorid + ');'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
@@ -322,7 +320,7 @@ def post_doctor_message(patientid):
     return 'Message sent!'
 
 # post a message from a patient to a coach
-@patients.route('/messages/<patientid>', methods=['POST'])
+@patients.route('/messagecoach/<patientid>', methods=['POST'])
 def post_coach_message(patientid):
     '''
     Post a message to the database from a patient to a coach
@@ -357,7 +355,7 @@ def post_coach_message(patientid):
 
 
 # post a message from a patient to a rep
-@patients.route('/messages/<patientid>', methods=['POST'])
+@patients.route('/messagerep/<patientid>', methods=['POST'])
 def post_rep_message(patientid):
     '''
     Post a message to the database from a patient to a rep
@@ -390,7 +388,7 @@ def post_rep_message(patientid):
 
 
 # post a visit with a doctor
-@patients.route('/visits/<patientid>', methods=['POST'])
+@patients.route('/visitdoctor/<patientid>', methods=['POST'])
 def schedule_doctor_visit(patientid):
     '''
     Schedule a visit with a doctor
@@ -422,8 +420,8 @@ def schedule_doctor_visit(patientid):
     return 'Visit scheduled!'
 
 # post a visit with a coach
-@patients.route('/visits/<coachid>', methods=['POST'])
-def schedule_coach_visit(coachid):
+@patients.route('/visitcoach/<patientid>', methods=['POST'])
+def schedule_coach_visit(patientid):
     '''
     Schedule a visit with a coach
 
@@ -436,7 +434,7 @@ def schedule_coach_visit(coachid):
     #extracting the variable
     purpose = the_data['purpose']
     visitDate = the_data['visitDate']
-    patientid = the_data['patientID']
+    coachid = the_data['coachID']
 
 
     # Constructing the query

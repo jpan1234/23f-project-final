@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS Prescriptions (
     company VARCHAR(255) NOT NULL,
     doctorID INT NOT NULL,
     status VARCHAR(50) NOT NULL,
-    datePrescribed DATE NOT NULL DEFAULT CURRENT_DATE,
+    datePrescribed DATE,
     pharmacy VARCHAR(255) NOT NULL,
     medication VARCHAR(255) NOT NULL,
     duration INT NOT NULL,
@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS HealthRecords (
 -- creating Message table
 CREATE TABLE IF NOT EXISTS Message (
     comID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    dateSent DATE DEFAULT CURRENT_DATE,
+    dateSent DATE,
     subject VARCHAR(255),
     content TEXT,
     patientID INT,
