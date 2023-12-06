@@ -5,21 +5,21 @@ from src import db
 
 rep = Blueprint('rep', __name__)
 
-# Get information on patient-specific insurance plan
-@rep.route('/insuranceplans/<patientID>', methods=['GET'])
-def get_patient_insurance_plan(patientID):
+# get all insurance plans affiliated with rep
+@rep.route('/insuranceplans/<repid>', methods=['GET'])
+def get_patient_insurance_plan(repid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
     cursor.execute(f'SELECT Patient.firstName, Patient.lastName,\
-                    InsurancePlan.description,\
+                    InsurancePlan.description, Patient.patientID,
                     FROM Patient\
                     JOIN BillingRecord\
                     ON Patient.patientID = BillingRecord.patientID\
                     JOIN InsurnacePlan\
                     ON BillingRecord.planID = InsurancePlan.planID\
-                    WHERE Patient.patientID = {patientID};')
+                    WHERE InsurancePlan.repID = {repid};')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -39,14 +39,14 @@ def get_patient_insurance_plan(patientID):
     return jsonify(json_data)
 
 
-# Provide a list of all insurance plans 
+# Provide a list of all unique insurance plans 
 @rep.route('/insuranceplan', methods=['GET'])
 def get_all_insurance_plans():
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    query = f'''SELECT planID, terminationDate, description, copay FROM InsurancePlan\
+    query = f'''SELECT DISTINCT description FROM InsurancePlan\
                 WHERE inactive = 0'''
     cursor.execute(query)
 
@@ -106,7 +106,8 @@ def get_patient_billing_records(patientID):
 
     # use cursor to query the database for a list of products
     query = f'''SELECT description, amount, paid FROM BillingRecord\
-                WHERE patientID = {patientID}'''
+                WHERE patientID = {patientID}
+                '''
     cursor.execute(query)
 
     # grab the column headers from the returned data
@@ -126,8 +127,8 @@ def get_patient_billing_records(patientID):
 
     return jsonify(json_data)
 
-@rep.route('/messages/<patientid>', methods=['GET'])
-def get_message_patient(patientid):
+@rep.route('/messages/<repid>', methods=['GET'])
+def get_message_patient(repid):
     '''
     Get all messages for a particular patient
 
@@ -137,39 +138,9 @@ def get_message_patient(patientid):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT subject, content, dateSent FROM Message\
-                     WHERE patientID = {patientid};')
-
-    # grab the column headers from the returned data
-    column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
-    json_data = []
-
-    # fetch all the data from the cursor
-    theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    return jsonify(json_data)
-
-@rep.route('/messages/<doctorid>', methods=['GET'])
-def get_message_doctor(doctorid):
-    '''
-    Get all messages for a particular doctor
-
-    columns: subject, content, dateSent for the patient
-    '''
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT subject, content, dateSent FROM Message\
-                     WHERE doctorID = {doctorid};')
+    cursor.execute(f'SELECT subject, content, dateSent, patientID, doctorID FROM Message\
+                     WHERE repID = {repid}\
+                     ORDER BY dateSent DESC;')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -265,8 +236,8 @@ def add_patient_billing_record (patientID):
 
 
 # post a message to a doctor
-@rep.route('/messages/<patientid>', methods=['POST'])
-def post_patient_message(patientid):
+@rep.route('/messages/<repid>', methods=['POST'])
+def post_patient_message(repid):
     '''
     Post a message to the database from a rep to a patient
 
@@ -279,7 +250,7 @@ def post_patient_message(patientid):
     #extracting the variable
     subject = the_data['subject']
     content = the_data['content']
-    repid = the_data['repID']
+    patientid = the_data['patientID']
 
 
     # Constructing the query
@@ -298,8 +269,8 @@ def post_patient_message(patientid):
     return 'Message sent!'
 
 # post a message to a doctor
-@rep.route('/messages/<doctorid>', methods=['POST'])
-def post_doctor_message(doctorid):
+@rep.route('/messages/<repid>', methods=['POST'])
+def post_doctor_message(repid):
     '''
     Post a message to the database from a patient to a coach
 
@@ -312,7 +283,7 @@ def post_doctor_message(doctorid):
     #extracting the variable
     subject = the_data['subject']
     content = the_data['content']
-    repid = the_data['repID']
+    doctorid = the_data['doctorID']
 
 
     # Constructing the query

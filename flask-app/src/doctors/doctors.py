@@ -217,7 +217,7 @@ def get_rep_messages_for_doctors(doctorID):
 
     cursor = db.get_db().cursor()
 
-    query = f'SELECT subject, content, dateSent FROM Message\
+    query = f'SELECT subject, content, dateSent, repID FROM Message\
         WHERE doctorID = {doctorID}\
         AND repID IS NOT NULL;'
 
@@ -308,17 +308,10 @@ def add_new_doctor_prescription(patientid):
     
     return 'Success!'
 
-    
 
 
-
-
-
-
-
-
-@doctors.route('/messages/<patientid>', methods=['POST'])
-def add_new_message_doctor_to_patient(patientid):
+@doctors.route('/messages/<doctorid>', methods=['POST'])
+def add_new_message_doctor_to_patient(doctorid):
     
     # collecting data from the request object 
     the_data = request.json
@@ -327,7 +320,7 @@ def add_new_message_doctor_to_patient(patientid):
     #extracting the variable
     subject = the_data['subject']
     content = the_data['content']
-    doctorid = the_data['doctorID']
+    patientid = the_data['patientID']
 
 
     # Constructing the query
@@ -441,8 +434,8 @@ def add_new_visit_doctor(doctorid):
     return 'Success!'
 
 
-@doctors.route('/messages/<repid>', methods=['POST'])
-def add_new_message_doctor_to_rep(repid):
+@doctors.route('/messages/<doctorid>', methods=['POST'])
+def add_new_message_doctor_to_rep(doctorid):
     
     # collecting data from the request object 
     the_data = request.json
@@ -453,8 +446,7 @@ def add_new_message_doctor_to_rep(repid):
     dateSent = the_data['dateSent']
     subject = the_data['subject']
     content = the_data['content']
-    doctorid = the_data['doctorID'] # doctor will need to be provided, shouldn't this be other way?
-
+    repid = the_data['repID'] 
 
     # Constructing the query
     query = 'INSERT INTO Message (comID, dateSent, subject, content, patientID, doctorID) VALUES ("'

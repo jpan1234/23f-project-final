@@ -84,7 +84,8 @@ def get_message(patientid):
 
     # use cursor to query the database for a list of products
     cursor.execute(f'SELECT subject, content, dateSent FROM Message\
-                     WHERE patientID = {patientid};')
+                     WHERE patientID = {patientid}\
+                     ORDER BY dateSENT DESC;')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -288,8 +289,8 @@ def get_wellness_records(patientid):
 # POST METHODS
 
 # post a message from a patient to a doctor
-@patients.route('/messages/<doctorid>', methods=['POST'])
-def post_doctor_message(doctorid):
+@patients.route('/messages/<patientid>', methods=['POST'])
+def post_doctor_message(patientid):
     '''
     Post a message to the database from a patient to a doctor
 
@@ -302,7 +303,7 @@ def post_doctor_message(doctorid):
     #extracting the variable
     subject = the_data['subject']
     content = the_data['content']
-    patientid = the_data['patientID']
+    doctorid = the_data['doctorID']
 
 
     # Constructing the query
@@ -321,8 +322,8 @@ def post_doctor_message(doctorid):
     return 'Message sent!'
 
 # post a message from a patient to a coach
-@patients.route('/messages/<coachid>', methods=['POST'])
-def post_coach_message(coachid):
+@patients.route('/messages/<patientid>', methods=['POST'])
+def post_coach_message(patientid):
     '''
     Post a message to the database from a patient to a coach
 
@@ -335,7 +336,7 @@ def post_coach_message(coachid):
     #extracting the variable
     subject = the_data['subject']
     content = the_data['content']
-    patientid = the_data['patientID']
+    coachid = the_data['coachID']
 
 
     # Constructing the query
@@ -356,8 +357,8 @@ def post_coach_message(coachid):
 
 
 # post a message from a patient to a rep
-@patients.route('/messages/<repid>', methods=['POST'])
-def post_rep_message(repid):
+@patients.route('/messages/<patientid>', methods=['POST'])
+def post_rep_message(patientid):
     '''
     Post a message to the database from a patient to a rep
 
@@ -370,7 +371,7 @@ def post_rep_message(repid):
     #extracting the variable
     subject = the_data['subject']
     content = the_data['content']
-    patientid = the_data['patientID']
+    repid = the_data['repID']
 
     # Constructing the query
     query = 'INSERT INTO Message (subject, content, patientID, repID) VALUES ("'

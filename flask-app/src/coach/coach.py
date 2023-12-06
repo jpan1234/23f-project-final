@@ -54,7 +54,7 @@ def get_messages_from_coach(coachid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
-    query = f'SELECT subject, content, dateSent FROM HuskyHealth.Message\
+    query = f'SELECT subject, content, dateSent,patientID FROM Message\
                      WHERE coachID = {coachid}\
                      ORDER BY dateSent DESC;'
 
