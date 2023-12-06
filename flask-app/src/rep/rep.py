@@ -105,7 +105,7 @@ def get_patient_billing_records(repID):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    query = f'''SELECT BillingRecords.description, amount, paid FROM BillingRecord\
+    query = f'''SELECT BillingRecord.description, amount, paid FROM BillingRecord\
                 JOIN InsurancePlan ON BillingRecord.planID = InsurancePlan.planID\
                 WHERE repID = {repID}
                 '''
