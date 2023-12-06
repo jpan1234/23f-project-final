@@ -185,8 +185,6 @@ def get_healthRecords_for_coach(coachid):
 
     return jsonify(json_data)
 
-
-
 # POSTS
 
 # posts a message to coachs patient
@@ -210,7 +208,7 @@ def post_coach_message(coachid):
 
 
     # Constructing the query
-    query = 'INSERT INTO HuskyHealth.Message (subject, content, patientid, dateSent, coachid) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientid, dateSent, coachid) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", "'
@@ -246,7 +244,7 @@ def post_coach_visit(coachid):
     patientid = the_data['patientID']
 
     # Constructing the query
-    query = 'INSERT INTO HuskyHealth.Visit (purpose, visitDate, patientID, coachID) VALUES ("'
+    query = 'INSERT INTO Visit (purpose, visitDate, patientID, coachID) VALUES ("'
     query += purpose + '", "'
     query += visitDate + '", "'
     query += patientid + '", '

@@ -273,20 +273,6 @@ def get_wellness_records(patientid):
 
     return jsonify(json_data)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # POST METHODS
 
 # post a message from a patient to a doctor
@@ -357,8 +343,6 @@ def post_coach_message(patientid):
     
     return 'Message sent!'
 
-
-
 # post a message from a patient to a rep
 @patients.route('/messagerep/<patientid>', methods=['POST'])
 def post_rep_message(patientid):
@@ -392,7 +376,6 @@ def post_rep_message(patientid):
     db.get_db().commit()
     
     return 'Message sent!' 
-
 
 # post a visit with a doctor
 @patients.route('/visitdoctor/<patientid>', methods=['POST'])
@@ -496,7 +479,7 @@ def update_message(comid):
 
 # update a wellness record
 @patients.route('/wellnessrecords/<wellnessrecordid>', methods=['PUT'])
-def update_patient_wellnessrecord(wellnessrecordID):
+def update_patient_wellnessrecord(wellnessrecordid):
     '''
     Update a wellness goal as complete or not
 
@@ -515,7 +498,7 @@ def update_patient_wellnessrecord(wellnessrecordID):
 
     query = f'UPDATE WellnessRecord\
                      SET complete = {completed}\
-                     WHERE wellnessrecordID = {wellnessrecordID};'
+                     WHERE wellnessrecordID = {wellnessrecordid};'
     
     # use cursor to query the database for a list of products
     cursor.execute(query)
@@ -564,11 +547,11 @@ def cancel_doctor_visit(visitid):
 
 # Deletes a notification
 @patients.route('/notifications/<notificationid>', methods=['DELETE'])
-def delete_notification(notificationID):
+def delete_notification(notificationid):
     
     query = f'DELETE\
         FROM Notifications\
-        WHERE notificationID = {notificationID};'
+        WHERE notificationID = {notificationid};'
         
     # get cursor and execute it
     cursor = db.get_db().cursor()

@@ -68,8 +68,8 @@ def get_all_insurance_plans():
     return jsonify(json_data)
 
 # Provide all health records for this patient 
-@rep.route('/healthrecords/<patientID>', methods=['GET'])
-def get_patient_health_records(patientID):
+@rep.route('/healthrecords/<patientid>', methods=['GET'])
+def get_patient_health_records(patientid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -77,7 +77,7 @@ def get_patient_health_records(patientID):
     query = f'SELECT * FROM HealthRecords\
                 JOIN InsuranceRepresentative\
                 ON HealthRecords.repID = InsuranceRepresentative.repID\
-                WHERE HealthRecords.patientID = {patientID}\
+                WHERE HealthRecords.patientID = {patientid}\
                 AND InsuranceRepresentative.consent = 1'
     cursor.execute(query)
 
@@ -99,15 +99,15 @@ def get_patient_health_records(patientID):
     return jsonify(json_data)
 
 # Provide all billing records for this patient 
-@rep.route('/billingrecords/<repID>', methods=['GET'])
-def get_patient_billing_records(repID):
+@rep.route('/billingrecords/<repid>', methods=['GET'])
+def get_patient_billing_records(repid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
     query = f'''SELECT BillingRecord.description, amount, paid FROM BillingRecord\
                 JOIN InsurancePlan ON BillingRecord.planID = InsurancePlan.planID\
-                WHERE repID = {repID}
+                WHERE repID = {repid}
                 '''
     cursor.execute(query)
 
@@ -201,8 +201,8 @@ def add_patient_insurance_plan():
 
 
 # add an insurance plan for a specfic patient
-@rep.route('/insuranceplans/<patientID>', methods=['POST'])
-def add_patient_billing_record (patientID):
+@rep.route('/insuranceplans/<patientid>', methods=['POST'])
+def add_patient_billing_record (patientid):
 
     # collecting data from the request object 
     the_data = request.json
@@ -316,8 +316,8 @@ def post_doctor_message(repid):
 
 
 # updates a patient's current insurance plan
-@rep.route('/rep/insuranceplans/<planID>', methods=['PUT'])
-def update_patient_insurance_plan(planID):
+@rep.route('/rep/insuranceplans/<planid>', methods=['PUT'])
+def update_patient_insurance_plan(planid):
     
     # collecting data from request object 
     the_data = request.json
@@ -328,13 +328,13 @@ def update_patient_insurance_plan(planID):
     copay = the_data['copay']
     description = the_data['description']
     inactive = the_data['inactive'] # have the choice to set something as inactive
-    repid = the_data['repID']
+    patientid = the_data['patientID']
         
     # create update query
     the_query = f'''UPDATE InsurancePlan\
                     SET terminationDate = {terminationDate}, copay = {copay}, description = {description},\
-                        inactive = {inactive}, repID = {repid}\
-                    WHERE planID = {planID}'''
+                        inactive = {inactive}, patientID = {patientid}\
+                    WHERE planID = {planid}'''
     current_app.logger.info(the_query)
     
     cursor = db.get_db().cursor()
@@ -345,7 +345,7 @@ def update_patient_insurance_plan(planID):
 
 # set billing record as paid
 @rep.route('/billingrecord/<patientid>', methods=['PUT'])
-def pay_bill(patientID):
+def pay_bill(patientid):
 
     # collecting data from the request object 
     the_data = request.json
@@ -359,7 +359,7 @@ def pay_bill(patientID):
     query = f'UPDATE BillingRecord\
                      SET paid = {paid}\
                      WHERE billingRecordID = {billingrecordID}\
-                     AND patientID = {patientID};'
+                     AND patientID = {patientid};'
     
     current_app.logger.info(query)
 
