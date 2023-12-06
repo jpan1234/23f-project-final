@@ -307,7 +307,7 @@ def post_doctor_message(patientid):
 
 
     # Constructing the query
-    query = 'INSERT INTO Message (subject, content, patientid, doctorid) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientID, doctorID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
     query += patientid + '", '
@@ -390,8 +390,8 @@ def post_rep_message(patientid):
 
 
 # post a visit with a doctor
-@patients.route('/visits/<doctorid>', methods=['POST'])
-def schedule_doctor_visit(patientid, doctorid):
+@patients.route('/visits/<patientid>', methods=['POST'])
+def schedule_doctor_visit(patientid):
     '''
     Schedule a visit with a doctor
 
@@ -404,7 +404,7 @@ def schedule_doctor_visit(patientid, doctorid):
     #extracting the variable
     purpose = the_data['purpose']
     visitDate = the_data['visitDate']
-    patientid = the_data['patientID']
+    doctorid = the_data['doctorID']
 
     # Constructing the query
     query = 'INSERT INTO Visit (purpose, visitDate, patientID, doctorID) VALUES ("'
@@ -453,28 +453,6 @@ def schedule_coach_visit(coachid):
     db.get_db().commit()
     
     return 'Visit scheduled!'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # PUT COMMANDS
 
