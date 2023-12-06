@@ -13,11 +13,11 @@ def get_patient_insurance_plan(repid):
 
     # use cursor to query the database for a list of products
     cursor.execute(f'SELECT Patient.firstName, Patient.lastName,\
-                    InsurancePlan.description, Patient.patientID,\
+                    InsurancePlan.description, Patient.patientID\
                     FROM Patient\
                     JOIN BillingRecord\
                     ON Patient.patientID = BillingRecord.patientID\
-                    JOIN InsurnacePlan\
+                    JOIN InsurancePlan\
                     ON BillingRecord.planID = InsurancePlan.planID\
                     WHERE InsurancePlan.repID = {repid};')
 
