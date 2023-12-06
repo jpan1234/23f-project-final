@@ -55,7 +55,7 @@ def get_prescriptions_for_doctor(doctorid):
     return jsonify(json_data)
     
 
-@doctors.route('/notifications/<doctorid>', methods=['Get'])
+@doctors.route('/notifications/<doctorid>', methods=['GET'])
 def get_notifications_for_doctors_patients(doctorid):
 
     '''
@@ -90,7 +90,7 @@ def get_notifications_for_doctors_patients(doctorid):
     return jsonify(json_data)
 
 
-@doctors.route('/messages/<doctorid>', methods=['Get'])
+@doctors.route('/messages/<doctorid>', methods=['GET'])
 def get_messages_for_doctor(doctorid):
 
     '''
@@ -124,7 +124,7 @@ def get_messages_for_doctor(doctorid):
     return jsonify(json_data)
 
 
-@doctors.route('/healthrecords/<doctorid>', methods=['Get'])
+@doctors.route('/healthrecords/<doctorid>', methods=['GET'])
 def get_healthRecords_for_doctors_patients(doctorid):
 
     '''
@@ -159,7 +159,7 @@ def get_healthRecords_for_doctors_patients(doctorid):
 
 
 
-@doctors.route('/labresults/<doctorid>', methods=['Get'])
+@doctors.route('/labresults/<doctorid>', methods=['GET'])
 def get_labresults_for_doctors_patients(doctorid):
 
     '''
@@ -200,7 +200,7 @@ def get_labresults_for_doctors_patients(doctorid):
 
 
 
-@doctors.route('/visits/<doctorid>', methods=['Get'])
+@doctors.route('/visits/<doctorid>', methods=['GET'])
 def get_visits_for_doctors(doctorid):
 
     '''
@@ -235,7 +235,7 @@ def get_visits_for_doctors(doctorid):
 
 
 
-@doctors.route('/messages/<doctorid>', methods=['Get'])
+@doctors.route('/messages/<doctorid>', methods=['GET'])
 def get_rep_messages_for_doctors(doctorid):
 
     '''
@@ -270,23 +270,7 @@ def get_rep_messages_for_doctors(doctorid):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # POSTING 
-
-
 
 @doctors.route('/prescriptions/<doctorid>', methods=['POST'])
 def add_new_doctor_prescription(doctorid):
@@ -599,7 +583,7 @@ def update_prescription():
     # commit changes
     db.get_db().commit()
 
-    return 'Canceled visit.'
+    return 'Prescription updated.'
 
 
 # DELETE ROUTE
