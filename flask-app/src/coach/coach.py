@@ -18,7 +18,7 @@ def get_notifications_from_patient(coachid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
-    query = f'SELECT Notifications.patientID, content, timeSent FROM Notifications\
+    query = f'SELECT notificationID, Notifications.patientID, content, timeSent FROM Notifications\
         JOIN Patient ON Notifications.patientID = Patient.patientID\
         JOIN Visit ON Patient.patientID = Visit.patientID\
         WHERE deleted = 0 AND coachID = {coachid};'
@@ -335,7 +335,7 @@ def delete_notification_coach(notificationID):
     
     query = f'DELETE\
         FROM Notifications\
-        WHERE comID = {notificationID};'
+        WHERE notificationID = {notificationID};'
         
     # get cursor and execute it
     cursor = db.get_db().cursor()
