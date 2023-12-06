@@ -99,14 +99,15 @@ def get_patient_health_records(patientID):
     return jsonify(json_data)
 
 # Provide all billing records for this patient 
-@rep.route('/billingrecords/<patientID>', methods=['GET'])
-def get_patient_billing_records(patientID):
+@rep.route('/billingrecords/<repID>', methods=['GET'])
+def get_patient_billing_records(repID):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
     query = f'''SELECT description, amount, paid FROM BillingRecord\
-                WHERE patientID = {patientID}
+                JOIN InsurancePlan ON BillingRecord.planID = InsurancePlan.planID\
+                WHERE repID = {repID}
                 '''
     cursor.execute(query)
 
