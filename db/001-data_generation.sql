@@ -1,5 +1,7 @@
+USE HuskyHealth;
+
 -- Patient data
-insert into Patient (patientID, firstName, lastName, birthDate, age) values (1, 'Orson', 'Brownsey', '2002-09-10', 20);
+insert into Patient (patientID, firstName, lastName, birthDate, age) values (1, 'Maya', 'Chen', '2002-09-10', 21);
 insert into Patient (patientID, firstName, lastName, birthDate, age) values (2, 'Alvin', 'Behnecken', '2000-01-23', 22);
 insert into Patient (patientID, firstName, lastName, birthDate, age) values (3, 'Belia', 'Hawney', '2005-10-18', 17);
 insert into Patient (patientID, firstName, lastName, birthDate, age) values (4, 'Stace', 'Chillistone', '2002-05-03', 20);
@@ -62,7 +64,7 @@ insert into Patient (patientID, firstName, lastName, birthDate, age) values (60,
 
 
 -- Doctor
-insert into Doctor (doctorID, specialization, firstName, lastName, consent) values (1, 'Orthopedic Surgery', 'Bogart', 'Tattershaw', 1);
+insert into Doctor (doctorID, specialization, firstName, lastName, consent) values (1, 'General Practitioner', 'Samuel', 'Booker', 1);
 insert into Doctor (doctorID, specialization, firstName, lastName, consent) values (2, 'Orthopedic Surgery', 'Karoly', 'Shovelbottom', 1);
 insert into Doctor (doctorID, specialization, firstName, lastName, consent) values (3, 'Ophthalmology', 'Juliane', 'McClymond', 1);
 insert into Doctor (doctorID, specialization, firstName, lastName, consent) values (4, 'Ophthalmology', 'Patrice', 'Ruddick', 1);
@@ -125,20 +127,20 @@ insert into Doctor (doctorID, specialization, firstName, lastName, consent) valu
 
 
 -- Wellness Coach
-insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (1, 'Nursing', 'Carla', 'Lightollers', 0);
+insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (1, 'Wellness Management', 'Jordan', 'Lee', 1);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (2, 'Psychology', 'Cammy', 'Jaume', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (3, 'Psychology', 'Sydel', 'Edelman', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (4, 'Holistic Health', 'Spenser', 'Perview', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (5, 'Dietetics', 'Emanuele', 'Leaf', 0);
-insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (6, 'Health Promotion', 'Verine', 'Sellan', 0);
-insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (7, 'Wellness Management', 'Garvey', 'Lambrecht', 0);
-insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (8, 'Behavioral Science', 'Vinnie', 'Lawman', 0);
+insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (6, 'Health Promotion', 'Verine', 'Sellan', 1);
+insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (7, 'Wellness Management', 'Garvey', 'Lambrecht', 1);
+insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (8, 'Behavioral Science', 'Vinnie', 'Lawman', 1);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (9, 'Sports Science', 'Frances', 'MacGebenay', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (10, 'Sports Science', 'Cosme', 'Greenland', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (11, 'Human Physiology', 'Herve', 'Rushsorth', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (12, 'Health Education', 'Husein', 'Kupke', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (13, 'Holistic Health', 'Joela', 'Lamb-shine', 0);
-insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (14, 'Kinesiology', 'Hastings', 'Seekings', 0);
+insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (14, 'Kinesiology', 'Hastings', 'Seekings', 1);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (15, 'Health Promotion', 'Arvy', 'Exley', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (16, 'Holistic Health', 'Danyette', 'Abel', 0);
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (17, 'Kinesiology', 'Katrina', 'Dwyer', 0);
@@ -187,7 +189,7 @@ insert into WellnessCoach (coachID, education, firstName, lastName, consent) val
 insert into WellnessCoach (coachID, education, firstName, lastName, consent) values (60, 'Health Education', 'Brandea', 'Brooking', 0);
 
 -- Insurance Representative
-insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (1, 'Allstate', 'Bellina', 'Woolmore', 0);
+insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (1, 'Allstate', 'Alicia', 'Ramirez', 0);
 insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (2, 'Farmers Insurance', 'Audre', 'Dudeney', 0);
 insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (3, 'Liberty Mutual', 'Shina', 'Pinchen', 0);
 insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (4, 'Farmers Insurance', 'Abelard', 'Piperley', 0);
@@ -249,10 +251,10 @@ insert into InsuranceRepresentative (repID, company, firstName, lastName, consen
 insert into InsuranceRepresentative (repID, company, firstName, lastName, consent) values (60, 'Nationwide', 'Jarrett', 'Cowope', 0);
 
 -- Visit
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (1, 'justo in blandit', '2023-03-21', 32, 5, 30, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (2, 'rutrum neque aenean auctor', '2023-02-11', 58, 18, 20, 1);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (3, 'ante ipsum primis in', '2023-01-06', 3, 51, 1, 0);
-insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (4, 'nulla neque libero convallis', '2023-10-22', 32, 31, 8, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (1, 'Check in', '2023-03-21', 1, 1, 30, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (2, 'Headaches', '2023-02-11', 1, 18, 20, 1);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (3, 'Toothache', '2023-01-06', 1, 1, 1, 0);
+insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (4, 'Possible prescription', '2023-10-22', 1, 2, 8, 0);
 insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (5, 'orci eget orci', '2023-08-01', 35, 12, 28, 1);
 insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (6, 'est quam pharetra magna ac', '2023-08-09', 57, 51, 60, 1);
 insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, canceled) values (7, 'dolor vel est donec', '2023-07-09', 56, 29, 1, 1);
@@ -313,10 +315,10 @@ insert into Visit (visitid, purpose, visitdate, patientid, doctorid, coachid, ca
 -- Lab Results
 insert into LabResults (testID, result, type, testDate, patientID) values (1, 'a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem', 'Urinalysis', '2023/2/23', 42);
 INSERT INTO LabResults (testID, result, type, testDate, patientID) VALUES
-(2, 'vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in', 'Liver Enzymes', '2023-07-11', 3),
+(2, 'vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in', 'Liver Enzymes', '2023-07-11', 1),
 (3, 'in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor', 'Lipid Profile', '2023-05-24', 4),
 (4, 'morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus', 'Blood Glucose', '2023-08-20', 57),
-(5, 'luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti', 'PSA)', '2023-09-15', 24),
+(5, 'luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti', 'Brain Scans', '2023-09-15', 1),
 (6, 'leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut', 'BUN (Blood Urea Nitrogen)', '2023-04-14', 23),
 (7, 'hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at', 'Liver Enzymes', '2023-02-05', 37),
 (8, 'magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in', 'Hepatitis Panel', '2023-10-28', 27),
@@ -375,8 +377,8 @@ INSERT INTO LabResults (testID, result, type, testDate, patientID) VALUES
 
 -- Prescriptions
 -- may have to change dates 
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (2, 'dictumst etiam', 9, 1, 43, '2023-10-20', 'dictumst', 20, 'integer', '2023-01-10', 'Morissette-Emmerich', 'Warfarin Sodium', 78, 1);
-insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (1, 'eget tincidunt eget', 8, 52, 47, '2023-04-23', 'ut', 4, 'pellentesque', '2023-06-25', 'Waters and Sons', 'Octinoxate and Titanium Dioxide', 12, 0);
+insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (2, 'dictumst etiam', 9, 1, 1, '2023-10-20', 'dictumst', 1, 'integer', '2023-01-10', 'Morissette-Emmerich', 'Aspirin', 78, 0);
+insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (1, 'eget tincidunt eget', 8, 52, 1, '2023-04-23', 'ut', 1, 'pellentesque', '2023-06-25', 'Waters and Sons', 'Allergy Medication', 12, 0);
 insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (3, 'convallis', 56, 40, 23, '2023-06-18', 'aliquet', 4, 'mattis', '2023-11-07', 'Sauer-Friesen', 'venlafaxine hydrochloride', 17, 1);
 insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (4, 'nulla', 16, 35, 8, '2023-10-29', 'leo', 32, 'praesent', '2023-04-29', 'Carroll, Murray and Grimes', 'OCTINOXATE, TITANIUM DIOXIDE, and ZINC OXIDE', 57, 1);
 insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (5, 'cursus id turpis', 9, 14, 46, '2023-11-30', 'pellentesque', 13, 'nonummy', '2023-01-26', 'Hodkiewicz, Bergnaum and Cormier', 'Sunscreen', 16, 0);
@@ -437,9 +439,9 @@ insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdat
 insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (60, 'sit amet', 24, 57, 6, '2023-05-21', 'in', 3, 'nulla', '2022-12-12', 'Cummerata Group', 'OCTINOXATE, TITANIUM DIOXIDE, OXYBENZONE', 1, 1);
 
 -- Health Records
-insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (1, 'Leukemia in brother', 'Milk', 'Rubella)', 19, 29, 35, 16, 30, 0);
-insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (2, 'Colon cancer in aunt', 'Eggs', 'Meningococcal', 37, 28, 44, 46, 53, 0);
-insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (3, 'Ovarian cancer in cousin', 'Eggs', 'MMR (Measles', 6, 8, 6, 1, 25, 0);
+insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (1, 'Leukemia in grandfather', 'Milk', 'Rubella', 1, 1, 1, 1, 30, 0);
+insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (2, 'Colon cancer in aunt', 'Eggs', 'Meningococcal', 1, 1, 1, 1, 53, 0);
+insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (3, 'Ovarian cancer in cousin', 'Eggs', 'MMR (Measles)', 6, 8, 6, 1, 25, 0);
 insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (4, 'Stroke in grandfather', 'Shellfish', 'COVID-19', 31, 10, 29, 4, 7, 0);
 insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (5, 'Heart disease in grandparents', 'Shellfish', 'Polio', 16, 4, 43, 29, 21, 0);
 insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (6, 'Prostate cancer in father', 'Mold', 'Mumps', 17, 37, 19, 22, 57, 0);
@@ -500,9 +502,9 @@ insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory,
 
 
 -- Message
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (2, '2023-12-04', 'erat id mauris vulputate elementum', 'Suspendisse potenti.', 24, 54, 33, 4, 1);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (1, '2023-12-04', 'interdum venenatis turpis', 'Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.', 12, 20, 20, 55, 0);
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (3, '2023-12-04', 'tristique est et', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis.', 45, 58, 32, 12, 1);
+insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (1, '2023-12-04', 'Upcoming Appointment', 'Hi! Just wanted to check in on our upcoming appointment.', 1, 1, NULL, NULL, 0);
+insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (2, '2023-12-04', 'Setting Healthy Goals', 'I want to set healthy goals! I need your help!', 1, NULL, 1, NULL, 0);
+insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (3, '2023-12-04', 'Inquiry on Bills', 'Hi! Just wondering about these bills I need to pay...', 1, NULL, NULL, 1, 1);
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (4, '2023-12-04', 'blandit non', 'Nulla tellus.', 5, 15, 35, 51, 0);
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (5, '2023-12-04', 'viverra pede ac', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor.', 32, 49, 30, 36, 1);
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (6, '2023-12-04', 'aliquam non mauris morbi non', 'Nullam porttitor lacus at turpis.', 4, 28, 28, 19, 1);
@@ -562,14 +564,11 @@ insert into Message (comid, datesent, subject, content, patientid, doctorid, coa
 insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (60, '2023-12-04', 'non lectus aliquam sit amet', 'Curabitur convallis.', 20, 2, 15, 3, 1);
 
 
-# for patient 1 example
-insert into Message (comid, datesent, subject, content, patientid, doctorid, coachid, repid, deleted) values (61, '2023-12-04', 'erat id mauris vulputate elementum', 'Suspendisse potenti.', 1, 54, 33, 4, 0);
-
 
 -- Insurance Plan
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (1, '2028-08-08', 138.89, 'magna vulputate luctus cum sociis natoque penatibus et magnis dis', 45, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (2, '2027-04-05', 82.95, 'nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede', 59, 0);
-insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (3, '2024-04-30', 94.45, 'id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae', 17, 0);
+insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (1, '2028-08-08', 138.89, 'General Payment', 1, 0);
+insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (2, '2027-04-05', 82.95, 'Accelerated Payment', 1, 0);
+insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (3, '2024-04-30', 94.45, 'Husky Afterpay', 1, 0);
 insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (4, '2027-09-29', 148.19, 'posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed', 32, 0);
 insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (5, '2026-09-13', 142.33, 'vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis', 49, 0);
 insert into InsurancePlan (planID, terminationDate, copay, description, repID, inactive) values (6, '2023-08-15', 88.79, 'nulla suspendisse potenti cras in purus eu magna vulputate luctus cum', 46, 0);
@@ -630,11 +629,11 @@ insert into InsurancePlan (planID, terminationDate, copay, description, repID, i
 
 
 -- Billing Records
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (1, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 186, 6, 50, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (2, 'In est risus, auctor sed, tristique in, tempus sit amet, sem.', 408, 20, 21, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (3, 'In eleifend quam a odio.', 277, 47, 42, 1);
+insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (1, 'Initial payment.', 186, 1, 1, 1);
+insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (2, 'Copay.', 408, 20, 1, 1);
+insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (3, 'Application Fee.', 277, 1, 1, 1);
 insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (4, 'Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.', 440, 50, 44, 1);
-insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (5, 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 140, 28, 6, 1);
+insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (5, 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 140, 28, 3, 1);
 insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (6, 'Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 600, 53, 36, 0);
 insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (7, 'Morbi quis tortor id nulla ultrices aliquet.', 676, 44, 30, 0);
 insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (8, 'In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.', 163, 6, 3, 0);
@@ -692,10 +691,10 @@ insert into BillingRecord (billingrecordid, description, amount, patientid, plan
 insert into BillingRecord (billingrecordid, description, amount, patientid, planid, paid) values (60, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 851, 44, 55, 0);
 
 -- Wellness Record
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (1, 'Establish a consistent sleep schedule', 'neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere', 5, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (2, 'Maintain a healthy weight', 'platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie', 23, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (3, 'Eat more fruits and veggies', 'pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula', 30, 0);
-insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (4, 'be outdoors', 'potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt', 42, 0);
+insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (1, 'Establish a consistent sleep schedule', 'neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere', 1, 0);
+insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (2, 'Maintain a healthy weight', 'platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie', 1, 0);
+insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (3, 'Eat more fruits and veggies', 'pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula', 1, 0);
+insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (4, 'be outdoors', 'potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt', 1, 0);
 insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (5, 'Cultivate positive relationships', 'ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi', 37, 0);
 insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (6, 'Establish a consistent sleep schedule', 'ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis', 12, 0);
 insert into WellnessRecord (wellnessRecordID, goal, description, patientID, complete) values (7, 'be outdoors', 'potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus', 25, 0);
@@ -942,3 +941,4 @@ values
 (58, 'Curabitur convallis.', 'mauris', CURRENT_TIMESTAMP, 1, 57, 43, 0),
 (59, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 'tellus', CURRENT_TIMESTAMP, 54, 22, 50, 1),
 (60, 'Suspendisse potenti.', 'tempus', CURRENT_TIMESTAMP, 4, 50, 60, 0);
+Í
