@@ -165,8 +165,7 @@ def get_healthRecords_for_coach(coachid):
     query = f'SELECT healthRecordID, familyHistory, allergies, vaxHistory FROM HealthRecords\
         JOIN WellnessCoach\
         ON WellnessCoach.coachID = HealthRecords.coachID\
-        WHERE HealthRecords.coachID = {coachid} AND WellnessCoach.consent = 1\
-        ORDER BY patientID;'
+        WHERE HealthRecords.coachID = {coachid} AND WellnessCoach.consent = 1'
 
     cursor.execute(query)
     # grab the column headers from the returned data
