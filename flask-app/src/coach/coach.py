@@ -7,9 +7,9 @@ coach = Blueprint('coach', __name__)
 
 # GETS
 
-# Get all the unseen notifications sent by the coach's patient from the database
-@coach.route('/notifications/<patientid>', methods=['GET'])
-def get_notifications_from_patient(patientid):
+# Get all the unseen notifications for the coach
+@coach.route('/notifications/<coachid>', methods=['GET'])
+def get_notifications_from_patient(coachid):
     '''
     Get all notifications that are unseen from coach's patient
 
@@ -18,10 +18,10 @@ def get_notifications_from_patient(patientid):
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
-    query = f'SELECT Notifications.patientID, content, timeSent FROM HuskyHealth.Notifications\
-        JOIN HuskyHealth.Patient ON Notifications.patientID = Patient.patientID\
-        JOIN HuskyHealth.Visit ON Patient.patientID = Visit.patientID\
-        WHERE status = Unread AND patientID = {patientid};'
+    query = f'SELECT Notifications.patientID, content, timeSent FROM Notifications\
+        JOIN Patient ON Notifications.patientID = Patient.patientID\
+        JOIN Visit ON Patient.patientID = Visit.patientID\
+        WHERE status = Unread AND coachID = {coachid};'
 
     # use cursor to query the database for a list of products
     cursor.execute(query)
