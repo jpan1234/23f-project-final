@@ -182,9 +182,10 @@ def get_visit_records(patientid):
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute(f'SELECT purpose, visitDate\
+    cursor.execute(f'SELECT visitID, doctorID, coachID, purpose, visitDate\
                      FROM Visit\
-                     WHERE patientID = {patientid};')
+                     WHERE patientID = {patientid}\
+                     AND canceled = 0;')
     
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -535,7 +536,7 @@ def cancel_doctor_visit(visitid):
     current_app.logger.info(the_data)
 
     #extracting the variable
-    canceled = sthe_data['canceled'] # either 1 or 0, mostly going to set to 1 to set as "complete"
+    canceled = the_data['canceled'] 
 
     # get a cursor object from the database
     cursor = db.get_db().cursor()
