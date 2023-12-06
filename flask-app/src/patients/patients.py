@@ -304,13 +304,15 @@ def post_doctor_message(patientid):
     subject = the_data['subject']
     content = the_data['content']
     doctorid = the_data['doctorID']
+    datesent = the_data['dateSent']
 
     # Constructing the query
     query = 'INSERT INTO Message (subject, content, patientID, doctorID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
-    query += patientid + '", '
-    query += doctorid + ');'
+    query += patientid + '", "'
+    query += datesent + '", "'
+    query += doctorid + '");'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
@@ -336,14 +338,15 @@ def post_coach_message(patientid):
     subject = the_data['subject']
     content = the_data['content']
     coachid = the_data['coachID']
-
+    datesent = the_data['dateSent']
 
     # Constructing the query
-    query = 'INSERT INTO Message (subject, content, patientID, coachID) VALUES ("'
+    query = 'INSERT INTO Message (subject, content, patientID, coachID, dateSent) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
-    query += patientid + '", '
-    query += coachid + ')'
+    query += patientid + '", "'
+    query += datesent + '", "'
+    query += coachid + '")'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
@@ -371,13 +374,15 @@ def post_rep_message(patientid):
     subject = the_data['subject']
     content = the_data['content']
     repid = the_data['repID']
+    datesent = the_data['dateSent']
 
     # Constructing the query
     query = 'INSERT INTO Message (subject, content, patientID, repID) VALUES ("'
     query += subject + '", "'
     query += content + '", "'
-    query += patientid + '", '
-    query += repid + ')'
+    query += patientid + '", "'
+    query += datesent + '","'
+    query += repid + '")'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
@@ -385,7 +390,7 @@ def post_rep_message(patientid):
     cursor.execute(query)
     db.get_db().commit()
     
-    return 'Message sent!'
+    return 'Message sent!' 
 
 
 # post a visit with a doctor
