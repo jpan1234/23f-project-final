@@ -8,11 +8,7 @@ patients = Blueprint('patients', __name__)
 # Get all the prescriptions from the database 
 @patients.route('/prescriptions/<patientid>', methods=['GET'])
 def get_prescriptions(patientid):
-    '''
-    Get all prescriptions from the database
 
-    columns: medication, pharmacy, dateprescribed for the patient
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -40,11 +36,7 @@ def get_prescriptions(patientid):
 # Get all the notifications from the database 
 @patients.route('/notifications/<patientid>', methods=['GET'])
 def get_notifications(patientid):
-    '''
-    Get all notifications from the database for the patient
 
-    columns: content for the patient
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -74,11 +66,7 @@ def get_notifications(patientid):
 # Get all the messages from the database from a doctor 
 @patients.route('/messages/<patientid>', methods=['GET'])
 def get_message(patientid):
-    '''
-    Get all messages for a particular patient
 
-    columns: subject, content, dateSent for the patient
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -108,11 +96,7 @@ def get_message(patientid):
 # Get all the healthrecords from the database for a patient 
 @patients.route('/healthrecords/<patientid>', methods=['GET'])
 def get_health_records(patientid):
-    '''
-    Get all health records from the database for the patient
 
-    columns: first name, last name, familyHistory, allergies, vaxHistory
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -142,11 +126,7 @@ def get_health_records(patientid):
 # Get all the lab results from the database for a patient 
 @patients.route('/labresults/<patientid>', methods=['GET'])
 def get_lab_records(patientid):
-    '''
-    Get all lab result records from the database for the patient
 
-    columns: result, type, testDate
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -174,11 +154,7 @@ def get_lab_records(patientid):
 # Get all the visits records from the database for a patient 
 @patients.route('/visits/<patientid>', methods=['GET'])
 def get_visit_records(patientid):
-    '''
-    Get all visits records from the database for the patient
 
-    columns: purpose, visitDate
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -208,11 +184,7 @@ def get_visit_records(patientid):
 # Get all the billing records from the database for a patient 
 @patients.route('/billingrecords/<patientid>', methods=['GET'])
 def get_billing_records(patientid):
-    '''
-    Get all billing records from the database for the patient
 
-    columns: description, amount
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -243,11 +215,7 @@ def get_billing_records(patientid):
 # Get all the wellness goal records from the database for a patient 
 @patients.route('/wellnessrecords/<patientid>', methods=['GET'])
 def get_wellness_records(patientid):
-    '''
-    Get all wellness records from the database for the patient
 
-    columns: description, goal
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -278,11 +246,7 @@ def get_wellness_records(patientid):
 # post a message from a patient to a doctor
 @patients.route('/messagedoctor/<patientid>', methods=['POST'])
 def post_doctor_message(patientid):
-    '''
-    Post a message to the database from a patient to a doctor
 
-    columns: subject, content, patientid, doctorid
-    '''
     # collecting data from the request object 
     the_data = request.json
     current_app.logger.info(the_data)
@@ -312,11 +276,7 @@ def post_doctor_message(patientid):
 # post a message from a patient to a coach
 @patients.route('/messagecoach/<patientid>', methods=['POST'])
 def post_coach_message(patientid):
-    '''
-    Post a message to the database from a patient to a coach
 
-    columns: subject, content, patientid, coachid
-    '''
     # collecting data from the request object 
     the_data = request.json
     current_app.logger.info(the_data)
@@ -347,11 +307,7 @@ def post_coach_message(patientid):
 # post a message from a patient to a rep
 @patients.route('/messagerep/<patientid>', methods=['POST'])
 def post_rep_message(patientid):
-    '''
-    Post a message to the database from a patient to a rep
 
-    columns: subject, content, patientid, repid
-    '''
     # collecting data from the request object 
     the_data = request.json
     current_app.logger.info(the_data)
@@ -381,11 +337,7 @@ def post_rep_message(patientid):
 # post a visit with a doctor
 @patients.route('/visitdoctor/<patientid>', methods=['POST'])
 def schedule_doctor_visit(patientid):
-    '''
-    Schedule a visit with a doctor
 
-    columns: purpose, visitDate, patientID, doctorID
-    '''
     # collecting data from the request object 
     the_data = request.json
     current_app.logger.info(the_data)
@@ -413,11 +365,7 @@ def schedule_doctor_visit(patientid):
 # post a visit with a coach
 @patients.route('/visitcoach/<patientid>', methods=['POST'])
 def schedule_coach_visit(patientid):
-    '''
-    Schedule a visit with a coach
 
-    columns: purpose, visitDate, patientID, coachID
-    '''
     # collecting data from the request object 
     the_data = request.json
     current_app.logger.info(the_data)
@@ -448,11 +396,6 @@ def schedule_coach_visit(patientid):
 # update a message to a doctor
 @patients.route('/messages/<comid>', methods=['PUT'])
 def update_message(comid):
-    '''
-    Update a message 
-
-    columns: 
-    '''
 
     # collecting data from the request object 
     the_data = request.json
@@ -481,11 +424,6 @@ def update_message(comid):
 # update a wellness record
 @patients.route('/wellnessrecords/<wellnessrecordid>', methods=['PUT'])
 def update_patient_wellnessrecord(wellnessrecordid):
-    '''
-    Update a wellness goal as complete or not
-
-    columns
-    '''
 
     # collecting data from the request object 
     the_data = request.json
@@ -515,11 +453,6 @@ def update_patient_wellnessrecord(wellnessrecordid):
 # cancel a doctor visit
 @patients.route('/visits/<visitid>', methods=['PUT'])
 def cancel_doctor_visit(visitid):
-    '''
-    Cancel a visit 
-
-    columns: 
-    '''
 
     # collecting data from the request object 
     the_data = request.json

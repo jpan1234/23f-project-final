@@ -403,3 +403,21 @@ def update_message(comid):
 
 
     return "Updated message."
+
+# Deletes a notification
+@rep.route('/deletenotifications/<notificationid>', methods=['DELETE'])
+def delete_notification_rep(notificationid):
+    
+    query = f'DELETE\
+        FROM Notifications\
+        WHERE notificationID = {notificationid};'
+        
+    # get cursor and execute it
+    cursor = db.get_db().cursor()
+
+    cursor.execute(query)
+    
+    # commit changes
+    db.get_db().commit()
+
+    return "Successfully deleted message!"

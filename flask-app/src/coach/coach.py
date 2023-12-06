@@ -10,11 +10,7 @@ coach = Blueprint('coach', __name__)
 # Get all the unseen notifications for the coach
 @coach.route('/notifications/<coachid>', methods=['GET'])
 def get_notifications_from_patient(coachid):
-    '''
-    Get all notifications that are unseen from coach's patient
 
-    columns: 
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -46,11 +42,7 @@ def get_notifications_from_patient(coachid):
 # Get all coachs messages
 @coach.route('/messages/<coachid>', methods=['GET'])
 def get_messages_from_coach(coachid):
-    '''
-    Get all messages between coach and affiliated patient
 
-    columns: 
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -81,11 +73,8 @@ def get_messages_from_coach(coachid):
 # Get all coachs visits
 @coach.route('/visits/<coachid>', methods=['GET'])
 def get_coach_visits(coachid):
-    '''
-    Get all coachs visits
+ 
 
-    columns: 
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -117,11 +106,7 @@ def get_coach_visits(coachid):
 # Get list of all wellness records of a coach
 @coach.route('/wellnessrecord/<coachid>', methods=['GET'])
 def get_coach_records(coachid):
-    '''
-    Gets list of all goals of a coach 
 
-    columns: 
-    '''
     # get a cursor object from the database
     cursor = db.get_db().cursor()
 
@@ -154,12 +139,6 @@ def get_coach_records(coachid):
 @coach.route('/healthrecords/<coachid>', methods=['Get'])
 def get_healthRecords_for_coach(coachid):
 
-    '''
-    Get all the coachs' patients' health records
-
-    columns: healthRecordID, familyHistory, allergies, vaxHistory
-    '''
-
     cursor = db.get_db().cursor()
 
     query = f'SELECT healthRecordID, familyHistory, allergies, vaxHistory FROM HealthRecords\
@@ -187,15 +166,10 @@ def get_healthRecords_for_coach(coachid):
 
 # POSTS
 
-# posts a message to coachs patient
-
+# posts a message to patient as a coach
 @coach.route('/messages/<coachid>', methods=['POST'])
 def post_coach_message(coachid):
-    '''
-    Post a message to the database from a patient to a coach
 
-    columns: subject, content, patientid, doctorid
-    '''
     # collecting data from the request object 
     the_data = request.json
     current_app.logger.info(the_data)
@@ -205,7 +179,6 @@ def post_coach_message(coachid):
     content = the_data['content']
     patientid = the_data['patientID']
     datesent = the_data['dateSent']
-
 
     # Constructing the query
     query = 'INSERT INTO Message (subject, content, patientid, dateSent, coachid) VALUES ("'
@@ -224,15 +197,8 @@ def post_coach_message(coachid):
     return 'Message sent!'
 
 # add a visit to the database by coach
-
 @coach.route('/visit/<coachid>', methods=['POST'])
 def post_coach_visit(coachid):
-
-    '''
-    Post a visit to the database from coach to patient
-
-    columns: subject, content, patientid, doctorid
-    '''
 
     # collecting data from the request object 
     the_data = request.json
@@ -263,11 +229,6 @@ def post_coach_visit(coachid):
 # update a message to a patient
 @coach.route('/messages/<comid>', methods=['PUT'])
 def update_message_coach(comid):
-    '''
-    Update a message 
-
-    columns: 
-    '''
 
     # collecting data from the request object 
     the_data = request.json
@@ -296,12 +257,6 @@ def update_message_coach(comid):
 # cancel a coach visit
 @coach.route('/visits/<visitid>', methods=['PUT'])
 def cancel_coach_visit(visitid):
-    '''
-    Cancel a visit 
-
-    columns: 
-    '''
-
     # collecting data from the request object 
     the_data = request.json
     current_app.logger.info(the_data)

@@ -5,7 +5,7 @@ from src import db
 
 doctors = Blueprint('doctors', __name__)
 
-
+# get all patients associated with doctor
 @doctors.route('/patients/<doctorid>', methods=['GET'])
 def get_patients(doctorid):
 
@@ -31,14 +31,9 @@ def get_patients(doctorid):
         json_data.append(dict(zip(column_headers, row)))
     return jsonify(json_data)
 
+# get prescriptions as a doctor
 @doctors.route('/prescriptions/<doctorid>', methods=['GET'])
 def get_prescriptions_for_doctor(doctorid):
-
-    '''
-    Get all the doctors prescriptions
-
-    columns: medication, pharmacy, dateprescribed, patientID
-    '''
 
     query = f'SELECT medication, pharmacy, datePrescribed, patientID FROM Prescriptions\
                 WHERE doctorID = {doctorid}\
@@ -54,15 +49,9 @@ def get_prescriptions_for_doctor(doctorid):
         json_data.append(dict(zip(column_headers, row)))
     return jsonify(json_data)
     
-
+# get all notifications associated with doctor
 @doctors.route('/notifications/<doctorid>', methods=['GET'])
 def get_notifications_for_doctors_patients(doctorid):
-
-    '''
-    Get all the doctors' patients' notifcations
-
-    columns: medication, pharmacy, dateprescribed, patientID
-    '''
 
     cursor = db.get_db().cursor()
 
@@ -89,15 +78,9 @@ def get_notifications_for_doctors_patients(doctorid):
 
     return jsonify(json_data)
 
-
+# get all messages associated with a doctor
 @doctors.route('/messages/<doctorid>', methods=['GET'])
 def get_messages_for_doctor(doctorid):
-
-    '''
-    Get all the doctors' messages
-
-    columns: subject, content, dateSent, patientID
-    '''
 
     cursor = db.get_db().cursor()
 
@@ -123,15 +106,9 @@ def get_messages_for_doctor(doctorid):
 
     return jsonify(json_data)
 
-
+# get health records as a doctor
 @doctors.route('/healthrecords/<doctorid>', methods=['GET'])
 def get_healthRecords_for_doctors_patients(doctorid):
-
-    '''
-    Get all the doctors' patients' health records
-
-    columns: healthRecordID, familyHistory, allergies, vaxHistory
-    '''
 
     cursor = db.get_db().cursor()
 
@@ -157,16 +134,9 @@ def get_healthRecords_for_doctors_patients(doctorid):
 
     return jsonify(json_data)
 
-
-
+# get lab results associated with doctor
 @doctors.route('/labresults/<doctorid>', methods=['GET'])
 def get_labresults_for_doctors_patients(doctorid):
-
-    '''
-    Get all the doctors' patients' lab results
-
-    columns:
-    '''
 
     cursor = db.get_db().cursor()
 
@@ -196,18 +166,9 @@ def get_labresults_for_doctors_patients(doctorid):
 
     return jsonify(json_data)
 
-
-
-
-
+# get all visits associated with doctor
 @doctors.route('/visits/<doctorid>', methods=['GET'])
 def get_visits_for_doctors(doctorid):
-
-    '''
-    Get all the doctors' patients' visits
-
-    columns: purpose, visitDate, patientID
-    '''
 
     cursor = db.get_db().cursor()
 
@@ -234,44 +195,9 @@ def get_visits_for_doctors(doctorid):
     return jsonify(json_data)
 
 
-
-@doctors.route('/messages/<doctorid>', methods=['GET'])
-def get_rep_messages_for_doctors(doctorid):
-
-    '''
-    Returns messages between a doctor and a their patients' corresponding representatitves
-
-    columns:
-    '''
-
-    cursor = db.get_db().cursor()
-
-    query = f'SELECT subject, content, dateSent, repID FROM Message\
-        WHERE doctorID = {doctorid}\
-        AND repID IS NOT NULL;'
-
-    cursor.execute(query)
-    # grab the column headers from the returned data
-    column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
-    json_data = []
-
-    # fetch all the data from the cursor
-    theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    return jsonify(json_data)
-
-
-
 # POSTING 
 
+# add a prescription
 @doctors.route('/prescriptions/<doctorid>', methods=['POST'])
 def add_new_doctor_prescription(doctorid):
     ''' 
@@ -321,8 +247,7 @@ def add_new_doctor_prescription(doctorid):
     
     return 'Success!'
 
-
-
+# add a message to patient
 @doctors.route('/messagepatient/<doctorid>', methods=['POST'])
 def add_new_message_doctor_to_patient(doctorid):
     
@@ -353,6 +278,7 @@ def add_new_message_doctor_to_patient(doctorid):
     
     return 'Success!'
 
+# add a message to rep
 @doctors.route('/messagerep/<doctorid>', methods=['POST'])
 def add_new_message_doctor_to_rep(doctorid):
     
@@ -383,7 +309,7 @@ def add_new_message_doctor_to_rep(doctorid):
     
     return 'Success!'
 
-
+# add a health record
 @doctors.route('/healthrecords/<doctorid>', methods=['POST'])
 def add_new_doctor_healthrecord(doctorid):
     
@@ -417,7 +343,7 @@ def add_new_doctor_healthrecord(doctorid):
     
     return 'Success!'
 
-
+# add a new lab result
 @doctors.route('/labresults/', methods=['POST'])
 def add_new_labresults_doctor():
     
@@ -449,7 +375,7 @@ def add_new_labresults_doctor():
     
     return 'Success!'
 
-
+# add a visit
 @doctors.route('/visits/<doctorid>', methods=['POST'])
 def add_new_visit_doctor(doctorid):
 
