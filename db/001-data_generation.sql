@@ -439,7 +439,7 @@ insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdat
 insert into Prescriptions (scriptid, type, visitid, testid, patientid, resultdate, company, doctorid, status, dateprescribed, pharmacy, medication, duration, inactive) values (60, 'sit amet', 24, 57, 6, '2023-05-21', 'in', 3, 'nulla', '2022-12-12', 'Cummerata Group', 'OCTINOXATE, TITANIUM DIOXIDE, OXYBENZONE', 1, 1);
 
 -- Health Records
-insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (1, 'Leukemia in grandfather', 'Milk', 'Rubella', 1, 1, 1, 1, 30, 0);
+insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (1, 'Leukemia in grandfather', 'Milk', 'Rubella', 1, 1, 1, 1, 30, 1);
 insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (2, 'Colon cancer in aunt', 'Eggs', 'Meningococcal', 1, 1, 1, 1, 53, 0);
 insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (3, 'Ovarian cancer in cousin', 'Eggs', 'MMR (Measles)', 6, 8, 6, 1, 25, 0);
 insert into HealthRecords (healthrecordid, familyhistory, allergies, vaxhistory, patientid, doctorid, repid, coachid, scriptid, complete) values (4, 'Stroke in grandfather', 'Shellfish', 'COVID-19', 31, 10, 29, 4, 7, 0);
