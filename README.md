@@ -10,7 +10,7 @@ Welcome to HuskyHealth, a comprehensive Personal Health Record (PHR) System meti
 - **Appointment Streamlining:** Schedule health consultations, counseling sessions, and wellness check-ups directly through the platform.
 - **Personalized Wellness Education:** Tailored content, from stress management strategies to nutrition tips, promoting proactive health practices.
 
-**User Personas:**
+**User Personas Include but Aren't Limited To::**
 - **Patients:** Access health records, prescriptions, allergies, and vaccination records. Schedule visits and receive timely reminders.
 - **Doctors:** Manage patient appointments, access health records, and engage in secure communication.
 - **Insurance Representatives:** Streamline information access for efficient claim processing.
