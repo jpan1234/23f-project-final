@@ -18,7 +18,8 @@ Welcome to HuskyHealth, a comprehensive Personal Health Record (PHR) System meti
 
 Experience the future of healthcare management at Northeastern University with HuskyHealth—your reliable partner in fostering a healthy and connected community.
 
-
+A video link explaining our routes and a short demo of our app!
+https://drive.google.com/file/d/1MFKvSpSgVW_cDPoLeq16ZSPs7ivI_jD9/view?usp=sharing
 
 
 ## This repo contains a setup for spinning up 3 Docker containers: 
@@ -36,4 +37,6 @@ Experience the future of healthcare management at Northeastern University with H
 5. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
 6. Open up Appsmith using `localhost:8080`
 7. Enjoy the capabilities of the app!
+
+
 
