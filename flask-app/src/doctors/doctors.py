@@ -9,12 +9,6 @@ doctors = Blueprint('doctors', __name__)
 @doctors.route('/patients/<doctorid>', methods=['GET'])
 def get_patients(doctorid):
 
-    '''
-    Get all the doctors prescriptions
-
-    columns: medication, pharmacy, dateprescribed, patientID
-    '''
-
     query = f'SELECT DISTINCT V.patientID, Patient.firstName, Patient.lastName FROM Patient\
                 JOIN Visit V on Patient.patientID = V.patientID\
                 WHERE V.doctorID = {doctorid};'
