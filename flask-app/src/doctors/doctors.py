@@ -172,7 +172,7 @@ def get_visits_for_doctors(doctorid):
 
     cursor = db.get_db().cursor()
 
-    query = f'SELECT purpose, visitDate, patientID FROM Visit\
+    query = f'SELECT visitID, purpose, visitDate, patientID FROM Visit\
             WHERE doctorID = {doctorid}\
             ORDER BY patientID;'
 
